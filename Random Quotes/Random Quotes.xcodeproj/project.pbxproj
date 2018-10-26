@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F8AC669C218366AA00372356 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC669B218366AA00372356 /* AppDelegate.swift */; };
+		F8AC669E218366AA00372356 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC669D218366AA00372356 /* ViewController.swift */; };
+		F8AC66A1218366AA00372356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC669F218366AA00372356 /* Main.storyboard */; };
+		F8AC66A3218366AC00372356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66A2218366AC00372356 /* Assets.xcassets */; };
+		F8AC66A6218366AC00372356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66A4218366AC00372356 /* LaunchScreen.storyboard */; };
+		F8AC66AE218367DA00372356 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AD218367DA00372356 /* Quote.swift */; };
+		F8AC66B02183683200372356 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AF2183683200372356 /* QuoteController.swift */; };
+		F8AC66B8218371C600372356 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AC66B7218371C600372356 /* NotificationCenter.framework */; };
+		F8AC66BB218371C600372356 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66BA218371C600372356 /* TodayViewController.swift */; };
+		F8AC66BE218371C600372356 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66BC218371C600372356 /* MainInterface.storyboard */; };
+		F8AC66C2218371C600372356 /* RandomQuotesTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8AC66B5218371C600372356 /* RandomQuotesTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8AC66C7218371D200372356 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AF2183683200372356 /* QuoteController.swift */; };
+		F8AC66C8218371D700372356 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AD218367DA00372356 /* Quote.swift */; };
+		F8AC66D02183769200372356 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66CE2183769200372356 /* Interface.storyboard */; };
+		F8AC66D22183769200372356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66D12183769200372356 /* Assets.xcassets */; };
+		F8AC66D92183769300372356 /* RandomQuotesWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8AC66D82183769200372356 /* RandomQuotesWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8AC66DE2183769300372356 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66DD2183769300372356 /* InterfaceController.swift */; };
+		F8AC66E02183769300372356 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66DF2183769300372356 /* ExtensionDelegate.swift */; };
+		F8AC66E22183769300372356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66E12183769300372356 /* Assets.xcassets */; };
+		F8AC66E62183769300372356 /* RandomQuotesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F8AC66CC2183769200372356 /* RandomQuotesWatch.app */; };
+		F8AC66EF2183776C00372356 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AD218367DA00372356 /* Quote.swift */; };
+		F8AC66F02183777000372356 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AF2183683200372356 /* QuoteController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8AC66C0218371C600372356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8AC6690218366AA00372356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8AC66B4218371C600372356;
+			remoteInfo = RandomQuotesTodayExtension;
+		};
+		F8AC66DA2183769300372356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8AC6690218366AA00372356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8AC66D72183769200372356;
+			remoteInfo = "RandomQuotesWatch Extension";
+		};
+		F8AC66E42183769300372356 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8AC6690218366AA00372356 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8AC66CB2183769200372356;
+			remoteInfo = RandomQuotesWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8AC66C6218371C600372356 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8AC66C2218371C600372356 /* RandomQuotesTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66EA2183769300372356 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8AC66D92183769300372356 /* RandomQuotesWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66EE2183769300372356 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F8AC66E62183769300372356 /* RandomQuotesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F8AC6698218366AA00372356 /* Random Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC669B218366AA00372356 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8AC669D218366AA00372356 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8AC66A0218366AA00372356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8AC66A2218366AC00372356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8AC66A5218366AC00372356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8AC66A7218366AC00372356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC66AD218367DA00372356 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		F8AC66AF2183683200372356 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		F8AC66B5218371C600372356 /* RandomQuotesTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandomQuotesTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC66B7218371C600372356 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F8AC66BA218371C600372356 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F8AC66BD218371C600372356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F8AC66BF218371C600372356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC66CC2183769200372356 /* RandomQuotesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuotesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC66CF2183769200372356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F8AC66D12183769200372356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8AC66D32183769200372356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC66D82183769200372356 /* RandomQuotesWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RandomQuotesWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AC66DD2183769300372356 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F8AC66DF2183769300372356 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F8AC66E12183769300372356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8AC66E32183769300372356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8AC6695218366AA00372356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66B2218371C600372356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66B8218371C600372356 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66D52183769200372356 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8AC668F218366AA00372356 = {
+			isa = PBXGroup;
+			children = (
+				F8AC669A218366AA00372356 /* Random Quotes */,
+				F8AC66B9218371C600372356 /* RandomQuotesTodayExtension */,
+				F8AC66CD2183769200372356 /* RandomQuotesWatch */,
+				F8AC66DC2183769300372356 /* RandomQuotesWatch Extension */,
+				F8AC66B6218371C600372356 /* Frameworks */,
+				F8AC6699218366AA00372356 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8AC6699218366AA00372356 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC6698218366AA00372356 /* Random Quotes.app */,
+				F8AC66B5218371C600372356 /* RandomQuotesTodayExtension.appex */,
+				F8AC66CC2183769200372356 /* RandomQuotesWatch.app */,
+				F8AC66D82183769200372356 /* RandomQuotesWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8AC669A218366AA00372356 /* Random Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC669B218366AA00372356 /* AppDelegate.swift */,
+				F8AC669D218366AA00372356 /* ViewController.swift */,
+				F8AC669F218366AA00372356 /* Main.storyboard */,
+				F8AC66A2218366AC00372356 /* Assets.xcassets */,
+				F8AC66A4218366AC00372356 /* LaunchScreen.storyboard */,
+				F8AC66A7218366AC00372356 /* Info.plist */,
+				F8AC66AD218367DA00372356 /* Quote.swift */,
+				F8AC66AF2183683200372356 /* QuoteController.swift */,
+			);
+			path = "Random Quotes";
+			sourceTree = "<group>";
+		};
+		F8AC66B6218371C600372356 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC66B7218371C600372356 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8AC66B9218371C600372356 /* RandomQuotesTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC66BA218371C600372356 /* TodayViewController.swift */,
+				F8AC66BC218371C600372356 /* MainInterface.storyboard */,
+				F8AC66BF218371C600372356 /* Info.plist */,
+			);
+			path = RandomQuotesTodayExtension;
+			sourceTree = "<group>";
+		};
+		F8AC66CD2183769200372356 /* RandomQuotesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC66CE2183769200372356 /* Interface.storyboard */,
+				F8AC66D12183769200372356 /* Assets.xcassets */,
+				F8AC66D32183769200372356 /* Info.plist */,
+			);
+			path = RandomQuotesWatch;
+			sourceTree = "<group>";
+		};
+		F8AC66DC2183769300372356 /* RandomQuotesWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F8AC66DD2183769300372356 /* InterfaceController.swift */,
+				F8AC66DF2183769300372356 /* ExtensionDelegate.swift */,
+				F8AC66E12183769300372356 /* Assets.xcassets */,
+				F8AC66E32183769300372356 /* Info.plist */,
+			);
+			path = "RandomQuotesWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8AC6697218366AA00372356 /* Random Quotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AC66AA218366AC00372356 /* Build configuration list for PBXNativeTarget "Random Quotes" */;
+			buildPhases = (
+				F8AC6694218366AA00372356 /* Sources */,
+				F8AC6695218366AA00372356 /* Frameworks */,
+				F8AC6696218366AA00372356 /* Resources */,
+				F8AC66C6218371C600372356 /* Embed App Extensions */,
+				F8AC66EE2183769300372356 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8AC66C1218371C600372356 /* PBXTargetDependency */,
+				F8AC66E52183769300372356 /* PBXTargetDependency */,
+			);
+			name = "Random Quotes";
+			productName = "Random Quotes";
+			productReference = F8AC6698218366AA00372356 /* Random Quotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8AC66B4218371C600372356 /* RandomQuotesTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AC66C3218371C600372356 /* Build configuration list for PBXNativeTarget "RandomQuotesTodayExtension" */;
+			buildPhases = (
+				F8AC66B1218371C600372356 /* Sources */,
+				F8AC66B2218371C600372356 /* Frameworks */,
+				F8AC66B3218371C600372356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomQuotesTodayExtension;
+			productName = RandomQuotesTodayExtension;
+			productReference = F8AC66B5218371C600372356 /* RandomQuotesTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F8AC66CB2183769200372356 /* RandomQuotesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AC66EB2183769300372356 /* Build configuration list for PBXNativeTarget "RandomQuotesWatch" */;
+			buildPhases = (
+				F8AC66CA2183769200372356 /* Resources */,
+				F8AC66EA2183769300372356 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8AC66DB2183769300372356 /* PBXTargetDependency */,
+			);
+			name = RandomQuotesWatch;
+			productName = RandomQuotesWatch;
+			productReference = F8AC66CC2183769200372356 /* RandomQuotesWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F8AC66D72183769200372356 /* RandomQuotesWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8AC66E72183769300372356 /* Build configuration list for PBXNativeTarget "RandomQuotesWatch Extension" */;
+			buildPhases = (
+				F8AC66D42183769200372356 /* Sources */,
+				F8AC66D52183769200372356 /* Frameworks */,
+				F8AC66D62183769200372356 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomQuotesWatch Extension";
+			productName = "RandomQuotesWatch Extension";
+			productReference = F8AC66D82183769200372356 /* RandomQuotesWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8AC6690218366AA00372356 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Jonathan T. Miles";
+				TargetAttributes = {
+					F8AC6697218366AA00372356 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F8AC66B4218371C600372356 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F8AC66CB2183769200372356 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					F8AC66D72183769200372356 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F8AC6693218366AA00372356 /* Build configuration list for PBXProject "Random Quotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8AC668F218366AA00372356;
+			productRefGroup = F8AC6699218366AA00372356 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8AC6697218366AA00372356 /* Random Quotes */,
+				F8AC66B4218371C600372356 /* RandomQuotesTodayExtension */,
+				F8AC66CB2183769200372356 /* RandomQuotesWatch */,
+				F8AC66D72183769200372356 /* RandomQuotesWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8AC6696218366AA00372356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66A6218366AC00372356 /* LaunchScreen.storyboard in Resources */,
+				F8AC66A3218366AC00372356 /* Assets.xcassets in Resources */,
+				F8AC66A1218366AA00372356 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66B3218371C600372356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66BE218371C600372356 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66CA2183769200372356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66D22183769200372356 /* Assets.xcassets in Resources */,
+				F8AC66D02183769200372356 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66D62183769200372356 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66E22183769300372356 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8AC6694218366AA00372356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC669E218366AA00372356 /* ViewController.swift in Sources */,
+				F8AC66AE218367DA00372356 /* Quote.swift in Sources */,
+				F8AC66B02183683200372356 /* QuoteController.swift in Sources */,
+				F8AC669C218366AA00372356 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66B1218371C600372356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66C7218371D200372356 /* QuoteController.swift in Sources */,
+				F8AC66C8218371D700372356 /* Quote.swift in Sources */,
+				F8AC66BB218371C600372356 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AC66D42183769200372356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8AC66E02183769300372356 /* ExtensionDelegate.swift in Sources */,
+				F8AC66EF2183776C00372356 /* Quote.swift in Sources */,
+				F8AC66F02183777000372356 /* QuoteController.swift in Sources */,
+				F8AC66DE2183769300372356 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8AC66C1218371C600372356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8AC66B4218371C600372356 /* RandomQuotesTodayExtension */;
+			targetProxy = F8AC66C0218371C600372356 /* PBXContainerItemProxy */;
+		};
+		F8AC66DB2183769300372356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8AC66D72183769200372356 /* RandomQuotesWatch Extension */;
+			targetProxy = F8AC66DA2183769300372356 /* PBXContainerItemProxy */;
+		};
+		F8AC66E52183769300372356 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8AC66CB2183769200372356 /* RandomQuotesWatch */;
+			targetProxy = F8AC66E42183769300372356 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8AC669F218366AA00372356 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC66A0218366AA00372356 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8AC66A4218366AC00372356 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC66A5218366AC00372356 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F8AC66BC218371C600372356 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC66BD218371C600372356 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		F8AC66CE2183769200372356 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8AC66CF2183769200372356 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8AC66A8218366AC00372356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8AC66A9218366AC00372356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8AC66AB218366AC00372356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = "Random Quotes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8AC66AC218366AC00372356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = "Random Quotes/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8AC66C4218371C600372356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = RandomQuotesTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes.RandomQuotesTodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8AC66C5218371C600372356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = RandomQuotesTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes.RandomQuotesTodayExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F8AC66E82183769300372356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = "RandomQuotesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		F8AC66E92183769300372356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				INFOPLIST_FILE = "RandomQuotesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		F8AC66EC2183769300372356 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				IBSC_MODULE = RandomQuotesWatch_Extension;
+				INFOPLIST_FILE = RandomQuotesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		F8AC66ED2183769300372356 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8J9VUCBX92;
+				IBSC_MODULE = RandomQuotesWatch_Extension;
+				INFOPLIST_FILE = RandomQuotesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jonathantmiles.Random-Quotes.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8AC6693218366AA00372356 /* Build configuration list for PBXProject "Random Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC66A8218366AC00372356 /* Debug */,
+				F8AC66A9218366AC00372356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AC66AA218366AC00372356 /* Build configuration list for PBXNativeTarget "Random Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC66AB218366AC00372356 /* Debug */,
+				F8AC66AC218366AC00372356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AC66C3218371C600372356 /* Build configuration list for PBXNativeTarget "RandomQuotesTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC66C4218371C600372356 /* Debug */,
+				F8AC66C5218371C600372356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AC66E72183769300372356 /* Build configuration list for PBXNativeTarget "RandomQuotesWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC66E82183769300372356 /* Debug */,
+				F8AC66E92183769300372356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8AC66EB2183769300372356 /* Build configuration list for PBXNativeTarget "RandomQuotesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8AC66EC2183769300372356 /* Debug */,
+				F8AC66ED2183769300372356 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8AC6690218366AA00372356 /* Project object */;
+}
