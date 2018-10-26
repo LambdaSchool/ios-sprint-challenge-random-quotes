@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Quote{
+struct Quote: Codable{
     var quote: String
     var author: String
     var category: String

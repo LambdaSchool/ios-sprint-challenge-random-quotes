@@ -12,7 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let quoteController = QuoteController()
+        quoteController.fetchQuotes { (quote, error) in
+            if let error = error {
+                NSLog("Error decdoing: \(error)")
+                return
+            }
+        }
     }
 
 

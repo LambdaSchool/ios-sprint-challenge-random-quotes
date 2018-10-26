@@ -7,6 +7,7 @@
 //
 
 import Foundation
+private let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies&count=1")!
 
 class QuoteController{
     
@@ -16,7 +17,35 @@ class QuoteController{
         quotes.append(newQuote)
     }
     
+    //MARK: - Networking
     
+    func fetchQuotes(completion: @escaping (Quote?,Error?) -> Void){
+        let headers = ["X-Mashape-Key": "RWjrU3jaLmmshkP4WVtwATgS1H1np1hMh6Ujsn9ZkJbkTwl4ki", "Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json"]
+        var request = URLRequest(url: baseURL)
+        request.allHTTPHeaderFields = headers
+        
+        URLSession.shared.dataTask(with: request) { (data, _, error) in
+            if let error = error {
+                completion(nil, error)
+                return
+            }
+            guard let data = data else {
+                NSLog("Data is nil")
+                return
+            }
+            
+           print( String(data: data, encoding:String.Encoding.utf8))
+            do{
+                let quote = try JSONDecoder().decode([Quote].self, from: data)
+                completion(quote.first,nil)
+                return
+            }catch {
+                completion(nil,error)
+                return
+            }
+        }.resume()
+    }
     //MARK: - Properties
     var quotes = [Quote]()
 }
+
