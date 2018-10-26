@@ -15,6 +15,16 @@
 		3DD85D622183669F00028D4D /* RandomQuotesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD85D602183669F00028D4D /* RandomQuotesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3D60A82B21836A2E003F4198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD85D542183660800028D4D /* RandomQuotesCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3DD85D48218365AE00028D4D;
+			remoteInfo = RandomQuotesCore;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		3DD85D3D218364AC00028D4D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -52,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D60A82821836A2D003F4198 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D60A82C21836A2E003F4198 /* RandomQuotesCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3DD85CF02183641700028D4D = {
 			isa = PBXGroup;
 			children = (
@@ -138,12 +156,28 @@
 			mainGroup = 3DD85CF02183641700028D4D;
 			productRefGroup = 3DD85CFA2183641700028D4D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D60A82821836A2D003F4198 /* Products */;
+					ProjectRef = 3DD85D542183660800028D4D /* RandomQuotesCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3DD85CF82183641700028D4D /* ios-random-quotes */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D60A82C21836A2E003F4198 /* RandomQuotesCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RandomQuotesCore.framework;
+			remoteRef = 3D60A82B21836A2E003F4198 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3DD85CF72183641700028D4D /* Resources */ = {
