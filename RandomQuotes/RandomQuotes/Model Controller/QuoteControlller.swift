@@ -10,8 +10,8 @@ import Foundation
 
 class QuoteController {
     
-    static let baseURL = URL(string: "https://andruxneX-Mashape-Keyt-random-famous-quotes.p.mashape.com/")!
-    static let apiKey = "Xpm4NyR90JmsheFbs8RkBlEUhfOlp17X8LxjsnSU87EcxXEGqM"
+    static let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/")!
+    static let apiKey = "f4Gbv51qWQmshRRneu7T312vs1Qwp164MuIjsnVfxaH9SgAOSP"
     
     func fetchQuote(completion: @escaping (Quote?, Error?) -> Void) {
         
@@ -39,9 +39,9 @@ class QuoteController {
             }
             
             do {
-                let quote = try JSONDecoder().decode(Quote.self, from: data)
+                let quotes = try JSONDecoder().decode([Quote].self, from: data)
                 DispatchQueue.main.async {
-                    completion(quote, nil)
+                    completion(quotes.first, nil)
                 }
             } catch {
                 NSLog("Unable to decode quote: \(error)")
