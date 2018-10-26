@@ -10,8 +10,19 @@ import Foundation
 
 class QuoteController {
     
+    private let session: URLSession
+    
     static let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/")!
     static let apiKey = "f4Gbv51qWQmshRRneu7T312vs1Qwp164MuIjsnVfxaH9SgAOSP"
+    
+    init() {
+        // Watch wants to use cache with dealing with networking, to save battery.
+        let configuration = URLSessionConfiguration.default
+        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+        
+        // Recreate the URLSession that ignores the cache, and use it in the fetch method.
+        session = URLSession(configuration: configuration)
+    }
     
     func fetchQuote(completion: @escaping (Quote?, Error?) -> Void) {
         
@@ -22,7 +33,7 @@ class QuoteController {
         
         // don't need httpMethod, it is automatically "GET"
         
-        URLSession.shared.dataTask(with: request) { (data, _, error) in
+        session.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 NSLog("Error fetching quote: \(error)")
                 DispatchQueue.main.async {

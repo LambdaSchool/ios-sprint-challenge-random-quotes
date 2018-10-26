@@ -15,8 +15,8 @@
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="uee-od-S5Z">
                             <items>
-                                <label alignment="left" text="Label" numberOfLines="3" id="i9F-p1-1OP"/>
-                                <label alignment="right" verticalAlignment="bottom" text="Label" textAlignment="left" id="MxP-zC-x8i"/>
+                                <label alignment="left" text="Loading quote..." numberOfLines="3" id="i9F-p1-1OP"/>
+                                <label alignment="right" verticalAlignment="bottom" textAlignment="left" id="MxP-zC-x8i"/>
                                 <button width="0.69999999999999996" height="0.20000000000000001" alignment="center" verticalAlignment="bottom" title="Refresh" id="OP8-TS-3ou">
                                     <connections>
                                         <action selector="refresh" destination="AgC-eL-Hgc" id="p5b-qv-x50"/>
