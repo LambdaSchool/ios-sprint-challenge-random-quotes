@@ -36,7 +36,7 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
         let randomInt = Int(arc4random_uniform(UInt32(self.quoteController.quotes.count)))
         if randomInt == 0 {
-            returnt
+            return
         } else {
             let quote = self.quoteController.quotes[randomInt]
             self.quoteController.quotes.remove(at: randomInt)
