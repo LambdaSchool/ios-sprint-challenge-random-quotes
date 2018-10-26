@@ -10,22 +10,27 @@ import Foundation
 
 public class QuoteController {
     
-    public func fetchSingleQuote() {
+    public func fetchSingleQuote(completion: @escaping (Quote?, Error?) -> Void) {
         var request = URLRequest(url: baseURL)
         request.addValue("dZ5pJldpLRmsh74FcLkkjAvtFm8Zp1bYMTnjsn1MKkJ9uxxDpF", forHTTPHeaderField: "X-Mashape-Key")
         
         URLSession.shared.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 NSLog("Error with datatask: \(error)")
+                completion(nil, error)
                 return
             }
             guard let data = data else { return }
             
             do {
                 let quotes = try JSONDecoder().decode([Quote].self, from: data)
-                self.quote = quotes.first!
+                let quote = quotes.first!
+                completion(quote, nil)
+                return
             } catch {
                 NSLog("Error decoding JSON data")
+                completion(nil, error)
+                return
             }
         }.resume()
     }

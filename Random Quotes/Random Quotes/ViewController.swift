@@ -13,13 +13,12 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        quoteController.fetchSingleQuote()
         
+        updateViews()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateViews()
     }
     
     @IBAction func reset(_ sender: Any) {
@@ -27,16 +26,28 @@ class ViewController: UIViewController {
     }
     
     func updateViews() {
-        //quoteController.fetchSingleQuote()
-        DispatchQueue.main.async {
-            if let quote = self.quoteController.quote {
-                self.quoteLabel.text = quote.quote
-                self.authorLabel.text = quote.author
+        quoteController.fetchSingleQuote { (quote, error) in
+            if let error = error {
+                NSLog("Error fetching quote in viewController: \(error)")
+                return
             }
+            guard let quote = quote else { return }
+            self.quote = quote
         }
+        //quoteController.fetchSingleQuote()
     }
     
     let quoteController = QuoteController()
+    var quote: Quote? {
+        didSet {
+            DispatchQueue.main.async {
+                if let quote = self.quote {
+                    self.quoteLabel.text = quote.quote
+                    self.authorLabel.text = quote.author
+                }
+            }
+        }
+    }
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
