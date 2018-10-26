@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103E76A5218379A70081AC97 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3921836845000945DA /* Quote.swift */; };
+		103E76A6218379A70081AC97 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
 		105E7A112183678E000945DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A102183678E000945DA /* AppDelegate.swift */; };
 		105E7A132183678E000945DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A122183678E000945DA /* ViewController.swift */; };
 		105E7A162183678E000945DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A142183678E000945DA /* Main.storyboard */; };
@@ -21,6 +23,13 @@
 		105E7A3E218369A3000945DA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3921836845000945DA /* Quote.swift */; };
 		105E7A3F218369A3000945DA /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
 		105E7A4221837536000945DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A172183678F000945DA /* Assets.xcassets */; };
+		10CB8F51218378F7002236AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CB8F4F218378F7002236AE /* Interface.storyboard */; };
+		10CB8F53218378F8002236AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CB8F52218378F8002236AE /* Assets.xcassets */; };
+		10CB8F5A218378F8002236AE /* FamousQuotesWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10CB8F5F218378F8002236AE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB8F5E218378F8002236AE /* InterfaceController.swift */; };
+		10CB8F61218378F8002236AE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB8F60218378F8002236AE /* ExtensionDelegate.swift */; };
+		10CB8F63218378F9002236AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CB8F62218378F9002236AE /* Assets.xcassets */; };
+		10CB8F67218378F9002236AE /* FamousQuotesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +39,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 105E7A26218367D6000945DA;
 			remoteInfo = FamousQuotesToday;
+		};
+		10CB8F5B218378F8002236AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105E7A052183678E000945DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CB8F58218378F8002236AE;
+			remoteInfo = "FamousQuotesWatch Extension";
+		};
+		10CB8F65218378F9002236AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105E7A052183678E000945DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CB8F4C218378F7002236AE;
+			remoteInfo = FamousQuotesWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,6 +64,28 @@
 			dstSubfolderSpec = 13;
 			files = (
 				105E7A34218367D6000945DA /* FamousQuotesToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F482183786B002236AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				10CB8F67218378F9002236AE /* FamousQuotesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F6B218378F9002236AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10CB8F5A218378F8002236AE /* FamousQuotesWatch Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +109,15 @@
 		105E7A3C218368CE000945DA /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 		105E7A40218374E4000945DA /* Famous Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Famous Quotes.entitlements"; sourceTree = "<group>"; };
 		105E7A41218374EA000945DA /* FamousQuotesToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FamousQuotesToday.entitlements; sourceTree = "<group>"; };
+		10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamousQuotesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CB8F50218378F7002236AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		10CB8F52218378F8002236AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10CB8F54218378F8002236AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FamousQuotesWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CB8F5E218378F8002236AE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		10CB8F60218378F8002236AE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		10CB8F62218378F9002236AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10CB8F64218378F9002236AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +136,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10CB8F56218378F8002236AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +151,8 @@
 			children = (
 				105E7A0F2183678E000945DA /* Famous Quotes */,
 				105E7A2B218367D6000945DA /* FamousQuotesToday */,
+				10CB8F4E218378F7002236AE /* FamousQuotesWatch */,
+				10CB8F5D218378F8002236AE /* FamousQuotesWatch Extension */,
 				105E7A28218367D6000945DA /* Frameworks */,
 				105E7A0E2183678E000945DA /* Products */,
 			);
@@ -100,6 +163,8 @@
 			children = (
 				105E7A0D2183678E000945DA /* Famous Quotes.app */,
 				105E7A27218367D6000945DA /* FamousQuotesToday.appex */,
+				10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */,
+				10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +220,27 @@
 			path = "Model and Model Controller";
 			sourceTree = "<group>";
 		};
+		10CB8F4E218378F7002236AE /* FamousQuotesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				10CB8F4F218378F7002236AE /* Interface.storyboard */,
+				10CB8F52218378F8002236AE /* Assets.xcassets */,
+				10CB8F54218378F8002236AE /* Info.plist */,
+			);
+			path = FamousQuotesWatch;
+			sourceTree = "<group>";
+		};
+		10CB8F5D218378F8002236AE /* FamousQuotesWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				10CB8F5E218378F8002236AE /* InterfaceController.swift */,
+				10CB8F60218378F8002236AE /* ExtensionDelegate.swift */,
+				10CB8F62218378F9002236AE /* Assets.xcassets */,
+				10CB8F64218378F9002236AE /* Info.plist */,
+			);
+			path = "FamousQuotesWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,11 +252,13 @@
 				105E7A0A2183678E000945DA /* Frameworks */,
 				105E7A0B2183678E000945DA /* Resources */,
 				105E7A38218367D6000945DA /* Embed App Extensions */,
+				10CB8F482183786B002236AE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				105E7A33218367D6000945DA /* PBXTargetDependency */,
+				10CB8F66218378F9002236AE /* PBXTargetDependency */,
 			);
 			name = "Famous Quotes";
 			productName = "Famous Quotes";
@@ -193,6 +281,40 @@
 			productName = FamousQuotesToday;
 			productReference = 105E7A27218367D6000945DA /* FamousQuotesToday.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		10CB8F4C218378F7002236AE /* FamousQuotesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CB8F6C218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch" */;
+			buildPhases = (
+				10CB8F4B218378F7002236AE /* Resources */,
+				10CB8F6B218378F9002236AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CB8F5C218378F8002236AE /* PBXTargetDependency */,
+			);
+			name = FamousQuotesWatch;
+			productName = FamousQuotesWatch;
+			productReference = 10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		10CB8F58218378F8002236AE /* FamousQuotesWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CB8F68218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch Extension" */;
+			buildPhases = (
+				10CB8F55218378F8002236AE /* Sources */,
+				10CB8F56218378F8002236AE /* Frameworks */,
+				10CB8F57218378F8002236AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FamousQuotesWatch Extension";
+			productName = "FamousQuotesWatch Extension";
+			productReference = 10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -220,6 +342,12 @@
 							};
 						};
 					};
+					10CB8F4C218378F7002236AE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					10CB8F58218378F8002236AE = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 105E7A082183678E000945DA /* Build configuration list for PBXProject "Famous Quotes" */;
@@ -237,6 +365,8 @@
 			targets = (
 				105E7A0C2183678E000945DA /* Famous Quotes */,
 				105E7A26218367D6000945DA /* FamousQuotesToday */,
+				10CB8F4C218378F7002236AE /* FamousQuotesWatch */,
+				10CB8F58218378F8002236AE /* FamousQuotesWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -258,6 +388,23 @@
 			files = (
 				105E7A4221837536000945DA /* Assets.xcassets in Resources */,
 				105E7A30218367D6000945DA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F4B218378F7002236AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB8F53218378F8002236AE /* Assets.xcassets in Resources */,
+				10CB8F51218378F7002236AE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F57218378F8002236AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB8F63218378F9002236AE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +432,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		10CB8F55218378F8002236AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB8F61218378F8002236AE /* ExtensionDelegate.swift in Sources */,
+				103E76A5218379A70081AC97 /* Quote.swift in Sources */,
+				103E76A6218379A70081AC97 /* QuoteController.swift in Sources */,
+				10CB8F5F218378F8002236AE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +450,16 @@
 			isa = PBXTargetDependency;
 			target = 105E7A26218367D6000945DA /* FamousQuotesToday */;
 			targetProxy = 105E7A32218367D6000945DA /* PBXContainerItemProxy */;
+		};
+		10CB8F5C218378F8002236AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CB8F58218378F8002236AE /* FamousQuotesWatch Extension */;
+			targetProxy = 10CB8F5B218378F8002236AE /* PBXContainerItemProxy */;
+		};
+		10CB8F66218378F9002236AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CB8F4C218378F7002236AE /* FamousQuotesWatch */;
+			targetProxy = 10CB8F65218378F9002236AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -318,6 +486,14 @@
 				105E7A2F218367D6000945DA /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		10CB8F4F218378F7002236AE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10CB8F50218378F7002236AE /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -515,6 +691,88 @@
 			};
 			name = Release;
 		};
+		10CB8F69218378F9002236AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = "FamousQuotesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		10CB8F6A218378F9002236AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = "FamousQuotesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		10CB8F6D218378F9002236AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				IBSC_MODULE = FamousQuotesWatch_Extension;
+				INFOPLIST_FILE = FamousQuotesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		10CB8F6E218378F9002236AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				IBSC_MODULE = FamousQuotesWatch_Extension;
+				INFOPLIST_FILE = FamousQuotesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +799,24 @@
 			buildConfigurations = (
 				105E7A36218367D6000945DA /* Debug */,
 				105E7A37218367D6000945DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CB8F68218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CB8F69218378F9002236AE /* Debug */,
+				10CB8F6A218378F9002236AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CB8F6C218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CB8F6D218378F9002236AE /* Debug */,
+				10CB8F6E218378F9002236AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
