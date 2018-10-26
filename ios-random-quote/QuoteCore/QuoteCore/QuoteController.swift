@@ -9,9 +9,11 @@
 import Foundation
 
 public class QuoteController {
+    // MARK: - Initializer
+    public init() {}
 
     // MARK: - Properties
-    let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/")!
+    private let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/")!
 
     // MARK: - Public Functions
     public func getQuote(completion: @escaping (Quote?, Error?) -> Void) {

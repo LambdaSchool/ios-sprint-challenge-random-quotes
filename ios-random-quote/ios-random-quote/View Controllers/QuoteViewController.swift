@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuoteCore
 
 class QuoteViewController: UIViewController {
     // MARK: - Properties
