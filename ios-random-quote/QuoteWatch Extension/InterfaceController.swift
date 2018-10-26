@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 import QuoteCoreWatch
 
-class InterfaceController: WKInterfaceController {
+class QuoteInterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)

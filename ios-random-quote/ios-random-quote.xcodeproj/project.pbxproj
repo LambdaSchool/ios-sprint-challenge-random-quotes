@@ -21,7 +21,7 @@
 		137F5A7321836AC900B93A66 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A7121836AC900B93A66 /* Interface.storyboard */; };
 		137F5A7521836ACA00B93A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A7421836ACA00B93A66 /* Assets.xcassets */; };
 		137F5A7C21836ACB00B93A66 /* QuoteWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 137F5A7B21836ACB00B93A66 /* QuoteWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		137F5A8121836ACB00B93A66 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A8021836ACB00B93A66 /* InterfaceController.swift */; };
+		137F5A8121836ACB00B93A66 /* QuoteInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A8021836ACB00B93A66 /* QuoteInterfaceController.swift */; };
 		137F5A8321836ACB00B93A66 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */; };
 		137F5A8521836ACC00B93A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A8421836ACC00B93A66 /* Assets.xcassets */; };
 		137F5A8921836ACC00B93A66 /* QuoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 137F5A6F21836AC800B93A66 /* QuoteWatch.app */; };
@@ -158,7 +158,7 @@
 		137F5A7421836ACA00B93A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137F5A7621836ACA00B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137F5A7B21836ACB00B93A66 /* QuoteWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuoteWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		137F5A8021836ACB00B93A66 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		137F5A8021836ACB00B93A66 /* QuoteInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteInterfaceController.swift; sourceTree = "<group>"; };
 		137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		137F5A8421836ACC00B93A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137F5A8621836ACC00B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -293,7 +293,7 @@
 		137F5A7F21836ACB00B93A66 /* QuoteWatch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				137F5A8021836ACB00B93A66 /* InterfaceController.swift */,
+				137F5A8021836ACB00B93A66 /* QuoteInterfaceController.swift */,
 				137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */,
 				137F5A8421836ACC00B93A66 /* Assets.xcassets */,
 				137F5A8621836ACC00B93A66 /* Info.plist */,
@@ -509,7 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				137F5A8321836ACB00B93A66 /* ExtensionDelegate.swift in Sources */,
-				137F5A8121836ACB00B93A66 /* InterfaceController.swift in Sources */,
+				137F5A8121836ACB00B93A66 /* QuoteInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
