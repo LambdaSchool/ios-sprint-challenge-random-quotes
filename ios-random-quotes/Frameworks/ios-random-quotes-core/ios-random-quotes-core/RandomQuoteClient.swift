@@ -19,9 +19,6 @@ public class RandomQuoteClient {
     // MARK: - Public
     public func fetchRandomQuote(completion: @escaping (Quote?, Error?) -> Void) {
         let url = URL(string: baseUrlString)!
-//        let components = URLComponents(url: url, resolvingAgainstBaseURL: true)
-//        let countQueryItem = URLQueryItem(name: "count", value: "1")
-//        components?.queryItems = [countQueryItem]
         
         var request = URLRequest(url: url)
         request.setValue(apiKey, forHTTPHeaderField: "X-Mashape-Key")

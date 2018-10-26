@@ -19,6 +19,8 @@
 		3D60A85B21836CF9003F4198 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60A85A21836CF9003F4198 /* NotificationController.swift */; };
 		3D60A85D21836CFA003F4198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D60A85C21836CFA003F4198 /* Assets.xcassets */; };
 		3D60A86221836CFA003F4198 /* RandomQuotesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3D60A84521836CF8003F4198 /* RandomQuotesWatch.app */; };
+		3D89A8BA2183744C00EE39C1 /* RandomQuoteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D89A8B92183744700EE39C1 /* RandomQuoteCore.framework */; };
+		3D89A8BB2183744C00EE39C1 /* RandomQuoteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D89A8B92183744700EE39C1 /* RandomQuoteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DD85CFD2183641700028D4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85CFC2183641700028D4D /* AppDelegate.swift */; };
 		3DD85D022183641700028D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD85D002183641700028D4D /* Main.storyboard */; };
 		3DD85D042183641700028D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD85D032183641700028D4D /* Assets.xcassets */; };
@@ -55,6 +57,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3D60A84421836CF8003F4198;
 			remoteInfo = RandomQuotesWatch;
+		};
+		3D89A8B82183744700EE39C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD85D542183660800028D4D /* RandomQuotesCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3D89A8AF218373D700EE39C1;
+			remoteInfo = "RandomQuoteCore-Watch";
+		};
+		3D89A8BC2183744C00EE39C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD85D542183660800028D4D /* RandomQuotesCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D89A8AE218373D700EE39C1;
+			remoteInfo = "RandomQuoteCore-Watch";
 		};
 		3DEC8E9521836F32004341C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,6 +113,17 @@
 				3D60A86221836CFA003F4198 /* RandomQuotesWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D89A8BE2183744C00EE39C1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D89A8BB2183744C00EE39C1 /* RandomQuoteCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		3DD85D3D218364AC00028D4D /* Embed Frameworks */ = {
@@ -151,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D89A8BA2183744C00EE39C1 /* RandomQuoteCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				3D60A82C21836A2E003F4198 /* RandomQuotesCore.framework */,
+				3D89A8B92183744700EE39C1 /* RandomQuoteCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -295,10 +324,12 @@
 				3D60A84D21836CF9003F4198 /* Sources */,
 				3D60A84E21836CF9003F4198 /* Frameworks */,
 				3D60A84F21836CF9003F4198 /* Resources */,
+				3D89A8BE2183744C00EE39C1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D89A8BD2183744C00EE39C1 /* PBXTargetDependency */,
 			);
 			name = "RandomQuotesWatch Extension";
 			productName = "RandomQuotesWatch Extension";
@@ -387,6 +418,13 @@
 			remoteRef = 3D60A82B21836A2E003F4198 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		3D89A8B92183744700EE39C1 /* RandomQuoteCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RandomQuoteCore.framework;
+			remoteRef = 3D89A8B82183744700EE39C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -471,6 +509,11 @@
 			isa = PBXTargetDependency;
 			target = 3D60A84421836CF8003F4198 /* RandomQuotesWatch */;
 			targetProxy = 3D60A86021836CFA003F4198 /* PBXContainerItemProxy */;
+		};
+		3D89A8BD2183744C00EE39C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RandomQuoteCore-Watch";
+			targetProxy = 3D89A8BC2183744C00EE39C1 /* PBXContainerItemProxy */;
 		};
 		3DEC8E9621836F32004341C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D89A8B3218373D700EE39C1 /* RandomQuoteCore_Watch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D89A8B1218373D700EE39C1 /* RandomQuoteCore_Watch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D89A8BF2183749B00EE39C1 /* RandomQuoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D652183673100028D4D /* RandomQuoteClient.swift */; };
+		3D89A8C02183749E00EE39C1 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D67218369D800028D4D /* Quote.swift */; };
 		3DD85D662183673100028D4D /* RandomQuoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D652183673100028D4D /* RandomQuoteClient.swift */; };
 		3DD85D68218369D800028D4D /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD85D67218369D800028D4D /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D89A8AF218373D700EE39C1 /* RandomQuoteCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuoteCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D89A8B1218373D700EE39C1 /* RandomQuoteCore_Watch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomQuoteCore_Watch.h; sourceTree = "<group>"; };
+		3D89A8B2218373D700EE39C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD85D48218365AE00028D4D /* RandomQuotesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD85D4C218365AE00028D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD85D652183673100028D4D /* RandomQuoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuoteClient.swift; sourceTree = "<group>"; };
@@ -19,6 +25,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D89A8AC218373D700EE39C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DD85D45218365AE00028D4D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,10 +42,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D89A8B0218373D700EE39C1 /* RandomQuoteCore-Watch */ = {
+			isa = PBXGroup;
+			children = (
+				3D89A8B1218373D700EE39C1 /* RandomQuoteCore_Watch.h */,
+				3D89A8B2218373D700EE39C1 /* Info.plist */,
+			);
+			path = "RandomQuoteCore-Watch";
+			sourceTree = "<group>";
+		};
 		3DD85D3E218365AE00028D4D = {
 			isa = PBXGroup;
 			children = (
 				3DD85D4A218365AE00028D4D /* ios-random-quotes-core */,
+				3D89A8B0218373D700EE39C1 /* RandomQuoteCore-Watch */,
 				3DD85D49218365AE00028D4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD85D48218365AE00028D4D /* RandomQuotesCore.framework */,
+				3D89A8AF218373D700EE39C1 /* RandomQuoteCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +82,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3D89A8AA218373D700EE39C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D89A8B3218373D700EE39C1 /* RandomQuoteCore_Watch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DD85D43218365AE00028D4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,6 +100,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3D89A8AE218373D700EE39C1 /* RandomQuoteCore-Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D89A8B6218373D700EE39C1 /* Build configuration list for PBXNativeTarget "RandomQuoteCore-Watch" */;
+			buildPhases = (
+				3D89A8AA218373D700EE39C1 /* Headers */,
+				3D89A8AB218373D700EE39C1 /* Sources */,
+				3D89A8AC218373D700EE39C1 /* Frameworks */,
+				3D89A8AD218373D700EE39C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomQuoteCore-Watch";
+			productName = "RandomQuoteCore-Watch";
+			productReference = 3D89A8AF218373D700EE39C1 /* RandomQuoteCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3DD85D47218365AE00028D4D /* RandomQuotesCore */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DD85D50218365AE00028D4D /* Build configuration list for PBXNativeTarget "RandomQuotesCore" */;
@@ -95,6 +145,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "De MicheliStefano";
 				TargetAttributes = {
+					3D89A8AE218373D700EE39C1 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					3DD85D47218365AE00028D4D = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -114,11 +167,19 @@
 			projectRoot = "";
 			targets = (
 				3DD85D47218365AE00028D4D /* RandomQuotesCore */,
+				3D89A8AE218373D700EE39C1 /* RandomQuoteCore-Watch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D89A8AD218373D700EE39C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DD85D46218365AE00028D4D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +190,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D89A8AB218373D700EE39C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D89A8C02183749E00EE39C1 /* Quote.swift in Sources */,
+				3D89A8BF2183749B00EE39C1 /* RandomQuoteClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DD85D44218365AE00028D4D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,6 +211,62 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		3D89A8B4218373D700EE39C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 84BULQXU2Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RandomQuoteCore-Watch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefano.RandomQuoteCore-Watch";
+				PRODUCT_NAME = RandomQuoteCore;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		3D89A8B5218373D700EE39C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 84BULQXU2Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RandomQuoteCore-Watch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stefano.RandomQuoteCore-Watch";
+				PRODUCT_NAME = RandomQuoteCore;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		3DD85D4E218365AE00028D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +445,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D89A8B6218373D700EE39C1 /* Build configuration list for PBXNativeTarget "RandomQuoteCore-Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D89A8B4218373D700EE39C1 /* Debug */,
+				3D89A8B5218373D700EE39C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3DD85D42218365AE00028D4D /* Build configuration list for PBXProject "RandomQuotesCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
