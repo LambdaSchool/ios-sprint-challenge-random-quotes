@@ -10,9 +10,9 @@ import Foundation
 
 public struct Quote: Decodable {
     
-    let quote: String
-    let author: String
-    let category: String
+    public let quote: String
+    public let author: String
+    public let category: String
     
     enum CodingKeys: String, CodingKey {
         case quote

@@ -10,6 +10,8 @@ import Foundation
 
 public class RandomQuoteClient {
     
+    public init() {}
+    
     // MARK: - Properties
     private let baseUrlString = "https://andruxnet-random-famous-quotes.p.mashape.com/"
     private let apiKey = ""
