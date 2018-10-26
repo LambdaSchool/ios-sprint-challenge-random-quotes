@@ -8,7 +8,7 @@
 
 import Foundation
 
-class QuoteController {
+public class QuoteController {
     
     private(set) var quotes: [Quote] = []
     

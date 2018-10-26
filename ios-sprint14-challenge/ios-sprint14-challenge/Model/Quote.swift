@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Quote: Codable, Equatable {
+public struct Quote: Codable, Equatable {
     var text: String
 }
