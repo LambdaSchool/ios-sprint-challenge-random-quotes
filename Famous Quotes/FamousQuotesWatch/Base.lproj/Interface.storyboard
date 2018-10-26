@@ -13,17 +13,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FamousQuotesWatch" customModuleProvider="target">
                     <items>
-                        <group width="1" height="114" alignment="left" id="pJC-cl-z09">
+                        <group width="1" height="1" alignment="left" layout="vertical" id="pJC-cl-z09">
                             <items>
                                 <label alignment="left" text="Label" numberOfLines="5" id="1YD-dI-ftR">
                                     <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
                                 </label>
+                                <label alignment="right" verticalAlignment="bottom" text="Label" id="a71-Qz-L4q"/>
                             </items>
-                        </group>
-                        <group width="1" alignment="left" id="bJz-St-7SL">
-                            <items>
-                                <label alignment="right" text="Label" id="a71-Qz-L4q"/>
-                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="pFV-wv-hDX">
+                                    <connections>
+                                        <action selector="changeQuote:" destination="AgC-eL-Hgc" id="wMH-Ib-7kz"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
                         </group>
                     </items>
                     <connections>

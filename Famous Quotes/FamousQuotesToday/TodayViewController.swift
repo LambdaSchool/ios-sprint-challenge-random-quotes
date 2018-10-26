@@ -14,17 +14,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        widgetPerformUpdate { (result) in
-            if result == .newData {
-                DispatchQueue.main.async {
-                    self.quoteLabel.text = " \"\(self.quote.quote)\""
-                    self.authorLabel.text = "- \(self.quote.author)"
-                }
-                
-            }
-        }
+        updateLabels()
     }
         
+    @IBAction func changeQuote(_ sender: Any) {
+        updateLabels()
+    }
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
         
@@ -43,7 +38,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
         }
     }
+    //MARK: - Private Methods
+    private func updateLabels(){
+        widgetPerformUpdate { (result) in
+            if result == .newData {
+                DispatchQueue.main.async {
+                    self.quoteLabel.text = " \"\(self.quote.quote)\""
+                    self.authorLabel.text = "- \(self.quote.author)"
+                }
+                
+            }
+        }
+    }
     
+    //MARK: -Properties
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     private let quoteController = QuoteController()

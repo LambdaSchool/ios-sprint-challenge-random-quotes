@@ -30,6 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="IUF-Zb-LtW" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="7Se-ob-Wvk"/>
                             <constraint firstItem="jYr-Os-amm" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="8SI-8U-LCT"/>
@@ -40,6 +41,9 @@
                             <constraint firstItem="IUF-Zb-LtW" firstAttribute="height" relation="lessThanOrEqual" secondItem="S3S-Oj-5AN" secondAttribute="height" multiplier="2/3" id="yq2-Tk-faE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="21z-H7-zhq" appends="YES" id="n9g-Qb-mx4"/>
+                        </connections>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -50,6 +54,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="21z-H7-zhq">
+                    <connections>
+                        <action selector="changeQuote:" destination="M4Y-Lb-cyx" id="mL8-1u-vEi"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="131.19999999999999" y="120.53973013493254"/>
         </scene>

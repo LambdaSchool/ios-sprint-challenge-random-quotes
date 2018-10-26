@@ -21,6 +21,17 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        updateLabels()
+        
+        
+    }
+    
+    @IBAction func changeQuote(_ sender: Any) {
+        updateLabels()
+    }
+    
+    //MARK: - Private Methods
+    private func updateLabels(){
         quoteController.fetchQuotes { (quote, error) in
             if let error = error {
                 NSLog("Error fetching quotes: \(error)")
@@ -31,8 +42,6 @@ class InterfaceController: WKInterfaceController {
                 self.authorLabel.setText("- \(quote.author)")
             }
         }
-        
-        
     }
     //MARK: - Properties
     let quoteController = QuoteController()
