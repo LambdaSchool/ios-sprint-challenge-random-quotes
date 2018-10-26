@@ -11,17 +11,25 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Random_Quote_Watch" customModuleProvider="target">
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Random_Quote_Watch" customModuleProvider="target">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="3nR-1J-Na3">
                             <items>
+                                <button alignment="right" title="New quote" id="UIQ-PF-qgZ">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                    <connections>
+                                        <action selector="fetchNewQuote" destination="AgC-eL-Hgc" id="eR6-iJ-iwz"/>
+                                    </connections>
+                                </button>
                                 <label alignment="center" verticalAlignment="center" text="Label" numberOfLines="0" id="ddg-mu-7PT"/>
                                 <label width="0.69999999999999996" alignment="right" verticalAlignment="bottom" text="Label" textAlignment="right" numberOfLines="0" id="9WL-Mt-by8"/>
                             </items>
+                            <edgeInsets key="margins" left="6" right="6" top="6" bottom="6"/>
                         </group>
                     </items>
                     <connections>
                         <outlet property="authorLabel" destination="9WL-Mt-by8" id="FJP-5O-Mqc"/>
+                        <outlet property="newQuoteButton" destination="UIQ-PF-qgZ" id="ihJ-uF-qqp"/>
                         <outlet property="quoteLabel" destination="ddg-mu-7PT" id="GfB-Bf-S6x"/>
                     </connections>
                 </controller>

@@ -18,6 +18,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         quoteLabel.text = ""
         authorLabel.text = ""
+        newQuoteButton.isEnabled = false
         
         fetchAQuote()
     }
@@ -28,13 +29,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             preferredContentSize = maxSize
             quoteLabel.numberOfLines = 1
             authorLabel.isHidden = true
+            newQuoteStackView.axis = .horizontal
         case .expanded:
-            let quoteHeight = quoteLabel.frame.size.height
-            let authorHeight = authorLabel.frame.size.height
-            let preferredHeight = quoteHeight + authorHeight + 38.0
+            let contentHeight = quoteLabel.frame.size.height + authorLabel.frame.size.height + newQuoteButton.frame.size.height
+            let spacingHeight: CGFloat = 12.0 + 10.0 + 10.0 + 12.0
+            let preferredHeight = contentHeight + spacingHeight
             preferredContentSize = CGSize(width: maxSize.width, height: preferredHeight)
             quoteLabel.numberOfLines = 0
             authorLabel.isHidden = false
+            newQuoteStackView.axis = .vertical
         }
     }
     
@@ -49,6 +52,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var newQuoteButton: UIButton!
+    @IBOutlet weak var newQuoteStackView: UIStackView!
     
     
     // MARK: - Private Functions
@@ -57,10 +62,14 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         DispatchQueue.main.async {
             self.quoteLabel.text = "\"\(self.quote?.quote ?? "Oops, looks like there was an error fetching your random quote")\""
             self.authorLabel.text = "-\(self.quote?.author ?? "- Random Quote Staff")"
+            self.newQuoteButton.isEnabled = true
         }
     }
     
     private func fetchAQuote() {
+        
+        newQuoteButton.isEnabled = false
+        
         quoteController.fetchQuote { (quote, error) in
             
             if let error = error {
@@ -77,5 +86,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             
             self.updateViews()
         }
+    }
+    
+    
+    // MARK: - Actions
+    
+    @IBAction func fetchNewQuote(_ sender: Any) {
+        fetchAQuote()
     }
 }

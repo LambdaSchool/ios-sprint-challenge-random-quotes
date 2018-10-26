@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController {
         
         quoteLabel.setText("")
         authorLabel.setText("")
+        newQuoteButton.setEnabled(false)
         
         fetchAQuote()
     }
@@ -32,6 +33,7 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet weak var quoteLabel: WKInterfaceLabel!
     @IBOutlet weak var authorLabel: WKInterfaceLabel!
+    @IBOutlet weak var newQuoteButton: WKInterfaceButton!
     
     
     // MARK: - Private Functions
@@ -40,10 +42,14 @@ class InterfaceController: WKInterfaceController {
         DispatchQueue.main.async {
             self.quoteLabel.setText("\"\(self.quote?.quote ?? "Oops, looks like there was an error fetching your random quote")\"")
             self.authorLabel.setText("- \(self.quote?.author ?? "- Random Quote Staff")")
+            self.newQuoteButton.setEnabled(true)
         }
     }
     
     private func fetchAQuote() {
+        
+        self.newQuoteButton.setEnabled(false)
+        
         quoteController.fetchQuote { (quote, error) in
             
             if let error = error {
@@ -60,5 +66,13 @@ class InterfaceController: WKInterfaceController {
             
             self.updateViews()
         }
+    }
+    
+    
+    // MARK: - Actions
+    
+    
+    @IBAction func fetchNewQuote() {
+        fetchAQuote()
     }
 }
