@@ -48,8 +48,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         switch activeDisplayMode {
         case .compact:
-            preferredContentSize = CGSize(width: maxSize.width, height: 150)
-//            quoteLabel.l
+            preferredContentSize = maxSize
         case .expanded:
             preferredContentSize = CGSize(width: maxSize.width, height: 200)
         }
