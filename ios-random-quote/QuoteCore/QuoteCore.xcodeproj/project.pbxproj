@@ -11,6 +11,8 @@
 		137F5A53218366DD00B93A66 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A51218366DD00B93A66 /* Quote.swift */; };
 		137F5A54218366DD00B93A66 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A52218366DD00B93A66 /* QuoteController.swift */; };
 		137F5A9B21836C3B00B93A66 /* QuoteCoreWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 137F5A9921836C3B00B93A66 /* QuoteCoreWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		137F5AA721836D1700B93A66 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A52218366DD00B93A66 /* QuoteController.swift */; };
+		137F5AA821836D1700B93A66 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A51218366DD00B93A66 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +206,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137F5AA821836D1700B93A66 /* Quote.swift in Sources */,
+				137F5AA721836D1700B93A66 /* QuoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
