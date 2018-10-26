@@ -18,6 +18,13 @@
 		137F5A5F2183676F00B93A66 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A5E2183676F00B93A66 /* TodayViewController.swift */; };
 		137F5A622183676F00B93A66 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A602183676F00B93A66 /* MainInterface.storyboard */; };
 		137F5A662183676F00B93A66 /* QuoteWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 137F5A592183676F00B93A66 /* QuoteWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		137F5A7321836AC900B93A66 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A7121836AC900B93A66 /* Interface.storyboard */; };
+		137F5A7521836ACA00B93A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A7421836ACA00B93A66 /* Assets.xcassets */; };
+		137F5A7C21836ACB00B93A66 /* QuoteWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 137F5A7B21836ACB00B93A66 /* QuoteWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		137F5A8121836ACB00B93A66 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A8021836ACB00B93A66 /* InterfaceController.swift */; };
+		137F5A8321836ACB00B93A66 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */; };
+		137F5A8521836ACC00B93A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A8421836ACC00B93A66 /* Assets.xcassets */; };
+		137F5A8921836ACC00B93A66 /* QuoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 137F5A6F21836AC800B93A66 /* QuoteWatch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +48,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 137F5A582183676F00B93A66;
 			remoteInfo = QuoteWidget;
+		};
+		137F5A7D21836ACB00B93A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F5A0B218363F200B93A66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137F5A7A21836ACB00B93A66;
+			remoteInfo = "QuoteWatch Extension";
+		};
+		137F5A8721836ACC00B93A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F5A0B218363F200B93A66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 137F5A6E21836AC800B93A66;
+			remoteInfo = QuoteWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,6 +88,28 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		137F5A8D21836ACC00B93A66 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				137F5A7C21836ACB00B93A66 /* QuoteWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5A9121836ACC00B93A66 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				137F5A8921836ACC00B93A66 /* QuoteWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +126,15 @@
 		137F5A5E2183676F00B93A66 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		137F5A612183676F00B93A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		137F5A632183676F00B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		137F5A6F21836AC800B93A66 /* QuoteWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		137F5A7221836AC900B93A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		137F5A7421836ACA00B93A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		137F5A7621836ACA00B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		137F5A7B21836ACB00B93A66 /* QuoteWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuoteWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		137F5A8021836ACB00B93A66 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		137F5A8421836ACC00B93A66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		137F5A8621836ACC00B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		137F5A7821836ACB00B93A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +169,8 @@
 			children = (
 				137F5A15218363F200B93A66 /* ios-random-quote */,
 				137F5A5D2183676F00B93A66 /* QuoteWidget */,
+				137F5A7021836AC900B93A66 /* QuoteWatch */,
+				137F5A7F21836ACB00B93A66 /* QuoteWatch Extension */,
 				137F5A5A2183676F00B93A66 /* Frameworks */,
 				137F5A14218363F200B93A66 /* Products */,
 			);
@@ -120,6 +181,8 @@
 			children = (
 				137F5A13218363F200B93A66 /* ios-random-quote.app */,
 				137F5A592183676F00B93A66 /* QuoteWidget.appex */,
+				137F5A6F21836AC800B93A66 /* QuoteWatch.app */,
+				137F5A7B21836ACB00B93A66 /* QuoteWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +251,27 @@
 			path = QuoteWidget;
 			sourceTree = "<group>";
 		};
+		137F5A7021836AC900B93A66 /* QuoteWatch */ = {
+			isa = PBXGroup;
+			children = (
+				137F5A7121836AC900B93A66 /* Interface.storyboard */,
+				137F5A7421836ACA00B93A66 /* Assets.xcassets */,
+				137F5A7621836ACA00B93A66 /* Info.plist */,
+			);
+			path = QuoteWatch;
+			sourceTree = "<group>";
+		};
+		137F5A7F21836ACB00B93A66 /* QuoteWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				137F5A8021836ACB00B93A66 /* InterfaceController.swift */,
+				137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */,
+				137F5A8421836ACC00B93A66 /* Assets.xcassets */,
+				137F5A8621836ACC00B93A66 /* Info.plist */,
+			);
+			path = "QuoteWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -200,12 +284,14 @@
 				137F5A11218363F200B93A66 /* Resources */,
 				137F5A502183669500B93A66 /* Embed Frameworks */,
 				137F5A6A2183676F00B93A66 /* Embed App Extensions */,
+				137F5A9121836ACC00B93A66 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				137F5A4F2183669500B93A66 /* PBXTargetDependency */,
 				137F5A652183676F00B93A66 /* PBXTargetDependency */,
+				137F5A8821836ACC00B93A66 /* PBXTargetDependency */,
 			);
 			name = "ios-random-quote";
 			productName = "ios-random-quote";
@@ -229,6 +315,40 @@
 			productReference = 137F5A592183676F00B93A66 /* QuoteWidget.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		137F5A6E21836AC800B93A66 /* QuoteWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137F5A8E21836ACC00B93A66 /* Build configuration list for PBXNativeTarget "QuoteWatch" */;
+			buildPhases = (
+				137F5A6D21836AC800B93A66 /* Resources */,
+				137F5A8D21836ACC00B93A66 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				137F5A7E21836ACB00B93A66 /* PBXTargetDependency */,
+			);
+			name = QuoteWatch;
+			productName = QuoteWatch;
+			productReference = 137F5A6F21836AC800B93A66 /* QuoteWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		137F5A7A21836ACB00B93A66 /* QuoteWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137F5A8A21836ACC00B93A66 /* Build configuration list for PBXNativeTarget "QuoteWatch Extension" */;
+			buildPhases = (
+				137F5A7721836ACB00B93A66 /* Sources */,
+				137F5A7821836ACB00B93A66 /* Frameworks */,
+				137F5A7921836ACB00B93A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuoteWatch Extension";
+			productName = "QuoteWatch Extension";
+			productReference = 137F5A7B21836ACB00B93A66 /* QuoteWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,6 +363,12 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					137F5A582183676F00B93A66 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					137F5A6E21836AC800B93A66 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					137F5A7A21836ACB00B93A66 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -268,6 +394,8 @@
 			targets = (
 				137F5A12218363F200B93A66 /* ios-random-quote */,
 				137F5A582183676F00B93A66 /* QuoteWidget */,
+				137F5A6E21836AC800B93A66 /* QuoteWatch */,
+				137F5A7A21836ACB00B93A66 /* QuoteWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -301,6 +429,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		137F5A6D21836AC800B93A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137F5A7521836ACA00B93A66 /* Assets.xcassets in Resources */,
+				137F5A7321836AC900B93A66 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5A7921836ACB00B93A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137F5A8521836ACC00B93A66 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -321,6 +466,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		137F5A7721836ACB00B93A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137F5A8321836ACB00B93A66 /* ExtensionDelegate.swift in Sources */,
+				137F5A8121836ACB00B93A66 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -333,6 +487,16 @@
 			isa = PBXTargetDependency;
 			target = 137F5A582183676F00B93A66 /* QuoteWidget */;
 			targetProxy = 137F5A642183676F00B93A66 /* PBXContainerItemProxy */;
+		};
+		137F5A7E21836ACB00B93A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137F5A7A21836ACB00B93A66 /* QuoteWatch Extension */;
+			targetProxy = 137F5A7D21836ACB00B93A66 /* PBXContainerItemProxy */;
+		};
+		137F5A8821836ACC00B93A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 137F5A6E21836AC800B93A66 /* QuoteWatch */;
+			targetProxy = 137F5A8721836ACC00B93A66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,6 +523,14 @@
 				137F5A612183676F00B93A66 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		137F5A7121836AC900B93A66 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				137F5A7221836AC900B93A66 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -556,6 +728,88 @@
 			};
 			name = Release;
 		};
+		137F5A8B21836ACC00B93A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 627UZVK698;
+				INFOPLIST_FILE = "QuoteWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Conner.ios-random-quote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		137F5A8C21836ACC00B93A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 627UZVK698;
+				INFOPLIST_FILE = "QuoteWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Conner.ios-random-quote.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		137F5A8F21836ACC00B93A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 627UZVK698;
+				IBSC_MODULE = QuoteWatch_Extension;
+				INFOPLIST_FILE = QuoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Conner.ios-random-quote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		137F5A9021836ACC00B93A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 627UZVK698;
+				IBSC_MODULE = QuoteWatch_Extension;
+				INFOPLIST_FILE = QuoteWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Conner.ios-random-quote.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,6 +836,24 @@
 			buildConfigurations = (
 				137F5A682183676F00B93A66 /* Debug */,
 				137F5A692183676F00B93A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		137F5A8A21836ACC00B93A66 /* Build configuration list for PBXNativeTarget "QuoteWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137F5A8B21836ACC00B93A66 /* Debug */,
+				137F5A8C21836ACC00B93A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		137F5A8E21836ACC00B93A66 /* Build configuration list for PBXNativeTarget "QuoteWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137F5A8F21836ACC00B93A66 /* Debug */,
+				137F5A9021836ACC00B93A66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
