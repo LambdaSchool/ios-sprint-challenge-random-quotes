@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ios_sprint14_watch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="144" alignment="left" text="Label" id="iJ0-Vm-CiP"/>
+                    </items>
+                    <connections>
+                        <outlet property="quoteLabel" destination="iJ0-Vm-CiP" id="Fz5-N3-8qM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-58" y="42"/>
+        </scene>
+    </scenes>
+</document>

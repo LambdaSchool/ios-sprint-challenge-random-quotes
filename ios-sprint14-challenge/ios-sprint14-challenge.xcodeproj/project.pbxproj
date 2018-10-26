@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49D9F9CF218368E200816F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F9CE218368E200816F35 /* AppDelegate.swift */; };
+		49D9F9D4218368E200816F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9F9D2218368E200816F35 /* Main.storyboard */; };
+		49D9F9D6218368E300816F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D9F9D5218368E300816F35 /* Assets.xcassets */; };
+		49D9F9D9218368E300816F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9F9D7218368E300816F35 /* LaunchScreen.storyboard */; };
+		49D9F9E6218369A600816F35 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F9E5218369A600816F35 /* Quote.swift */; };
+		49D9F9E821836A0900816F35 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F9E721836A0900816F35 /* QuoteController.swift */; };
+		49D9F9EF21836B7100816F35 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9F9ED21836B7100816F35 /* Interface.storyboard */; };
+		49D9F9F121836B7200816F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D9F9F021836B7200816F35 /* Assets.xcassets */; };
+		49D9F9F821836B7200816F35 /* ios-sprint14-watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49D9F9F721836B7200816F35 /* ios-sprint14-watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49D9F9FD21836B7200816F35 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F9FC21836B7200816F35 /* InterfaceController.swift */; };
+		49D9F9FF21836B7200816F35 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F9FE21836B7200816F35 /* ExtensionDelegate.swift */; };
+		49D9FA0121836B7300816F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D9FA0021836B7300816F35 /* Assets.xcassets */; };
+		49D9FA0521836B7300816F35 /* ios-sprint14-watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 49D9F9EB21836B7100816F35 /* ios-sprint14-watch.app */; };
+		49D9FA152183753800816F35 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9FA142183753800816F35 /* NotificationCenter.framework */; };
+		49D9FA182183753800816F35 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9FA172183753800816F35 /* TodayViewController.swift */; };
+		49D9FA1B2183753800816F35 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D9FA192183753800816F35 /* MainInterface.storyboard */; };
+		49D9FA1F2183753800816F35 /* ios-sprint14-widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 49D9FA122183753700816F35 /* ios-sprint14-widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		49D9FA31218376A300816F35 /* ios_sprint14_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9FA2A218376A300816F35 /* ios_sprint14_core.framework */; };
+		49D9FA32218376A300816F35 /* ios_sprint14_core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9FA2A218376A300816F35 /* ios_sprint14_core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		49D9FA6A2183811B00816F35 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9F9FC21836B7200816F35 /* InterfaceController.swift */; };
+		49D9FA6B2183812200816F35 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D9FA172183753800816F35 /* TodayViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49D9F9F921836B7200816F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D9F9C3218368E200816F35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D9F9F621836B7200816F35;
+			remoteInfo = "ios-sprint14-watch Extension";
+		};
+		49D9FA0321836B7300816F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D9F9C3218368E200816F35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D9F9EA21836B7100816F35;
+			remoteInfo = "ios-sprint14-watch";
+		};
+		49D9FA1D2183753800816F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D9F9C3218368E200816F35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D9FA112183753700816F35;
+			remoteInfo = "ios-sprint14-widget";
+		};
+		49D9FA2F218376A300816F35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49D9F9C3218368E200816F35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49D9FA29218376A300816F35;
+			remoteInfo = "ios-sprint14-core";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		49D9FA0921836B7300816F35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49D9F9F821836B7200816F35 /* ios-sprint14-watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA0D21836B7300816F35 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				49D9FA0521836B7300816F35 /* ios-sprint14-watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA232183753800816F35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				49D9FA1F2183753800816F35 /* ios-sprint14-widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA36218376A300816F35 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				49D9FA32218376A300816F35 /* ios_sprint14_core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		49D9F9CB218368E200816F35 /* ios-sprint14-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-sprint14-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D9F9CE218368E200816F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49D9F9D3218368E200816F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49D9F9D5218368E300816F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D9F9D8218368E300816F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49D9F9DA218368E300816F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D9F9E5218369A600816F35 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		49D9F9E721836A0900816F35 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		49D9F9EB21836B7100816F35 /* ios-sprint14-watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-sprint14-watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D9F9EE21836B7100816F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		49D9F9F021836B7200816F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D9F9F221836B7200816F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D9F9F721836B7200816F35 /* ios-sprint14-watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ios-sprint14-watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D9F9FC21836B7200816F35 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		49D9F9FE21836B7200816F35 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		49D9FA0021836B7300816F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49D9FA0221836B7300816F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D9FA122183753700816F35 /* ios-sprint14-widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ios-sprint14-widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49D9FA142183753800816F35 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		49D9FA172183753800816F35 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		49D9FA1A2183753800816F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		49D9FA1C2183753800816F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49D9FA2A218376A300816F35 /* ios_sprint14_core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ios_sprint14_core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49D9F9C8218368E200816F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9FA31218376A300816F35 /* ios_sprint14_core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9F9F421836B7200816F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA0F2183753700816F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9FA152183753800816F35 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA27218376A300816F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D9F9C2218368E200816F35 = {
+			isa = PBXGroup;
+			children = (
+				49D9F9CD218368E200816F35 /* ios-sprint14-challenge */,
+				49D9F9EC21836B7100816F35 /* ios-sprint14-watch */,
+				49D9F9FB21836B7200816F35 /* ios-sprint14-watch Extension */,
+				49D9FA162183753800816F35 /* ios-sprint14-widget */,
+				49D9FA132183753800816F35 /* Frameworks */,
+				49D9F9CC218368E200816F35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49D9F9CC218368E200816F35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9CB218368E200816F35 /* ios-sprint14-challenge.app */,
+				49D9F9EB21836B7100816F35 /* ios-sprint14-watch.app */,
+				49D9F9F721836B7200816F35 /* ios-sprint14-watch Extension.appex */,
+				49D9FA122183753700816F35 /* ios-sprint14-widget.appex */,
+				49D9FA2A218376A300816F35 /* ios_sprint14_core.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49D9F9CD218368E200816F35 /* ios-sprint14-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9E42183690D00816F35 /* Model */,
+				49D9F9E32183690300816F35 /* Model Controller */,
+				49D9F9E2218368FE00816F35 /* Views */,
+				49D9F9E1218368F700816F35 /* Controllers */,
+				49D9F9E0218368F100816F35 /* Resources */,
+			);
+			path = "ios-sprint14-challenge";
+			sourceTree = "<group>";
+		};
+		49D9F9E0218368F100816F35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9CE218368E200816F35 /* AppDelegate.swift */,
+				49D9F9D2218368E200816F35 /* Main.storyboard */,
+				49D9F9DA218368E300816F35 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		49D9F9E1218368F700816F35 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49D9F9E2218368FE00816F35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9D5218368E300816F35 /* Assets.xcassets */,
+				49D9F9D7218368E300816F35 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49D9F9E32183690300816F35 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9E721836A0900816F35 /* QuoteController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		49D9F9E42183690D00816F35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9E5218369A600816F35 /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49D9F9EC21836B7100816F35 /* ios-sprint14-watch */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9ED21836B7100816F35 /* Interface.storyboard */,
+				49D9F9F021836B7200816F35 /* Assets.xcassets */,
+				49D9F9F221836B7200816F35 /* Info.plist */,
+			);
+			path = "ios-sprint14-watch";
+			sourceTree = "<group>";
+		};
+		49D9F9FB21836B7200816F35 /* ios-sprint14-watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49D9F9FC21836B7200816F35 /* InterfaceController.swift */,
+				49D9F9FE21836B7200816F35 /* ExtensionDelegate.swift */,
+				49D9FA0021836B7300816F35 /* Assets.xcassets */,
+				49D9FA0221836B7300816F35 /* Info.plist */,
+			);
+			path = "ios-sprint14-watch Extension";
+			sourceTree = "<group>";
+		};
+		49D9FA132183753800816F35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49D9FA142183753800816F35 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49D9FA162183753800816F35 /* ios-sprint14-widget */ = {
+			isa = PBXGroup;
+			children = (
+				49D9FA172183753800816F35 /* TodayViewController.swift */,
+				49D9FA192183753800816F35 /* MainInterface.storyboard */,
+				49D9FA1C2183753800816F35 /* Info.plist */,
+			);
+			path = "ios-sprint14-widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		49D9FA25218376A300816F35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		49D9F9CA218368E200816F35 /* ios-sprint14-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9F9DD218368E300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-challenge" */;
+			buildPhases = (
+				49D9F9C7218368E200816F35 /* Sources */,
+				49D9F9C8218368E200816F35 /* Frameworks */,
+				49D9F9C9218368E200816F35 /* Resources */,
+				49D9FA0D21836B7300816F35 /* Embed Watch Content */,
+				49D9FA232183753800816F35 /* Embed App Extensions */,
+				49D9FA36218376A300816F35 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D9FA0421836B7300816F35 /* PBXTargetDependency */,
+				49D9FA1E2183753800816F35 /* PBXTargetDependency */,
+				49D9FA30218376A300816F35 /* PBXTargetDependency */,
+			);
+			name = "ios-sprint14-challenge";
+			productName = "ios-sprint14-challenge";
+			productReference = 49D9F9CB218368E200816F35 /* ios-sprint14-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49D9F9EA21836B7100816F35 /* ios-sprint14-watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9FA0A21836B7300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-watch" */;
+			buildPhases = (
+				49D9F9E921836B7100816F35 /* Resources */,
+				49D9FA0921836B7300816F35 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49D9F9FA21836B7200816F35 /* PBXTargetDependency */,
+			);
+			name = "ios-sprint14-watch";
+			productName = "ios-sprint14-watch";
+			productReference = 49D9F9EB21836B7100816F35 /* ios-sprint14-watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		49D9F9F621836B7200816F35 /* ios-sprint14-watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9FA0621836B7300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-watch Extension" */;
+			buildPhases = (
+				49D9F9F321836B7200816F35 /* Sources */,
+				49D9F9F421836B7200816F35 /* Frameworks */,
+				49D9F9F521836B7200816F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-sprint14-watch Extension";
+			productName = "ios-sprint14-watch Extension";
+			productReference = 49D9F9F721836B7200816F35 /* ios-sprint14-watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		49D9FA112183753700816F35 /* ios-sprint14-widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9FA202183753800816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-widget" */;
+			buildPhases = (
+				49D9FA0E2183753700816F35 /* Sources */,
+				49D9FA0F2183753700816F35 /* Frameworks */,
+				49D9FA102183753700816F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-sprint14-widget";
+			productName = "ios-sprint14-widget";
+			productReference = 49D9FA122183753700816F35 /* ios-sprint14-widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		49D9FA29218376A300816F35 /* ios-sprint14-core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49D9FA33218376A300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-core" */;
+			buildPhases = (
+				49D9FA25218376A300816F35 /* Headers */,
+				49D9FA26218376A300816F35 /* Sources */,
+				49D9FA27218376A300816F35 /* Frameworks */,
+				49D9FA28218376A300816F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ios-sprint14-core";
+			productName = "ios-sprint14-core";
+			productReference = 49D9FA2A218376A300816F35 /* ios_sprint14_core.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49D9F9C3218368E200816F35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "David Doswell";
+				TargetAttributes = {
+					49D9F9CA218368E200816F35 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					49D9F9EA21836B7100816F35 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					49D9F9F621836B7200816F35 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					49D9FA112183753700816F35 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					49D9FA29218376A300816F35 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 49D9F9C6218368E200816F35 /* Build configuration list for PBXProject "ios-sprint14-challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49D9F9C2218368E200816F35;
+			productRefGroup = 49D9F9CC218368E200816F35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49D9F9CA218368E200816F35 /* ios-sprint14-challenge */,
+				49D9F9EA21836B7100816F35 /* ios-sprint14-watch */,
+				49D9F9F621836B7200816F35 /* ios-sprint14-watch Extension */,
+				49D9FA112183753700816F35 /* ios-sprint14-widget */,
+				49D9FA29218376A300816F35 /* ios-sprint14-core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49D9F9C9218368E200816F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9F9D9218368E300816F35 /* LaunchScreen.storyboard in Resources */,
+				49D9F9D6218368E300816F35 /* Assets.xcassets in Resources */,
+				49D9F9D4218368E200816F35 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9F9E921836B7100816F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9F9F121836B7200816F35 /* Assets.xcassets in Resources */,
+				49D9F9EF21836B7100816F35 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9F9F521836B7200816F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9FA0121836B7300816F35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA102183753700816F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9FA1B2183753800816F35 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA28218376A300816F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49D9F9C7218368E200816F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9F9E821836A0900816F35 /* QuoteController.swift in Sources */,
+				49D9FA6A2183811B00816F35 /* InterfaceController.swift in Sources */,
+				49D9FA6B2183812200816F35 /* TodayViewController.swift in Sources */,
+				49D9F9E6218369A600816F35 /* Quote.swift in Sources */,
+				49D9F9CF218368E200816F35 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9F9F321836B7200816F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9F9FF21836B7200816F35 /* ExtensionDelegate.swift in Sources */,
+				49D9F9FD21836B7200816F35 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA0E2183753700816F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D9FA182183753800816F35 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49D9FA26218376A300816F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49D9F9FA21836B7200816F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D9F9F621836B7200816F35 /* ios-sprint14-watch Extension */;
+			targetProxy = 49D9F9F921836B7200816F35 /* PBXContainerItemProxy */;
+		};
+		49D9FA0421836B7300816F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D9F9EA21836B7100816F35 /* ios-sprint14-watch */;
+			targetProxy = 49D9FA0321836B7300816F35 /* PBXContainerItemProxy */;
+		};
+		49D9FA1E2183753800816F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D9FA112183753700816F35 /* ios-sprint14-widget */;
+			targetProxy = 49D9FA1D2183753800816F35 /* PBXContainerItemProxy */;
+		};
+		49D9FA30218376A300816F35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49D9FA29218376A300816F35 /* ios-sprint14-core */;
+			targetProxy = 49D9FA2F218376A300816F35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49D9F9D2218368E200816F35 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D9F9D3218368E200816F35 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49D9F9D7218368E300816F35 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D9F9D8218368E300816F35 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		49D9F9ED21836B7100816F35 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D9F9EE21836B7100816F35 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		49D9FA192183753800816F35 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D9FA1A2183753800816F35 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49D9F9DB218368E300816F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49D9F9DC218368E300816F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49D9F9DE218368E300816F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				INFOPLIST_FILE = "$(SRCROOT)/ios-sprint14-challenge/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49D9F9DF218368E300816F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				INFOPLIST_FILE = "$(SRCROOT)/ios-sprint14-challenge/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49D9FA0721836B7300816F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				INFOPLIST_FILE = "ios-sprint14-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		49D9FA0821836B7300816F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				INFOPLIST_FILE = "ios-sprint14-watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		49D9FA0B21836B7300816F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				IBSC_MODULE = ios_sprint14_watch_Extension;
+				INFOPLIST_FILE = "ios-sprint14-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		49D9FA0C21836B7300816F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				IBSC_MODULE = ios_sprint14_watch_Extension;
+				INFOPLIST_FILE = "ios-sprint14-watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		49D9FA212183753800816F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				INFOPLIST_FILE = "ios-sprint14-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge.ios-sprint14-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49D9FA222183753800816F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				INFOPLIST_FILE = "ios-sprint14-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-challenge.ios-sprint14-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		49D9FA34218376A300816F35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-sprint14-widget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-core";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		49D9FA35218376A300816F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WEBVY2C5S6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/ios-sprint14-widget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.doswelloliverdavid.ios-sprint14-core";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49D9F9C6218368E200816F35 /* Build configuration list for PBXProject "ios-sprint14-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9F9DB218368E300816F35 /* Debug */,
+				49D9F9DC218368E300816F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9F9DD218368E300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9F9DE218368E300816F35 /* Debug */,
+				49D9F9DF218368E300816F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9FA0621836B7300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9FA0721836B7300816F35 /* Debug */,
+				49D9FA0821836B7300816F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9FA0A21836B7300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9FA0B21836B7300816F35 /* Debug */,
+				49D9FA0C21836B7300816F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9FA202183753800816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9FA212183753800816F35 /* Debug */,
+				49D9FA222183753800816F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49D9FA33218376A300816F35 /* Build configuration list for PBXNativeTarget "ios-sprint14-core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D9FA34218376A300816F35 /* Debug */,
+				49D9FA35218376A300816F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49D9F9C3218368E200816F35 /* Project object */;
+}
