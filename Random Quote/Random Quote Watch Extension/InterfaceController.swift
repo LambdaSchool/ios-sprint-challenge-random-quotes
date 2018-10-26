@@ -11,29 +11,14 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         quoteLabel.setText("")
         authorLabel.setText("")
         
-        quoteController.fetchQuote { (quote, error) in
-            
-            if let error = error {
-                NSLog("Error with fetch: \(error)")
-                return
-            }
-            
-            guard let quote = quote else {
-                NSLog("Quote was nil")
-                return
-            }
-            
-            self.quote = quote
-            
-            self.updateViews()
-        }
+        fetchAQuote()
     }
     
     
@@ -54,7 +39,26 @@ class InterfaceController: WKInterfaceController {
     private func updateViews() {
         DispatchQueue.main.async {
             self.quoteLabel.setText("\"\(self.quote?.quote ?? "Oops, looks like there was an error fetching your random quote")\"")
-            self.authorLabel.setText("-\(self.quote?.author ?? "- Random Quote Staff")")
+            self.authorLabel.setText("- \(self.quote?.author ?? "- Random Quote Staff")")
+        }
+    }
+    
+    private func fetchAQuote() {
+        quoteController.fetchQuote { (quote, error) in
+            
+            if let error = error {
+                NSLog("Error with fetch: \(error)")
+                return
+            }
+            
+            guard let quote = quote else {
+                NSLog("Quote was nil")
+                return
+            }
+            
+            self.quote = quote
+            
+            self.updateViews()
         }
     }
 }

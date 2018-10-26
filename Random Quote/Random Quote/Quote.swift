@@ -19,12 +19,12 @@ class QuoteController {
     static let apiKey = "M6hNpOsGrGmshbZ8nzvPlPwkNO12p1bpAvJjsnYjVcf0DgeXIB"
     
     func fetchQuote(completion: @escaping (Quote?, Error?) -> Void) {
-
+        
         var request = URLRequest(url: QuoteController.url)
         request.allHTTPHeaderFields = ["X-Mashape-Key": QuoteController.apiKey,
                                        "Content-Type": "application/x-www-form-urlencoded",
                                        "Accept": "application/json"]
-
+        
         URLSession.shared.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 NSLog("Error fetching random quote: \(error)")
@@ -44,7 +44,7 @@ class QuoteController {
                 completion(nil, error)
                 return
             }
-        }.resume()
+            }.resume()
     }
     
 }

@@ -17,29 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="152"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6lk-su-CEO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xga-bd-na3">
                                 <rect key="frame" x="12" y="12" width="296" height="128"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
                                         <rect key="frame" x="0.0" y="0.0" width="296" height="97.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48F-7S-m97">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZB-Sj-ZPh">
                                         <rect key="frame" x="0.0" y="107.5" width="296" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="6lk-su-CEO" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="12" id="18g-CM-pmJ"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="6lk-su-CEO" secondAttribute="trailing" constant="12" id="L3t-fk-nBq"/>
-                            <constraint firstItem="6lk-su-CEO" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="12" id="bTV-rw-faO"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="6lk-su-CEO" secondAttribute="bottom" constant="12" id="rB9-Ig-mMn"/>
+                            <constraint firstItem="Xga-bd-na3" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="12" id="QqN-qO-fMj"/>
+                            <constraint firstItem="Xga-bd-na3" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="12" id="XFv-7V-Lx1"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="Xga-bd-na3" secondAttribute="trailing" constant="12" id="dMr-ac-jv9"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="Xga-bd-na3" secondAttribute="bottom" constant="12" id="o9Y-Yp-m9Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
@@ -47,8 +47,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="152"/>
                     <connections>
-                        <outlet property="authorLabel" destination="48F-7S-m97" id="TZE-P5-Ag2"/>
-                        <outlet property="quoteLabel" destination="GcN-lo-r42" id="xdA-Dq-mX7"/>
+                        <outlet property="authorLabel" destination="cZB-Sj-ZPh" id="8mM-un-35e"/>
+                        <outlet property="quoteLabel" destination="GcN-lo-r42" id="AoI-Mf-dgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

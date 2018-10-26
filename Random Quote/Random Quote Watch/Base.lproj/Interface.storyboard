@@ -13,19 +13,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Random_Quote_Watch" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="ibQ-dk-crb">
+                        <group width="1" height="1" alignment="left" layout="vertical" id="3nR-1J-Na3">
                             <items>
-                                <label width="1" alignment="left" verticalAlignment="center" text="Label" textAlignment="center" id="0lF-fa-uOo"/>
-                                <label width="1" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="right" id="wjF-Tp-UTd"/>
+                                <label alignment="center" verticalAlignment="center" text="Label" numberOfLines="0" id="ddg-mu-7PT"/>
+                                <label width="0.69999999999999996" alignment="right" verticalAlignment="bottom" text="Label" textAlignment="right" numberOfLines="0" id="9WL-Mt-by8"/>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="authorLabel" destination="wjF-Tp-UTd" id="aCR-e9-rUj"/>
-                        <outlet property="quoteLabel" destination="0lF-fa-uOo" id="kf9-hG-GHp"/>
+                        <outlet property="authorLabel" destination="9WL-Mt-by8" id="FJP-5O-Mqc"/>
+                        <outlet property="quoteLabel" destination="ddg-mu-7PT" id="GfB-Bf-S6x"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="220" y="345"/>
         </scene>
     </scenes>
 </document>

@@ -10,30 +10,31 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.extensionContext?.widgetLargestAvailableDisplayMode = .compact
+        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
         
         quoteLabel.text = ""
         authorLabel.text = ""
         
-        quoteController.fetchQuote { (quote, error) in
-
-            if let error = error {
-                NSLog("Error with fetch: \(error)")
-                return
-            }
-            
-            guard let quote = quote else {
-                NSLog("Quote was nil")
-                return
-            }
-            
-            self.quote = quote
-            
-            self.updateViews()
+        fetchAQuote()
+    }
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        switch activeDisplayMode {
+        case .compact:
+            preferredContentSize = maxSize
+            quoteLabel.numberOfLines = 1
+            authorLabel.isHidden = true
+        case .expanded:
+            let quoteHeight = quoteLabel.frame.size.height
+            let authorHeight = authorLabel.frame.size.height
+            let preferredHeight = quoteHeight + authorHeight + 38.0
+            preferredContentSize = CGSize(width: maxSize.width, height: preferredHeight)
+            quoteLabel.numberOfLines = 0
+            authorLabel.isHidden = false
         }
     }
     
@@ -50,13 +51,31 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var authorLabel: UILabel!
     
     
-    
     // MARK: - Private Functions
     
     private func updateViews() {
         DispatchQueue.main.async {
             self.quoteLabel.text = "\"\(self.quote?.quote ?? "Oops, looks like there was an error fetching your random quote")\""
             self.authorLabel.text = "-\(self.quote?.author ?? "- Random Quote Staff")"
+        }
+    }
+    
+    private func fetchAQuote() {
+        quoteController.fetchQuote { (quote, error) in
+            
+            if let error = error {
+                NSLog("Error with fetch: \(error)")
+                return
+            }
+            
+            guard let quote = quote else {
+                NSLog("Quote was nil")
+                return
+            }
+            
+            self.quote = quote
+            
+            self.updateViews()
         }
     }
 }
