@@ -12,6 +12,8 @@
 		F8AC66A1218366AA00372356 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC669F218366AA00372356 /* Main.storyboard */; };
 		F8AC66A3218366AC00372356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66A2218366AC00372356 /* Assets.xcassets */; };
 		F8AC66A6218366AC00372356 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8AC66A4218366AC00372356 /* LaunchScreen.storyboard */; };
+		F8AC66AE218367DA00372356 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AD218367DA00372356 /* Quote.swift */; };
+		F8AC66B02183683200372356 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AC66AF2183683200372356 /* QuoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F8AC66A2218366AC00372356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8AC66A5218366AC00372356 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8AC66A7218366AC00372356 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8AC66AD218367DA00372356 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		F8AC66AF2183683200372356 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				F8AC66A2218366AC00372356 /* Assets.xcassets */,
 				F8AC66A4218366AC00372356 /* LaunchScreen.storyboard */,
 				F8AC66A7218366AC00372356 /* Info.plist */,
+				F8AC66AD218367DA00372356 /* Quote.swift */,
+				F8AC66AF2183683200372356 /* QuoteController.swift */,
 			);
 			path = "Random Quotes";
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8AC669E218366AA00372356 /* ViewController.swift in Sources */,
+				F8AC66AE218367DA00372356 /* Quote.swift in Sources */,
+				F8AC66B02183683200372356 /* QuoteController.swift in Sources */,
 				F8AC669C218366AA00372356 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
