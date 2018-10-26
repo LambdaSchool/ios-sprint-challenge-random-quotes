@@ -25,6 +25,8 @@
 		137F5A8321836ACB00B93A66 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A8221836ACB00B93A66 /* ExtensionDelegate.swift */; };
 		137F5A8521836ACC00B93A66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A8421836ACC00B93A66 /* Assets.xcassets */; };
 		137F5A8921836ACC00B93A66 /* QuoteWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 137F5A6F21836AC800B93A66 /* QuoteWatch.app */; };
+		137F5AA221836C8A00B93A66 /* QuoteCoreWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137F5AA121836C8A00B93A66 /* QuoteCoreWatch.framework */; };
+		137F5AA321836C8A00B93A66 /* QuoteCoreWatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 137F5AA121836C8A00B93A66 /* QuoteCoreWatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 137F5A6E21836AC800B93A66;
 			remoteInfo = QuoteWatch;
+		};
+		137F5AA021836C8A00B93A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 137F5A9721836C3A00B93A66;
+			remoteInfo = QuoteCoreWatch;
+		};
+		137F5AA421836C8A00B93A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 137F5A9621836C3A00B93A66;
+			remoteInfo = QuoteCoreWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -108,6 +124,17 @@
 				137F5A8921836ACC00B93A66 /* QuoteWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5AA621836C8B00B93A66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				137F5AA321836C8A00B93A66 /* QuoteCoreWatch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -158,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137F5AA221836C8A00B93A66 /* QuoteCoreWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				137F5A4B2183666A00B93A66 /* QuoteCore.framework */,
+				137F5AA121836C8A00B93A66 /* QuoteCoreWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,10 +368,12 @@
 				137F5A7721836ACB00B93A66 /* Sources */,
 				137F5A7821836ACB00B93A66 /* Frameworks */,
 				137F5A7921836ACB00B93A66 /* Resources */,
+				137F5AA621836C8B00B93A66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				137F5AA521836C8A00B93A66 /* PBXTargetDependency */,
 			);
 			name = "QuoteWatch Extension";
 			productName = "QuoteWatch Extension";
@@ -406,6 +437,13 @@
 			fileType = wrapper.framework;
 			path = QuoteCore.framework;
 			remoteRef = 137F5A4A2183666A00B93A66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		137F5AA121836C8A00B93A66 /* QuoteCoreWatch.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QuoteCoreWatch.framework;
+			remoteRef = 137F5AA021836C8A00B93A66 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -497,6 +535,11 @@
 			isa = PBXTargetDependency;
 			target = 137F5A6E21836AC800B93A66 /* QuoteWatch */;
 			targetProxy = 137F5A8721836ACC00B93A66 /* PBXContainerItemProxy */;
+		};
+		137F5AA521836C8A00B93A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuoteCoreWatch;
+			targetProxy = 137F5AA421836C8A00B93A66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

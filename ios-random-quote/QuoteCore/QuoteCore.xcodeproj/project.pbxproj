@@ -10,6 +10,7 @@
 		137F5A3F2183663400B93A66 /* QuoteCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 137F5A3D2183663400B93A66 /* QuoteCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		137F5A53218366DD00B93A66 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A51218366DD00B93A66 /* Quote.swift */; };
 		137F5A54218366DD00B93A66 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A52218366DD00B93A66 /* QuoteController.swift */; };
+		137F5A9B21836C3B00B93A66 /* QuoteCoreWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 137F5A9921836C3B00B93A66 /* QuoteCoreWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +19,20 @@
 		137F5A3E2183663400B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137F5A51218366DD00B93A66 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		137F5A52218366DD00B93A66 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		137F5A9721836C3A00B93A66 /* QuoteCoreWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QuoteCoreWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		137F5A9921836C3B00B93A66 /* QuoteCoreWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuoteCoreWatch.h; sourceTree = "<group>"; };
+		137F5A9A21836C3B00B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		137F5A372183663400B93A66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5A9421836C3A00B93A66 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				137F5A3C2183663400B93A66 /* QuoteCore */,
+				137F5A9821836C3B00B93A66 /* QuoteCoreWatch */,
 				137F5A3B2183663400B93A66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				137F5A3A2183663400B93A66 /* QuoteCore.framework */,
+				137F5A9721836C3A00B93A66 /* QuoteCoreWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +71,15 @@
 			path = QuoteCore;
 			sourceTree = "<group>";
 		};
+		137F5A9821836C3B00B93A66 /* QuoteCoreWatch */ = {
+			isa = PBXGroup;
+			children = (
+				137F5A9921836C3B00B93A66 /* QuoteCoreWatch.h */,
+				137F5A9A21836C3B00B93A66 /* Info.plist */,
+			);
+			path = QuoteCoreWatch;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -66,6 +88,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				137F5A3F2183663400B93A66 /* QuoteCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5A9221836C3A00B93A66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137F5A9B21836C3B00B93A66 /* QuoteCoreWatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +120,24 @@
 			productReference = 137F5A3A2183663400B93A66 /* QuoteCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		137F5A9621836C3A00B93A66 /* QuoteCoreWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137F5A9C21836C3B00B93A66 /* Build configuration list for PBXNativeTarget "QuoteCoreWatch" */;
+			buildPhases = (
+				137F5A9221836C3A00B93A66 /* Headers */,
+				137F5A9321836C3A00B93A66 /* Sources */,
+				137F5A9421836C3A00B93A66 /* Frameworks */,
+				137F5A9521836C3A00B93A66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuoteCoreWatch;
+			productName = QuoteCoreWatch;
+			productReference = 137F5A9721836C3A00B93A66 /* QuoteCoreWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +148,9 @@
 				ORGANIZATIONNAME = Conner;
 				TargetAttributes = {
 					137F5A392183663400B93A66 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					137F5A9621836C3A00B93A66 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -117,12 +168,20 @@
 			projectRoot = "";
 			targets = (
 				137F5A392183663400B93A66 /* QuoteCore */,
+				137F5A9621836C3A00B93A66 /* QuoteCoreWatch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		137F5A382183663400B93A66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5A9521836C3A00B93A66 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,6 +197,13 @@
 			files = (
 				137F5A54218366DD00B93A66 /* QuoteController.swift in Sources */,
 				137F5A53218366DD00B93A66 /* Quote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		137F5A9321836C3A00B93A66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +384,62 @@
 			};
 			name = Release;
 		};
+		137F5A9D21836C3B00B93A66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 627UZVK698;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuoteCoreWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.QuoteCoreWatch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		137F5A9E21836C3B00B93A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 627UZVK698;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = QuoteCoreWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Conner.QuoteCoreWatch;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +457,15 @@
 			buildConfigurations = (
 				137F5A432183663400B93A66 /* Debug */,
 				137F5A442183663400B93A66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		137F5A9C21836C3B00B93A66 /* Build configuration list for PBXNativeTarget "QuoteCoreWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137F5A9D21836C3B00B93A66 /* Debug */,
+				137F5A9E21836C3B00B93A66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
