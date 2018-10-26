@@ -16,6 +16,16 @@
 		137F5A2F218364CE00B93A66 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A2E218364CE00B93A66 /* QuoteController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		137F5A4A2183666A00B93A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 137F5A3A2183663400B93A66;
+			remoteInfo = QuoteCore;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		137F5A13218363F200B93A66 /* ios-random-quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-random-quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		137F5A16218363F200B93A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +36,7 @@
 		137F5A22218363F400B93A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137F5A2B2183649E00B93A66 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		137F5A2E218364CE00B93A66 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuoteCore.xcodeproj; path = QuoteCore/QuoteCore.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 		137F5A15218363F200B93A66 /* ios-random-quote */ = {
 			isa = PBXGroup;
 			children = (
+				137F5A452183663A00B93A66 /* Frameworks */,
 				137F5A16218363F200B93A66 /* AppDelegate.swift */,
 				137F5A292183643600B93A66 /* View Controllers */,
 				137F5A2D218364B500B93A66 /* Model Controller */,
@@ -100,6 +112,22 @@
 				137F5A2E218364CE00B93A66 /* QuoteController.swift */,
 			);
 			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		137F5A452183663A00B93A66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		137F5A472183666A00B93A66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				137F5A4B2183666A00B93A66 /* QuoteCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +176,28 @@
 			mainGroup = 137F5A0A218363F200B93A66;
 			productRefGroup = 137F5A14218363F200B93A66 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 137F5A472183666A00B93A66 /* Products */;
+					ProjectRef = 137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				137F5A12218363F200B93A66 /* ios-random-quote */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		137F5A4B2183666A00B93A66 /* QuoteCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QuoteCore.framework;
+			remoteRef = 137F5A4A2183666A00B93A66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		137F5A11218363F200B93A66 /* Resources */ = {
