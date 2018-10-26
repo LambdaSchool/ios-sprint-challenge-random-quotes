@@ -14,6 +14,8 @@
 		137F5A21218363F400B93A66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137F5A1F218363F400B93A66 /* LaunchScreen.storyboard */; };
 		137F5A2C2183649E00B93A66 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A2B2183649E00B93A66 /* Quote.swift */; };
 		137F5A2F218364CE00B93A66 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137F5A2E218364CE00B93A66 /* QuoteController.swift */; };
+		137F5A4C2183669500B93A66 /* QuoteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137F5A4B2183666A00B93A66 /* QuoteCore.framework */; };
+		137F5A4D2183669500B93A66 /* QuoteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 137F5A4B2183666A00B93A66 /* QuoteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +26,28 @@
 			remoteGlobalIDString = 137F5A3A2183663400B93A66;
 			remoteInfo = QuoteCore;
 		};
+		137F5A4E2183669500B93A66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 137F5A462183666A00B93A66 /* QuoteCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 137F5A392183663400B93A66;
+			remoteInfo = QuoteCore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		137F5A502183669500B93A66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				137F5A4D2183669500B93A66 /* QuoteCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		137F5A13218363F200B93A66 /* ios-random-quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-random-quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137F5A4C2183669500B93A66 /* QuoteCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +164,12 @@
 				137F5A0F218363F200B93A66 /* Sources */,
 				137F5A10218363F200B93A66 /* Frameworks */,
 				137F5A11218363F200B93A66 /* Resources */,
+				137F5A502183669500B93A66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				137F5A4F2183669500B93A66 /* PBXTargetDependency */,
 			);
 			name = "ios-random-quote";
 			productName = "ios-random-quote";
@@ -225,6 +251,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		137F5A4F2183669500B93A66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuoteCore;
+			targetProxy = 137F5A4E2183669500B93A66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		137F5A1A218363F200B93A66 /* Main.storyboard */ = {
