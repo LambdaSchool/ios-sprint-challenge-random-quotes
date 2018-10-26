@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				137F5A16218363F200B93A66 /* AppDelegate.swift */,
-				137F5A18218363F200B93A66 /* QuoteViewController.swift */,
+				137F5A292183643600B93A66 /* View Controllers */,
 				137F5A282183641F00B93A66 /* Resources */,
 			);
 			path = "ios-random-quote";
@@ -70,6 +70,14 @@
 				137F5A22218363F400B93A66 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		137F5A292183643600B93A66 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				137F5A18218363F200B93A66 /* QuoteViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
