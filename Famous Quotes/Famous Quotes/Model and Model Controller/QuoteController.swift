@@ -7,7 +7,7 @@
 //
 
 import Foundation
-private let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=movies&count=1")!
+private let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous&count=1")!
 
 class QuoteController{
     

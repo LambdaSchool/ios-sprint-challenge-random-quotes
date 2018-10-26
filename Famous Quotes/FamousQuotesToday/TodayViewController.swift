@@ -10,15 +10,32 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
-
+    
+    override func viewDidLoad() {
+        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         updateLabels()
     }
-        
+    
     @IBAction func changeQuote(_ sender: Any) {
         updateLabels()
+    }
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        switch activeDisplayMode {
+        case .expanded:
+            preferredContentSize = CGSize(width: maxSize.width, height: 200)
+            quoteLabel.font = quoteLabel.font.withSize(24)
+            quoteLabel.numberOfLines = 5
+            authorLabel.font = authorLabel.font.withSize(18)
+        case .compact:
+            preferredContentSize = maxSize
+            quoteLabel.numberOfLines = 3
+            quoteLabel.font = quoteLabel.font.withSize(18)
+            authorLabel.font = authorLabel.font.withSize(17)
+        }
     }
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.

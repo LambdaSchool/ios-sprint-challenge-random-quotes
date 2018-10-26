@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What's for breakfast?&quot;" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUF-Zb-LtW">
-                                <rect key="frame" x="16" y="16" width="288" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <rect key="frame" x="16" y="16" width="288" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Andrew" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-Os-amm">
-                                <rect key="frame" x="16" y="163" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="- Andrew" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-Os-amm">
+                                <rect key="frame" x="16" y="163.5" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -38,6 +38,7 @@
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="jYr-Os-amm" secondAttribute="bottom" constant="16" id="HxN-EE-mJb"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="jYr-Os-amm" secondAttribute="trailing" constant="16" id="ihk-RS-kWV"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="IUF-Zb-LtW" secondAttribute="trailing" constant="16" id="kz1-OX-Zku"/>
+                            <constraint firstItem="jYr-Os-amm" firstAttribute="top" relation="greaterThanOrEqual" secondItem="IUF-Zb-LtW" secondAttribute="bottom" constant="2" id="vr9-KW-JyT"/>
                             <constraint firstItem="IUF-Zb-LtW" firstAttribute="height" relation="lessThanOrEqual" secondItem="S3S-Oj-5AN" secondAttribute="height" multiplier="2/3" id="yq2-Tk-faE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
