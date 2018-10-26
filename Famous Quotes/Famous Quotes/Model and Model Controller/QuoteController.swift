@@ -33,8 +33,6 @@ class QuoteController{
                 NSLog("Data is nil")
                 return
             }
-            
-           print( String(data: data, encoding:String.Encoding.utf8))
             do{
                 let quote = try JSONDecoder().decode([Quote].self, from: data)
                 completion(quote.first,nil)

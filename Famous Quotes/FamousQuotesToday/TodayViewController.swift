@@ -11,8 +11,18 @@ import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
         
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        widgetPerformUpdate { (result) in
+            if result == .newData {
+                DispatchQueue.main.async {
+                    self.quoteLabel.text = " \"\(self.quote.quote)\""
+                    self.authorLabel.text = "- \(self.quote.author)"
+                }
+                
+            }
+        }
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
@@ -21,8 +31,21 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-        
-        completionHandler(NCUpdateResult.newData)
+        quoteController.fetchQuotes { (quote, error) in
+            if let error = error{
+                NSLog("Error fetching quotes: \(error)")
+                completionHandler(NCUpdateResult.failed)
+            } else if let quote = quote{
+                self.quote = quote
+                completionHandler(NCUpdateResult.newData)
+            } else{
+                completionHandler(NCUpdateResult.noData)
+            }
+        }
     }
     
+    @IBOutlet weak var quoteLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    private let quoteController = QuoteController()
+    private var quote: Quote!
 }

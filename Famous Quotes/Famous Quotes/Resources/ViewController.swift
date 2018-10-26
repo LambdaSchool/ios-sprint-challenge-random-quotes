@@ -10,17 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        let quoteController = QuoteController()
-        quoteController.fetchQuotes { (quote, error) in
-            if let error = error {
-                NSLog("Error decdoing: \(error)")
-                return
-            }
-        }
-    }
-
 
 }
 

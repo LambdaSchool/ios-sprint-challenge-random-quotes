@@ -20,6 +20,7 @@
 		105E7A3D218368CE000945DA /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
 		105E7A3E218369A3000945DA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3921836845000945DA /* Quote.swift */; };
 		105E7A3F218369A3000945DA /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
+		105E7A4221837536000945DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A172183678F000945DA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		105E7A31218367D6000945DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		105E7A3921836845000945DA /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		105E7A3C218368CE000945DA /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		105E7A40218374E4000945DA /* Famous Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Famous Quotes.entitlements"; sourceTree = "<group>"; };
+		105E7A41218374EA000945DA /* FamousQuotesToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FamousQuotesToday.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		105E7A0F2183678E000945DA /* Famous Quotes */ = {
 			isa = PBXGroup;
 			children = (
+				105E7A40218374E4000945DA /* Famous Quotes.entitlements */,
 				105E7A142183678E000945DA /* Main.storyboard */,
 				105E7A3B218368B7000945DA /* Model and Model Controller */,
 				105E7A222183679D000945DA /* Resources */,
@@ -134,6 +138,7 @@
 		105E7A2B218367D6000945DA /* FamousQuotesToday */ = {
 			isa = PBXGroup;
 			children = (
+				105E7A41218374EA000945DA /* FamousQuotesToday.entitlements */,
 				105E7A2C218367D6000945DA /* TodayViewController.swift */,
 				105E7A2E218367D6000945DA /* MainInterface.storyboard */,
 				105E7A31218367D6000945DA /* Info.plist */,
@@ -201,9 +206,19 @@
 				TargetAttributes = {
 					105E7A0C2183678E000945DA = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					105E7A26218367D6000945DA = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -241,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105E7A4221837536000945DA /* Assets.xcassets in Resources */,
 				105E7A30218367D6000945DA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

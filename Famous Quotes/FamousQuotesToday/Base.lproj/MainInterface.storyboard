@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,31 +12,46 @@
         <!--Today View Controller-->
         <scene sceneID="cwh-vc-ff4">
             <objects>
-                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="FamousQuotesToday" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;What's for breakfast?&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUF-Zb-LtW">
+                                <rect key="frame" x="16" y="16" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Andrew" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYr-Os-amm">
+                                <rect key="frame" x="16" y="163" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="20" symbolic="YES" id="0Q0-KW-PJ6"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="20" symbolic="YES" id="6Vq-gs-PHe"/>
-                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="GcN-lo-r42" secondAttribute="trailing" constant="20" symbolic="YES" id="L8K-9R-egU"/>
-                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="20" symbolic="YES" id="mYS-Cv-VNx"/>
+                            <constraint firstItem="IUF-Zb-LtW" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="7Se-ob-Wvk"/>
+                            <constraint firstItem="jYr-Os-amm" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="16" id="8SI-8U-LCT"/>
+                            <constraint firstItem="IUF-Zb-LtW" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="16" id="CiA-Jk-ZyM"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="bottom" secondItem="jYr-Os-amm" secondAttribute="bottom" constant="16" id="HxN-EE-mJb"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="jYr-Os-amm" secondAttribute="trailing" constant="16" id="ihk-RS-kWV"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="IUF-Zb-LtW" secondAttribute="trailing" constant="16" id="kz1-OX-Zku"/>
+                            <constraint firstItem="IUF-Zb-LtW" firstAttribute="height" relation="lessThanOrEqual" secondItem="S3S-Oj-5AN" secondAttribute="height" multiplier="2/3" id="yq2-Tk-faE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="200"/>
+                    <connections>
+                        <outlet property="authorLabel" destination="jYr-Os-amm" id="8Zw-Za-qX0"/>
+                        <outlet property="quoteLabel" destination="IUF-Zb-LtW" id="KJw-bL-yu9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.19999999999999" y="120.53973013493254"/>
         </scene>
     </scenes>
 </document>
