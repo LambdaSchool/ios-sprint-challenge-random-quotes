@@ -1,0 +1,827 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		103E76A5218379A70081AC97 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3921836845000945DA /* Quote.swift */; };
+		103E76A6218379A70081AC97 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
+		105E7A112183678E000945DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A102183678E000945DA /* AppDelegate.swift */; };
+		105E7A132183678E000945DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A122183678E000945DA /* ViewController.swift */; };
+		105E7A162183678E000945DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A142183678E000945DA /* Main.storyboard */; };
+		105E7A182183678F000945DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A172183678F000945DA /* Assets.xcassets */; };
+		105E7A1B2183678F000945DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A192183678F000945DA /* LaunchScreen.storyboard */; };
+		105E7A2A218367D6000945DA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105E7A29218367D6000945DA /* NotificationCenter.framework */; };
+		105E7A2D218367D6000945DA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A2C218367D6000945DA /* TodayViewController.swift */; };
+		105E7A30218367D6000945DA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A2E218367D6000945DA /* MainInterface.storyboard */; };
+		105E7A34218367D6000945DA /* FamousQuotesToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 105E7A27218367D6000945DA /* FamousQuotesToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		105E7A3A21836845000945DA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3921836845000945DA /* Quote.swift */; };
+		105E7A3D218368CE000945DA /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
+		105E7A3E218369A3000945DA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3921836845000945DA /* Quote.swift */; };
+		105E7A3F218369A3000945DA /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105E7A3C218368CE000945DA /* QuoteController.swift */; };
+		105E7A4221837536000945DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105E7A172183678F000945DA /* Assets.xcassets */; };
+		10CB8F51218378F7002236AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CB8F4F218378F7002236AE /* Interface.storyboard */; };
+		10CB8F53218378F8002236AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CB8F52218378F8002236AE /* Assets.xcassets */; };
+		10CB8F5A218378F8002236AE /* FamousQuotesWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		10CB8F5F218378F8002236AE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB8F5E218378F8002236AE /* InterfaceController.swift */; };
+		10CB8F61218378F8002236AE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CB8F60218378F8002236AE /* ExtensionDelegate.swift */; };
+		10CB8F63218378F9002236AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CB8F62218378F9002236AE /* Assets.xcassets */; };
+		10CB8F67218378F9002236AE /* FamousQuotesWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		105E7A32218367D6000945DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105E7A052183678E000945DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105E7A26218367D6000945DA;
+			remoteInfo = FamousQuotesToday;
+		};
+		10CB8F5B218378F8002236AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105E7A052183678E000945DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CB8F58218378F8002236AE;
+			remoteInfo = "FamousQuotesWatch Extension";
+		};
+		10CB8F65218378F9002236AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105E7A052183678E000945DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CB8F4C218378F7002236AE;
+			remoteInfo = FamousQuotesWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		105E7A38218367D6000945DA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				105E7A34218367D6000945DA /* FamousQuotesToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F482183786B002236AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				10CB8F67218378F9002236AE /* FamousQuotesWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F6B218378F9002236AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				10CB8F5A218378F8002236AE /* FamousQuotesWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		105E7A0D2183678E000945DA /* Famous Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Famous Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		105E7A102183678E000945DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		105E7A122183678E000945DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		105E7A152183678E000945DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		105E7A172183678F000945DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		105E7A1A2183678F000945DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		105E7A1C2183678F000945DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105E7A27218367D6000945DA /* FamousQuotesToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FamousQuotesToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		105E7A29218367D6000945DA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		105E7A2C218367D6000945DA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		105E7A2F218367D6000945DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		105E7A31218367D6000945DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105E7A3921836845000945DA /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		105E7A3C218368CE000945DA /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		105E7A40218374E4000945DA /* Famous Quotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Famous Quotes.entitlements"; sourceTree = "<group>"; };
+		105E7A41218374EA000945DA /* FamousQuotesToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FamousQuotesToday.entitlements; sourceTree = "<group>"; };
+		10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamousQuotesWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CB8F50218378F7002236AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		10CB8F52218378F8002236AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10CB8F54218378F8002236AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FamousQuotesWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CB8F5E218378F8002236AE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		10CB8F60218378F8002236AE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		10CB8F62218378F9002236AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10CB8F64218378F9002236AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		105E7A0A2183678E000945DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105E7A24218367D6000945DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E7A2A218367D6000945DA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F56218378F8002236AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		105E7A042183678E000945DA = {
+			isa = PBXGroup;
+			children = (
+				105E7A0F2183678E000945DA /* Famous Quotes */,
+				105E7A2B218367D6000945DA /* FamousQuotesToday */,
+				10CB8F4E218378F7002236AE /* FamousQuotesWatch */,
+				10CB8F5D218378F8002236AE /* FamousQuotesWatch Extension */,
+				105E7A28218367D6000945DA /* Frameworks */,
+				105E7A0E2183678E000945DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		105E7A0E2183678E000945DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				105E7A0D2183678E000945DA /* Famous Quotes.app */,
+				105E7A27218367D6000945DA /* FamousQuotesToday.appex */,
+				10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */,
+				10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		105E7A0F2183678E000945DA /* Famous Quotes */ = {
+			isa = PBXGroup;
+			children = (
+				105E7A40218374E4000945DA /* Famous Quotes.entitlements */,
+				105E7A142183678E000945DA /* Main.storyboard */,
+				105E7A3B218368B7000945DA /* Model and Model Controller */,
+				105E7A222183679D000945DA /* Resources */,
+			);
+			path = "Famous Quotes";
+			sourceTree = "<group>";
+		};
+		105E7A222183679D000945DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				105E7A102183678E000945DA /* AppDelegate.swift */,
+				105E7A122183678E000945DA /* ViewController.swift */,
+				105E7A172183678F000945DA /* Assets.xcassets */,
+				105E7A192183678F000945DA /* LaunchScreen.storyboard */,
+				105E7A1C2183678F000945DA /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		105E7A28218367D6000945DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				105E7A29218367D6000945DA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		105E7A2B218367D6000945DA /* FamousQuotesToday */ = {
+			isa = PBXGroup;
+			children = (
+				105E7A41218374EA000945DA /* FamousQuotesToday.entitlements */,
+				105E7A2C218367D6000945DA /* TodayViewController.swift */,
+				105E7A2E218367D6000945DA /* MainInterface.storyboard */,
+				105E7A31218367D6000945DA /* Info.plist */,
+			);
+			path = FamousQuotesToday;
+			sourceTree = "<group>";
+		};
+		105E7A3B218368B7000945DA /* Model and Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				105E7A3921836845000945DA /* Quote.swift */,
+				105E7A3C218368CE000945DA /* QuoteController.swift */,
+			);
+			path = "Model and Model Controller";
+			sourceTree = "<group>";
+		};
+		10CB8F4E218378F7002236AE /* FamousQuotesWatch */ = {
+			isa = PBXGroup;
+			children = (
+				10CB8F4F218378F7002236AE /* Interface.storyboard */,
+				10CB8F52218378F8002236AE /* Assets.xcassets */,
+				10CB8F54218378F8002236AE /* Info.plist */,
+			);
+			path = FamousQuotesWatch;
+			sourceTree = "<group>";
+		};
+		10CB8F5D218378F8002236AE /* FamousQuotesWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				10CB8F5E218378F8002236AE /* InterfaceController.swift */,
+				10CB8F60218378F8002236AE /* ExtensionDelegate.swift */,
+				10CB8F62218378F9002236AE /* Assets.xcassets */,
+				10CB8F64218378F9002236AE /* Info.plist */,
+			);
+			path = "FamousQuotesWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		105E7A0C2183678E000945DA /* Famous Quotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105E7A1F2183678F000945DA /* Build configuration list for PBXNativeTarget "Famous Quotes" */;
+			buildPhases = (
+				105E7A092183678E000945DA /* Sources */,
+				105E7A0A2183678E000945DA /* Frameworks */,
+				105E7A0B2183678E000945DA /* Resources */,
+				105E7A38218367D6000945DA /* Embed App Extensions */,
+				10CB8F482183786B002236AE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				105E7A33218367D6000945DA /* PBXTargetDependency */,
+				10CB8F66218378F9002236AE /* PBXTargetDependency */,
+			);
+			name = "Famous Quotes";
+			productName = "Famous Quotes";
+			productReference = 105E7A0D2183678E000945DA /* Famous Quotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		105E7A26218367D6000945DA /* FamousQuotesToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105E7A35218367D6000945DA /* Build configuration list for PBXNativeTarget "FamousQuotesToday" */;
+			buildPhases = (
+				105E7A23218367D6000945DA /* Sources */,
+				105E7A24218367D6000945DA /* Frameworks */,
+				105E7A25218367D6000945DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FamousQuotesToday;
+			productName = FamousQuotesToday;
+			productReference = 105E7A27218367D6000945DA /* FamousQuotesToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		10CB8F4C218378F7002236AE /* FamousQuotesWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CB8F6C218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch" */;
+			buildPhases = (
+				10CB8F4B218378F7002236AE /* Resources */,
+				10CB8F6B218378F9002236AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10CB8F5C218378F8002236AE /* PBXTargetDependency */,
+			);
+			name = FamousQuotesWatch;
+			productName = FamousQuotesWatch;
+			productReference = 10CB8F4D218378F7002236AE /* FamousQuotesWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		10CB8F58218378F8002236AE /* FamousQuotesWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CB8F68218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch Extension" */;
+			buildPhases = (
+				10CB8F55218378F8002236AE /* Sources */,
+				10CB8F56218378F8002236AE /* Frameworks */,
+				10CB8F57218378F8002236AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FamousQuotesWatch Extension";
+			productName = "FamousQuotesWatch Extension";
+			productReference = 10CB8F59218378F8002236AE /* FamousQuotesWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		105E7A052183678E000945DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Andrew Liao";
+				TargetAttributes = {
+					105E7A0C2183678E000945DA = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					105E7A26218367D6000945DA = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					10CB8F4C218378F7002236AE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					10CB8F58218378F8002236AE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 105E7A082183678E000945DA /* Build configuration list for PBXProject "Famous Quotes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 105E7A042183678E000945DA;
+			productRefGroup = 105E7A0E2183678E000945DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				105E7A0C2183678E000945DA /* Famous Quotes */,
+				105E7A26218367D6000945DA /* FamousQuotesToday */,
+				10CB8F4C218378F7002236AE /* FamousQuotesWatch */,
+				10CB8F58218378F8002236AE /* FamousQuotesWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		105E7A0B2183678E000945DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E7A1B2183678F000945DA /* LaunchScreen.storyboard in Resources */,
+				105E7A182183678F000945DA /* Assets.xcassets in Resources */,
+				105E7A162183678E000945DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105E7A25218367D6000945DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E7A4221837536000945DA /* Assets.xcassets in Resources */,
+				105E7A30218367D6000945DA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F4B218378F7002236AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB8F53218378F8002236AE /* Assets.xcassets in Resources */,
+				10CB8F51218378F7002236AE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F57218378F8002236AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB8F63218378F9002236AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		105E7A092183678E000945DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E7A132183678E000945DA /* ViewController.swift in Sources */,
+				105E7A3A21836845000945DA /* Quote.swift in Sources */,
+				105E7A3D218368CE000945DA /* QuoteController.swift in Sources */,
+				105E7A112183678E000945DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105E7A23218367D6000945DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105E7A3F218369A3000945DA /* QuoteController.swift in Sources */,
+				105E7A3E218369A3000945DA /* Quote.swift in Sources */,
+				105E7A2D218367D6000945DA /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10CB8F55218378F8002236AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CB8F61218378F8002236AE /* ExtensionDelegate.swift in Sources */,
+				103E76A5218379A70081AC97 /* Quote.swift in Sources */,
+				103E76A6218379A70081AC97 /* QuoteController.swift in Sources */,
+				10CB8F5F218378F8002236AE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		105E7A33218367D6000945DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105E7A26218367D6000945DA /* FamousQuotesToday */;
+			targetProxy = 105E7A32218367D6000945DA /* PBXContainerItemProxy */;
+		};
+		10CB8F5C218378F8002236AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CB8F58218378F8002236AE /* FamousQuotesWatch Extension */;
+			targetProxy = 10CB8F5B218378F8002236AE /* PBXContainerItemProxy */;
+		};
+		10CB8F66218378F9002236AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CB8F4C218378F7002236AE /* FamousQuotesWatch */;
+			targetProxy = 10CB8F65218378F9002236AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		105E7A142183678E000945DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				105E7A152183678E000945DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		105E7A192183678F000945DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				105E7A1A2183678F000945DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		105E7A2E218367D6000945DA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				105E7A2F218367D6000945DA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		10CB8F4F218378F7002236AE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10CB8F50218378F7002236AE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		105E7A1D2183678F000945DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		105E7A1E2183678F000945DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		105E7A202183678F000945DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = "$(SRCROOT)/Famous Quotes/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		105E7A212183678F000945DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = "$(SRCROOT)/Famous Quotes/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		105E7A36218367D6000945DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = FamousQuotesToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.FamousQuotesToday";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		105E7A37218367D6000945DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = FamousQuotesToday/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.FamousQuotesToday";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		10CB8F69218378F9002236AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = "FamousQuotesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		10CB8F6A218378F9002236AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				INFOPLIST_FILE = "FamousQuotesWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		10CB8F6D218378F9002236AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				IBSC_MODULE = FamousQuotesWatch_Extension;
+				INFOPLIST_FILE = FamousQuotesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		10CB8F6E218378F9002236AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 579Y2HH9JP;
+				IBSC_MODULE = FamousQuotesWatch_Extension;
+				INFOPLIST_FILE = FamousQuotesWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.Famous-Quotes.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		105E7A082183678E000945DA /* Build configuration list for PBXProject "Famous Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105E7A1D2183678F000945DA /* Debug */,
+				105E7A1E2183678F000945DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105E7A1F2183678F000945DA /* Build configuration list for PBXNativeTarget "Famous Quotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105E7A202183678F000945DA /* Debug */,
+				105E7A212183678F000945DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105E7A35218367D6000945DA /* Build configuration list for PBXNativeTarget "FamousQuotesToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105E7A36218367D6000945DA /* Debug */,
+				105E7A37218367D6000945DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CB8F68218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CB8F69218378F9002236AE /* Debug */,
+				10CB8F6A218378F9002236AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CB8F6C218378F9002236AE /* Build configuration list for PBXNativeTarget "FamousQuotesWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CB8F6D218378F9002236AE /* Debug */,
+				10CB8F6E218378F9002236AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 105E7A052183678E000945DA /* Project object */;
+}

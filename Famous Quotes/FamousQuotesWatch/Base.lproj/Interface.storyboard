@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FamousQuotesWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="pJC-cl-z09">
+                            <items>
+                                <label alignment="left" text="Label" numberOfLines="5" id="1YD-dI-ftR">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                                <label alignment="right" verticalAlignment="bottom" text="Label" id="a71-Qz-L4q"/>
+                            </items>
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="pFV-wv-hDX">
+                                    <connections>
+                                        <action selector="changeQuote:" destination="AgC-eL-Hgc" id="wMH-Ib-7kz"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="a71-Qz-L4q" id="9cs-Pk-jB2"/>
+                        <outlet property="quoteLabel" destination="1YD-dI-ftR" id="V37-bR-8X4"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="137" y="84.5"/>
+        </scene>
+    </scenes>
+</document>
