@@ -14,7 +14,83 @@
 		39DB1F01218364DD00D32B25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1EFF218364DD00D32B25 /* LaunchScreen.storyboard */; };
 		39DB1F092183650A00D32B25 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F082183650A00D32B25 /* Quote.swift */; };
 		39DB1F0C2183658400D32B25 /* QuoteControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F0B2183658400D32B25 /* QuoteControlller.swift */; };
+		39DB1F162183720D00D32B25 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DB1F152183720D00D32B25 /* NotificationCenter.framework */; };
+		39DB1F192183720D00D32B25 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F182183720D00D32B25 /* TodayViewController.swift */; };
+		39DB1F1C2183720D00D32B25 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F1A2183720D00D32B25 /* MainInterface.storyboard */; };
+		39DB1F202183720D00D32B25 /* RandomQuotesWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39DB1F132183720D00D32B25 /* RandomQuotesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39DB1F252183721500D32B25 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F082183650A00D32B25 /* Quote.swift */; };
+		39DB1F262183721800D32B25 /* QuoteControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F0B2183658400D32B25 /* QuoteControlller.swift */; };
+		39DB1F31218377FA00D32B25 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F2F218377FA00D32B25 /* Interface.storyboard */; };
+		39DB1F33218377FB00D32B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F32218377FB00D32B25 /* Assets.xcassets */; };
+		39DB1F3A218377FB00D32B25 /* RandomQuotesWatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 39DB1F39218377FB00D32B25 /* RandomQuotesWatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		39DB1F3F218377FB00D32B25 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F3E218377FB00D32B25 /* InterfaceController.swift */; };
+		39DB1F41218377FB00D32B25 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F40218377FB00D32B25 /* ExtensionDelegate.swift */; };
+		39DB1F43218377FB00D32B25 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F42218377FB00D32B25 /* NotificationController.swift */; };
+		39DB1F45218377FB00D32B25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39DB1F44218377FB00D32B25 /* Assets.xcassets */; };
+		39DB1F4A218377FB00D32B25 /* RandomQuotesWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 39DB1F2D218377FA00D32B25 /* RandomQuotesWatchApp.app */; };
+		39DB1F532183781C00D32B25 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F082183650A00D32B25 /* Quote.swift */; };
+		39DB1F542183781F00D32B25 /* QuoteControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DB1F0B2183658400D32B25 /* QuoteControlller.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39DB1F1E2183720D00D32B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DB1EEB218364DD00D32B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39DB1F122183720D00D32B25;
+			remoteInfo = RandomQuotesWidget;
+		};
+		39DB1F3B218377FB00D32B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DB1EEB218364DD00D32B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39DB1F38218377FB00D32B25;
+			remoteInfo = "RandomQuotesWatchApp Extension";
+		};
+		39DB1F48218377FB00D32B25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39DB1EEB218364DD00D32B25 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39DB1F2C218377FA00D32B25;
+			remoteInfo = RandomQuotesWatchApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		39DB1F242183720E00D32B25 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39DB1F202183720D00D32B25 /* RandomQuotesWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F4E218377FB00D32B25 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				39DB1F3A218377FB00D32B25 /* RandomQuotesWatchApp Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F52218377FB00D32B25 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				39DB1F4A218377FB00D32B25 /* RandomQuotesWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		39DB1EF3218364DD00D32B25 /* RandomQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +102,43 @@
 		39DB1F02218364DD00D32B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39DB1F082183650A00D32B25 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		39DB1F0B2183658400D32B25 /* QuoteControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteControlller.swift; sourceTree = "<group>"; };
+		39DB1F132183720D00D32B25 /* RandomQuotesWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandomQuotesWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DB1F152183720D00D32B25 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		39DB1F182183720D00D32B25 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		39DB1F1B2183720D00D32B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		39DB1F1D2183720D00D32B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39DB1F29218374FC00D32B25 /* RandomQuotesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandomQuotesWidget.entitlements; sourceTree = "<group>"; };
+		39DB1F2A218375E800D32B25 /* RandomQuotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RandomQuotes.entitlements; sourceTree = "<group>"; };
+		39DB1F2D218377FA00D32B25 /* RandomQuotesWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuotesWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DB1F30218377FA00D32B25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		39DB1F32218377FB00D32B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39DB1F34218377FB00D32B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39DB1F39218377FB00D32B25 /* RandomQuotesWatchApp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RandomQuotesWatchApp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39DB1F3E218377FB00D32B25 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		39DB1F40218377FB00D32B25 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		39DB1F42218377FB00D32B25 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		39DB1F44218377FB00D32B25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39DB1F46218377FB00D32B25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39DB1F47218377FB00D32B25 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		39DB1EF0218364DD00D32B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F102183720D00D32B25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DB1F162183720D00D32B25 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F36218377FB00D32B25 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				39DB1EF5218364DD00D32B25 /* RandomQuotes */,
+				39DB1F172183720D00D32B25 /* RandomQuotesWidget */,
+				39DB1F2E218377FA00D32B25 /* RandomQuotesWatchApp */,
+				39DB1F3D218377FB00D32B25 /* RandomQuotesWatchApp Extension */,
+				39DB1F142183720D00D32B25 /* Frameworks */,
 				39DB1EF4218364DD00D32B25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				39DB1EF3218364DD00D32B25 /* RandomQuotes.app */,
+				39DB1F132183720D00D32B25 /* RandomQuotesWidget.appex */,
+				39DB1F2D218377FA00D32B25 /* RandomQuotesWatchApp.app */,
+				39DB1F39218377FB00D32B25 /* RandomQuotesWatchApp Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +174,7 @@
 		39DB1EF5218364DD00D32B25 /* RandomQuotes */ = {
 			isa = PBXGroup;
 			children = (
+				39DB1F2A218375E800D32B25 /* RandomQuotes.entitlements */,
 				39DB1EF6218364DD00D32B25 /* AppDelegate.swift */,
 				39DB1F0A2183651000D32B25 /* Model */,
 				39DB1F0D2183658800D32B25 /* Model Controller */,
@@ -94,6 +211,48 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		39DB1F142183720D00D32B25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39DB1F152183720D00D32B25 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39DB1F172183720D00D32B25 /* RandomQuotesWidget */ = {
+			isa = PBXGroup;
+			children = (
+				39DB1F29218374FC00D32B25 /* RandomQuotesWidget.entitlements */,
+				39DB1F182183720D00D32B25 /* TodayViewController.swift */,
+				39DB1F1A2183720D00D32B25 /* MainInterface.storyboard */,
+				39DB1F1D2183720D00D32B25 /* Info.plist */,
+			);
+			path = RandomQuotesWidget;
+			sourceTree = "<group>";
+		};
+		39DB1F2E218377FA00D32B25 /* RandomQuotesWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				39DB1F2F218377FA00D32B25 /* Interface.storyboard */,
+				39DB1F32218377FB00D32B25 /* Assets.xcassets */,
+				39DB1F34218377FB00D32B25 /* Info.plist */,
+			);
+			path = RandomQuotesWatchApp;
+			sourceTree = "<group>";
+		};
+		39DB1F3D218377FB00D32B25 /* RandomQuotesWatchApp Extension */ = {
+			isa = PBXGroup;
+			children = (
+				39DB1F3E218377FB00D32B25 /* InterfaceController.swift */,
+				39DB1F40218377FB00D32B25 /* ExtensionDelegate.swift */,
+				39DB1F42218377FB00D32B25 /* NotificationController.swift */,
+				39DB1F44218377FB00D32B25 /* Assets.xcassets */,
+				39DB1F46218377FB00D32B25 /* Info.plist */,
+				39DB1F47218377FB00D32B25 /* PushNotificationPayload.apns */,
+			);
+			path = "RandomQuotesWatchApp Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,15 +263,70 @@
 				39DB1EEF218364DD00D32B25 /* Sources */,
 				39DB1EF0218364DD00D32B25 /* Frameworks */,
 				39DB1EF1218364DD00D32B25 /* Resources */,
+				39DB1F242183720E00D32B25 /* Embed App Extensions */,
+				39DB1F52218377FB00D32B25 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				39DB1F1F2183720D00D32B25 /* PBXTargetDependency */,
+				39DB1F49218377FB00D32B25 /* PBXTargetDependency */,
 			);
 			name = RandomQuotes;
 			productName = RandomQuotes;
 			productReference = 39DB1EF3218364DD00D32B25 /* RandomQuotes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		39DB1F122183720D00D32B25 /* RandomQuotesWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39DB1F212183720E00D32B25 /* Build configuration list for PBXNativeTarget "RandomQuotesWidget" */;
+			buildPhases = (
+				39DB1F0F2183720D00D32B25 /* Sources */,
+				39DB1F102183720D00D32B25 /* Frameworks */,
+				39DB1F112183720D00D32B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomQuotesWidget;
+			productName = RandomQuotesWidget;
+			productReference = 39DB1F132183720D00D32B25 /* RandomQuotesWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		39DB1F2C218377FA00D32B25 /* RandomQuotesWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39DB1F4F218377FB00D32B25 /* Build configuration list for PBXNativeTarget "RandomQuotesWatchApp" */;
+			buildPhases = (
+				39DB1F2B218377FA00D32B25 /* Resources */,
+				39DB1F4E218377FB00D32B25 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39DB1F3C218377FB00D32B25 /* PBXTargetDependency */,
+			);
+			name = RandomQuotesWatchApp;
+			productName = RandomQuotesWatchApp;
+			productReference = 39DB1F2D218377FA00D32B25 /* RandomQuotesWatchApp.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		39DB1F38218377FB00D32B25 /* RandomQuotesWatchApp Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39DB1F4B218377FB00D32B25 /* Build configuration list for PBXNativeTarget "RandomQuotesWatchApp Extension" */;
+			buildPhases = (
+				39DB1F35218377FB00D32B25 /* Sources */,
+				39DB1F36218377FB00D32B25 /* Frameworks */,
+				39DB1F37218377FB00D32B25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomQuotesWatchApp Extension";
+			productName = "RandomQuotesWatchApp Extension";
+			productReference = 39DB1F39218377FB00D32B25 /* RandomQuotesWatchApp Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -125,6 +339,25 @@
 				ORGANIZATIONNAME = "Linh Bouniol";
 				TargetAttributes = {
 					39DB1EF2218364DD00D32B25 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					39DB1F122183720D00D32B25 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					39DB1F2C218377FA00D32B25 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					39DB1F38218377FB00D32B25 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
@@ -143,6 +376,9 @@
 			projectRoot = "";
 			targets = (
 				39DB1EF2218364DD00D32B25 /* RandomQuotes */,
+				39DB1F122183720D00D32B25 /* RandomQuotesWidget */,
+				39DB1F2C218377FA00D32B25 /* RandomQuotesWatchApp */,
+				39DB1F38218377FB00D32B25 /* RandomQuotesWatchApp Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +391,31 @@
 				39DB1F01218364DD00D32B25 /* LaunchScreen.storyboard in Resources */,
 				39DB1EFE218364DD00D32B25 /* Assets.xcassets in Resources */,
 				39DB1EFC218364DD00D32B25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F112183720D00D32B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DB1F1C2183720D00D32B25 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F2B218377FA00D32B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DB1F33218377FB00D32B25 /* Assets.xcassets in Resources */,
+				39DB1F31218377FA00D32B25 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F37218377FB00D32B25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DB1F45218377FB00D32B25 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +433,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39DB1F0F2183720D00D32B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DB1F252183721500D32B25 /* Quote.swift in Sources */,
+				39DB1F262183721800D32B25 /* QuoteControlller.swift in Sources */,
+				39DB1F192183720D00D32B25 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39DB1F35218377FB00D32B25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39DB1F542183781F00D32B25 /* QuoteControlller.swift in Sources */,
+				39DB1F532183781C00D32B25 /* Quote.swift in Sources */,
+				39DB1F43218377FB00D32B25 /* NotificationController.swift in Sources */,
+				39DB1F41218377FB00D32B25 /* ExtensionDelegate.swift in Sources */,
+				39DB1F3F218377FB00D32B25 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39DB1F1F2183720D00D32B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39DB1F122183720D00D32B25 /* RandomQuotesWidget */;
+			targetProxy = 39DB1F1E2183720D00D32B25 /* PBXContainerItemProxy */;
+		};
+		39DB1F3C218377FB00D32B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39DB1F38218377FB00D32B25 /* RandomQuotesWatchApp Extension */;
+			targetProxy = 39DB1F3B218377FB00D32B25 /* PBXContainerItemProxy */;
+		};
+		39DB1F49218377FB00D32B25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39DB1F2C218377FA00D32B25 /* RandomQuotesWatchApp */;
+			targetProxy = 39DB1F48218377FB00D32B25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		39DB1EFA218364DD00D32B25 /* Main.storyboard */ = {
@@ -189,6 +490,22 @@
 				39DB1F00218364DD00D32B25 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		39DB1F1A2183720D00D32B25 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39DB1F1B2183720D00D32B25 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		39DB1F2F218377FA00D32B25 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39DB1F30218377FA00D32B25 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -313,9 +630,11 @@
 		39DB1F06218364DD00D32B25 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RandomQuotes/RandomQuotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 39ZVY2XGME;
+				DEVELOPMENT_TEAM = 6FD53Q4Y3Q;
 				INFOPLIST_FILE = RandomQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -331,9 +650,11 @@
 		39DB1F07218364DD00D32B25 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RandomQuotes/RandomQuotes.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 39ZVY2XGME;
+				DEVELOPMENT_TEAM = 6FD53Q4Y3Q;
 				INFOPLIST_FILE = RandomQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -343,6 +664,128 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39DB1F222183720E00D32B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RandomQuotesWidget/RandomQuotesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FD53Q4Y3Q;
+				INFOPLIST_FILE = RandomQuotesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linhbouniol.RandomQuotes.RandomQuotesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39DB1F232183720E00D32B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = RandomQuotesWidget/RandomQuotesWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FD53Q4Y3Q;
+				INFOPLIST_FILE = RandomQuotesWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linhbouniol.RandomQuotes.RandomQuotesWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39DB1F4C218377FB00D32B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39ZVY2XGME;
+				INFOPLIST_FILE = "RandomQuotesWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linhbouniol.RandomQuotes.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		39DB1F4D218377FB00D32B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39ZVY2XGME;
+				INFOPLIST_FILE = "RandomQuotesWatchApp Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.linhbouniol.RandomQuotes.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		39DB1F50218377FB00D32B25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FD53Q4Y3Q;
+				IBSC_MODULE = RandomQuotesWatchApp_Extension;
+				INFOPLIST_FILE = RandomQuotesWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linhbouniol.RandomQuotes.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		39DB1F51218377FB00D32B25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6FD53Q4Y3Q;
+				IBSC_MODULE = RandomQuotesWatchApp_Extension;
+				INFOPLIST_FILE = RandomQuotesWatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linhbouniol.RandomQuotes.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
 			name = Release;
 		};
@@ -363,6 +806,33 @@
 			buildConfigurations = (
 				39DB1F06218364DD00D32B25 /* Debug */,
 				39DB1F07218364DD00D32B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39DB1F212183720E00D32B25 /* Build configuration list for PBXNativeTarget "RandomQuotesWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39DB1F222183720E00D32B25 /* Debug */,
+				39DB1F232183720E00D32B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39DB1F4B218377FB00D32B25 /* Build configuration list for PBXNativeTarget "RandomQuotesWatchApp Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39DB1F4C218377FB00D32B25 /* Debug */,
+				39DB1F4D218377FB00D32B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39DB1F4F218377FB00D32B25 /* Build configuration list for PBXNativeTarget "RandomQuotesWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39DB1F50218377FB00D32B25 /* Debug */,
+				39DB1F51218377FB00D32B25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

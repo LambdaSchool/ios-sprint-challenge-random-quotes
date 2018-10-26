@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandomQuotesWatchApp" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="uee-od-S5Z">
+                            <items>
+                                <label alignment="left" text="Label" numberOfLines="3" id="i9F-p1-1OP"/>
+                                <label alignment="right" verticalAlignment="bottom" text="Label" textAlignment="left" id="MxP-zC-x8i"/>
+                                <button width="0.69999999999999996" height="0.20000000000000001" alignment="center" verticalAlignment="bottom" title="Refresh" id="OP8-TS-3ou">
+                                    <connections>
+                                        <action selector="refresh" destination="AgC-eL-Hgc" id="p5b-qv-x50"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="MxP-zC-x8i" id="B7H-1T-yHp"/>
+                        <outlet property="quoteLabel" destination="i9F-p1-1OP" id="uZE-UN-maN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+    </scenes>
+</document>
