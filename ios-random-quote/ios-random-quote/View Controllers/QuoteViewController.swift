@@ -9,11 +9,26 @@
 import UIKit
 
 class QuoteViewController: UIViewController {
+    // MARK: - Properties
+    let quoteController = QuoteController()
 
+    // MARK: - IBOutlets
     @IBOutlet var quoteLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        quoteController.getQuote { (quote, error) in
+            if let error = error {
+                NSLog("No quote, error: \(error)")
+                return
+            }
+            
+            guard let quote = quote else { return }
+            
+            DispatchQueue.main.async {
+                self.quoteLabel.text = "\(quote.quote) - \(quote.author)"
+            }
+        }
     }
 }
 
