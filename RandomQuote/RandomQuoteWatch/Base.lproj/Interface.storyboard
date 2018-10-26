@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandomQuoteWatch" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="128" alignment="center" text="Quote" id="1d5-8D-GxH"/>
+                        <group width="1" height="18" alignment="left" id="knS-u9-qu3">
+                            <items>
+                                <button width="64" height="15" alignment="left" title="Refresh" id="yE8-XI-YPu">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="handleRefresh" destination="AgC-eL-Hgc" id="wzx-uu-B37"/>
+                                    </connections>
+                                </button>
+                                <label width="67" height="16" alignment="right" verticalAlignment="bottom" text="Author" textAlignment="right" id="vTh-5o-6ZT">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="vTh-5o-6ZT" id="CXf-C9-hTt"/>
+                        <outlet property="quoteLabel" destination="1d5-8D-GxH" id="8cd-sE-U6E"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="159" y="165"/>
+        </scene>
+    </scenes>
+</document>
