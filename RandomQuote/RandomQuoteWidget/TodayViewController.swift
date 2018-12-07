@@ -33,7 +33,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             }
             
             DispatchQueue.main.async {
-                self.quoteTextView.text = quote.quote
+                self.quoteLabel.text = quote.quote
                 self.authorLabel.text = "- \(quote.author)"
             }
             completionHandler(.newData)
@@ -42,6 +42,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     let fetcher = QuoteFetcher()
     
-    @IBOutlet weak var quoteTextView: UITextView!
+    @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
 }

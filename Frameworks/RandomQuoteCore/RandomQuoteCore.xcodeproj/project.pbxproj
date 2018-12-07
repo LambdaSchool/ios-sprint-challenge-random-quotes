@@ -10,6 +10,9 @@
 		7B5732FC21BAD882000CADC6 /* RandomQuoteCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5732FA21BAD882000CADC6 /* RandomQuoteCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B57331121BAD946000CADC6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B57330F21BAD946000CADC6 /* Quote.swift */; };
 		7B57331221BAD946000CADC6 /* QuoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B57331021BAD946000CADC6 /* QuoteFetcher.swift */; };
+		7B57335721BAE2AA000CADC6 /* RandomeQuoteCore_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B57335521BAE2A7000CADC6 /* RandomeQuoteCore_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B57335B21BAE2E6000CADC6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B57330F21BAD946000CADC6 /* Quote.swift */; };
+		7B57335C21BAE2E6000CADC6 /* QuoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B57331021BAD946000CADC6 /* QuoteFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,10 +21,20 @@
 		7B5732FB21BAD882000CADC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B57330F21BAD946000CADC6 /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		7B57331021BAD946000CADC6 /* QuoteFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteFetcher.swift; sourceTree = "<group>"; };
+		7B57335321BAE2A6000CADC6 /* RandomQuoteCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuoteCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B57335521BAE2A7000CADC6 /* RandomeQuoteCore_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomeQuoteCore_watchOS.h; sourceTree = "<group>"; };
+		7B57335621BAE2AA000CADC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7B5732F421BAD881000CADC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B57335021BAE2A6000CADC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +50,7 @@
 				7B57330F21BAD946000CADC6 /* Quote.swift */,
 				7B57331021BAD946000CADC6 /* QuoteFetcher.swift */,
 				7B5732F921BAD881000CADC6 /* RandomQuoteCore */,
+				7B57335421BAE2A6000CADC6 /* RandomeQuoteCore-watchOS */,
 				7B5732F821BAD881000CADC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5732F721BAD881000CADC6 /* RandomQuoteCore.framework */,
+				7B57335321BAE2A6000CADC6 /* RandomQuoteCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +73,15 @@
 			path = RandomQuoteCore;
 			sourceTree = "<group>";
 		};
+		7B57335421BAE2A6000CADC6 /* RandomeQuoteCore-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B57335521BAE2A7000CADC6 /* RandomeQuoteCore_watchOS.h */,
+				7B57335621BAE2AA000CADC6 /* Info.plist */,
+			);
+			path = "RandomeQuoteCore-watchOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -66,6 +90,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5732FC21BAD882000CADC6 /* RandomQuoteCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B57334E21BAE2A6000CADC6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B57335721BAE2AA000CADC6 /* RandomeQuoteCore_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +122,24 @@
 			productReference = 7B5732F721BAD881000CADC6 /* RandomQuoteCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		7B57335221BAE2A6000CADC6 /* RandomeQuoteCore-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B57335821BAE2AA000CADC6 /* Build configuration list for PBXNativeTarget "RandomeQuoteCore-watchOS" */;
+			buildPhases = (
+				7B57334E21BAE2A6000CADC6 /* Headers */,
+				7B57334F21BAE2A6000CADC6 /* Sources */,
+				7B57335021BAE2A6000CADC6 /* Frameworks */,
+				7B57335121BAE2A6000CADC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomeQuoteCore-watchOS";
+			productName = "RandomeQuoteCore-watchOS";
+			productReference = 7B57335321BAE2A6000CADC6 /* RandomQuoteCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +150,9 @@
 				ORGANIZATIONNAME = "Daniela Parra";
 				TargetAttributes = {
 					7B5732F621BAD881000CADC6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7B57335221BAE2A6000CADC6 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -117,12 +170,20 @@
 			projectRoot = "";
 			targets = (
 				7B5732F621BAD881000CADC6 /* RandomQuoteCore */,
+				7B57335221BAE2A6000CADC6 /* RandomeQuoteCore-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7B5732F521BAD881000CADC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B57335121BAE2A6000CADC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,6 +199,15 @@
 			files = (
 				7B57331221BAD946000CADC6 /* QuoteFetcher.swift in Sources */,
 				7B57331121BAD946000CADC6 /* Quote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B57334F21BAE2A6000CADC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B57335C21BAE2E6000CADC6 /* QuoteFetcher.swift in Sources */,
+				7B57335B21BAE2E6000CADC6 /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +386,60 @@
 			};
 			name = Release;
 		};
+		7B57335921BAE2AA000CADC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RandomeQuoteCore-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Daniela.RandomeQuoteCore-watchOS";
+				PRODUCT_NAME = RandomQuoteCore;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		7B57335A21BAE2AA000CADC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "RandomeQuoteCore-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Daniela.RandomeQuoteCore-watchOS";
+				PRODUCT_NAME = RandomQuoteCore;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +457,15 @@
 			buildConfigurations = (
 				7B57330021BAD882000CADC6 /* Debug */,
 				7B57330121BAD882000CADC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B57335821BAE2AA000CADC6 /* Build configuration list for PBXNativeTarget "RandomeQuoteCore-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B57335921BAE2AA000CADC6 /* Debug */,
+				7B57335A21BAE2AA000CADC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
