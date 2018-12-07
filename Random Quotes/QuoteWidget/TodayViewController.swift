@@ -13,11 +13,28 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        widgetPerformUpdate { (result) in
+        widgetPerformUpdate { (_) in
+            
+        }
+    }
+    
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        switch activeDisplayMode {
+        case .compact:
+            preferredContentSize = maxSize
+        case .expanded:
+            preferredContentSize = CGSize(width: maxSize.width, height: 300)
+        }
+    }
+    
+    @IBAction func refresh(_ sender: Any) {
+        widgetPerformUpdate { (_) in
             
         }
     }
