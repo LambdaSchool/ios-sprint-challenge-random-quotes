@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         guard let quote = quote else { return }
         
         quoteLabel.text = quote.quote
-        authorLabel.text = quote.author
+        authorLabel.text = "- \(quote.author)"
     }
     
     private let fetcher = QuoteFetcher()
