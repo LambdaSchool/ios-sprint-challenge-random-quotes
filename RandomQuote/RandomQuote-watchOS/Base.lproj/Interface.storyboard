@@ -16,7 +16,7 @@
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="VCq-Sj-9Fk">
                             <items>
-                                <label width="1" alignment="left" text="Label" id="tIH-07-ElR"/>
+                                <label width="1" alignment="left" text="Label" numberOfLines="0" id="tIH-07-ElR"/>
                                 <label width="1" alignment="left" text="Label" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="shL-ZB-1H0">
                                     <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
                                 </label>
