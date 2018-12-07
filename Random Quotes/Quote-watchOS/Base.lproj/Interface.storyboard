@@ -15,6 +15,11 @@
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="Bac-Rv-6Fh">
                             <items>
+                                <button width="70" height="18" alignment="right" title="Refresh" id="Td0-hI-gDw">
+                                    <connections>
+                                        <action selector="refresh" destination="AgC-eL-Hgc" id="qVh-U0-TXZ"/>
+                                    </connections>
+                                </button>
                                 <label alignment="left" text="Label" numberOfLines="0" id="bGM-yD-g26"/>
                                 <label alignment="right" verticalAlignment="bottom" text="Label" numberOfLines="0" id="yFn-z8-bcb"/>
                             </items>

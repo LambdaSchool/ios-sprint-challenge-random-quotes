@@ -14,7 +14,10 @@ class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        getQuote()
+    }
+    
+    func getQuote() {
         QuoteController.shared.getQuote { (quote, error) in
             if let error = error {
                 NSLog("Error getting Quote on Watch: \(error)")
@@ -28,6 +31,11 @@ class InterfaceController: WKInterfaceController {
             }
         }
     }
+    
+    @IBAction func refresh() {
+        getQuote()
+    }
+    
     
     func updateViews(_ quote: Quote) {
         self.quoteLabel.setText(" \"\(quote.quote)\"  ")
