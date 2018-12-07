@@ -60,6 +60,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="rbZ-aK-vGo" id="VDT-S7-bdv"/>
                         <outlet property="quoteLabel" destination="tz4-xp-l7p" id="Axs-5L-H5G"/>
+                        <outlet property="quoteStackView" destination="PWo-ks-RCQ" id="24h-1p-gcC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

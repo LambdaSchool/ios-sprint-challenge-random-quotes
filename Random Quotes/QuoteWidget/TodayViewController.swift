@@ -22,6 +22,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
             
         }
     }
+    @IBOutlet weak var quoteStackView: UIStackView!
     
     
     func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
@@ -29,7 +30,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         case .compact:
             preferredContentSize = maxSize
         case .expanded:
-            preferredContentSize = CGSize(width: maxSize.width, height: 300)
+            let quoteSize = quoteStackView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+            preferredContentSize = CGSize(width: maxSize.width, height: quoteSize.height)
         }
     }
     
