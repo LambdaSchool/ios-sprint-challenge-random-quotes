@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Random_Quotes_watchOS" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="YEd-ow-wxd">
+                            <items>
+                                <label width="136" height="127" alignment="center" text="Quote" numberOfLines="0" id="c2p-b6-4UP"/>
+                                <label alignment="right" verticalAlignment="bottom" text="Author" id="K6N-rN-LGn"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="K6N-rN-LGn" id="uce-AE-hsW"/>
+                        <outlet property="quoteLabel" destination="c2p-b6-4UP" id="Jq7-4R-GvI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="24.391304347826086" y="23.526785714285715"/>
+        </scene>
+    </scenes>
+</document>
