@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Quote_watchOS" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="Bac-Rv-6Fh">
+                            <items>
+                                <button width="70" height="18" alignment="right" title="Refresh" id="Td0-hI-gDw">
+                                    <connections>
+                                        <action selector="refresh" destination="AgC-eL-Hgc" id="qVh-U0-TXZ"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" text="Label" numberOfLines="0" id="bGM-yD-g26"/>
+                                <label alignment="right" verticalAlignment="bottom" text="Label" numberOfLines="0" id="yFn-z8-bcb"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="yFn-z8-bcb" id="ndD-ga-pE4"/>
+                        <outlet property="quoteLabel" destination="bGM-yD-g26" id="U5e-5D-YCn"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
