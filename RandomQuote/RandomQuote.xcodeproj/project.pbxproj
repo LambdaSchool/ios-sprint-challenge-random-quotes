@@ -12,9 +12,40 @@
 		7B5732DC21BACF88000CADC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5732DA21BACF88000CADC6 /* Main.storyboard */; };
 		7B5732DE21BACF90000CADC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5732DD21BACF90000CADC6 /* Assets.xcassets */; };
 		7B5732E121BACF90000CADC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B5732DF21BACF90000CADC6 /* LaunchScreen.storyboard */; };
-		7B5732E921BAD105000CADC6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5732E821BAD105000CADC6 /* Quote.swift */; };
-		7B5732EC21BAD179000CADC6 /* QuoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5732EB21BAD179000CADC6 /* QuoteFetcher.swift */; };
+		7B57330A21BAD930000CADC6 /* RandomQuoteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B57330921BAD8F2000CADC6 /* RandomQuoteCore.framework */; };
+		7B57330B21BAD930000CADC6 /* RandomQuoteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7B57330921BAD8F2000CADC6 /* RandomQuoteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B57330821BAD8F2000CADC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B57330421BAD8F1000CADC6 /* RandomQuoteCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B5732F721BAD881000CADC6;
+			remoteInfo = RandomQuoteCore;
+		};
+		7B57330C21BAD930000CADC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B57330421BAD8F1000CADC6 /* RandomQuoteCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B5732F621BAD881000CADC6;
+			remoteInfo = RandomQuoteCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B57330E21BAD930000CADC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7B57330B21BAD930000CADC6 /* RandomQuoteCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7B5732D321BACF88000CADC6 /* RandomQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,8 +55,7 @@
 		7B5732DD21BACF90000CADC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B5732E021BACF90000CADC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B5732E221BACF90000CADC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B5732E821BAD105000CADC6 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		7B5732EB21BAD179000CADC6 /* QuoteFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteFetcher.swift; sourceTree = "<group>"; };
+		7B57330421BAD8F1000CADC6 /* RandomQuoteCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RandomQuoteCore.xcodeproj; path = ../../Frameworks/RandomQuoteCore/RandomQuoteCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B57330A21BAD930000CADC6 /* RandomQuoteCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				7B5732D521BACF88000CADC6 /* RandomQuote */,
+				7B57330321BAD8C2000CADC6 /* Framework */,
 				7B5732D421BACF88000CADC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,14 +92,28 @@
 			children = (
 				7B5732D621BACF88000CADC6 /* AppDelegate.swift */,
 				7B5732D821BACF88000CADC6 /* ViewController.swift */,
-				7B5732E821BAD105000CADC6 /* Quote.swift */,
-				7B5732EB21BAD179000CADC6 /* QuoteFetcher.swift */,
 				7B5732DA21BACF88000CADC6 /* Main.storyboard */,
 				7B5732DD21BACF90000CADC6 /* Assets.xcassets */,
 				7B5732DF21BACF90000CADC6 /* LaunchScreen.storyboard */,
 				7B5732E221BACF90000CADC6 /* Info.plist */,
 			);
 			path = RandomQuote;
+			sourceTree = "<group>";
+		};
+		7B57330321BAD8C2000CADC6 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7B57330421BAD8F1000CADC6 /* RandomQuoteCore.xcodeproj */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		7B57330521BAD8F1000CADC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B57330921BAD8F2000CADC6 /* RandomQuoteCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,10 +126,12 @@
 				7B5732CF21BACF88000CADC6 /* Sources */,
 				7B5732D021BACF88000CADC6 /* Frameworks */,
 				7B5732D121BACF88000CADC6 /* Resources */,
+				7B57330E21BAD930000CADC6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B57330D21BAD930000CADC6 /* PBXTargetDependency */,
 			);
 			name = RandomQuote;
 			productName = RandomQuote;
@@ -116,12 +164,28 @@
 			mainGroup = 7B5732CA21BACF88000CADC6;
 			productRefGroup = 7B5732D421BACF88000CADC6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7B57330521BAD8F1000CADC6 /* Products */;
+					ProjectRef = 7B57330421BAD8F1000CADC6 /* RandomQuoteCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				7B5732D221BACF88000CADC6 /* RandomQuote */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7B57330921BAD8F2000CADC6 /* RandomQuoteCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RandomQuoteCore.framework;
+			remoteRef = 7B57330821BAD8F2000CADC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		7B5732D121BACF88000CADC6 /* Resources */ = {
@@ -141,14 +205,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B5732EC21BAD179000CADC6 /* QuoteFetcher.swift in Sources */,
 				7B5732D921BACF88000CADC6 /* ViewController.swift in Sources */,
-				7B5732E921BAD105000CADC6 /* Quote.swift in Sources */,
 				7B5732D721BACF88000CADC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B57330D21BAD930000CADC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RandomQuoteCore;
+			targetProxy = 7B57330C21BAD930000CADC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7B5732DA21BACF88000CADC6 /* Main.storyboard */ = {
