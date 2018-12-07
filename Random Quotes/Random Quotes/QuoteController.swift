@@ -11,6 +11,8 @@ import Foundation
 
 class QuoteController {
     
+    static let shared = QuoteController()
+    
     
     func getQuote(completion: @escaping (Quote?, Error?) -> Void) {
         var request = URLRequest(url: baseUrl)
