@@ -32,7 +32,10 @@ public class QuoteFetcher {
             request.setValue(value, forHTTPHeaderField: key)
         }
         
-        guard let url = URL(string: baseURL) else { return }
+//        guard let url = URL(string: baseURL) else { return }
+        
+
+        
 
         
         URLSession.shared.dataTask(with: request) { (data, _, error) in
