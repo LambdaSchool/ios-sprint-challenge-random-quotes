@@ -15,7 +15,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        self.extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
@@ -40,8 +40,39 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         }
     }
     
+    @IBAction func getNewQuote(_ sender: Any) {
+        fetcher.fetchRandomQuote { (quote, error) in
+            if let error = error {
+                NSLog("\(error)")
+                return
+            }
+            
+            guard let quote = quote else {
+                NSLog("No quote was fetched")
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self.quoteLabel.text = quote.quote
+                self.authorLabel.text = "- \(quote.author)"
+            }
+        }
+    }
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        switch activeDisplayMode {
+        case .compact:
+            preferredContentSize = maxSize
+            self.newQuoteButton.isHidden = true
+        case .expanded:
+            preferredContentSize = CGSize(width: maxSize.width, height: 200)
+            self.newQuoteButton.isHidden = false
+        }
+    }
+    
     let fetcher = QuoteFetcher()
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var newQuoteButton: UIButton!
 }
