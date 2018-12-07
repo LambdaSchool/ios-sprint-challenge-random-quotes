@@ -18,39 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQR-ed-DJ2">
-                                <rect key="frame" x="139" y="117" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-da-vpj">
-                                <rect key="frame" x="16" y="20" width="259" height="110"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-da-vpj">
+                                <rect key="frame" x="16" y="8" width="250" height="122"/>
+                                <fontDescription key="fontDescription" name="Papyrus-Condensed" family="Papyrus" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↺" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nM-0o-4D5">
-                                <rect key="frame" x="283" y="60" width="21" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="21" id="Yx3-VK-pbr"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkL-h8-RDo">
+                                <rect key="frame" x="274" y="30" width="30" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="↺"/>
+                                <connections>
+                                    <action selector="newQuote:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="VkP-R6-Oos"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="0nM-0o-4D5" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="1QO-Ng-vw1"/>
-                            <constraint firstItem="1ho-da-vpj" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="20" symbolic="YES" id="6ia-kG-FMS"/>
-                            <constraint firstItem="0nM-0o-4D5" firstAttribute="leading" secondItem="1ho-da-vpj" secondAttribute="trailing" constant="8" symbolic="YES" id="BZu-eb-kcW"/>
-                            <constraint firstItem="1ho-da-vpj" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="F4B-pc-kr5"/>
-                            <constraint firstAttribute="bottom" secondItem="1ho-da-vpj" secondAttribute="bottom" constant="20" symbolic="YES" id="wDf-Vl-tr6"/>
-                            <constraint firstItem="1ho-da-vpj" firstAttribute="centerY" secondItem="0nM-0o-4D5" secondAttribute="centerY" id="wFm-O3-3J2"/>
+                            <constraint firstItem="bkL-h8-RDo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ho-da-vpj" secondAttribute="trailing" constant="8" symbolic="YES" id="6eu-41-S1e"/>
+                            <constraint firstItem="1ho-da-vpj" firstAttribute="width" secondItem="S3S-Oj-5AN" secondAttribute="width" constant="-70" id="Di8-hN-liW"/>
+                            <constraint firstItem="1ho-da-vpj" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="K1E-eT-PXE"/>
+                            <constraint firstAttribute="bottom" secondItem="1ho-da-vpj" secondAttribute="bottom" constant="20" symbolic="YES" id="REM-6a-pWM"/>
+                            <constraint firstItem="1ho-da-vpj" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="8" id="eS0-ik-K1B"/>
+                            <constraint firstItem="bkL-h8-RDo" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="eTc-4h-EEg"/>
+                            <constraint firstItem="bkL-h8-RDo" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="30" id="fGJ-iI-bYJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="quoteLabel" destination="1ho-da-vpj" id="3dO-s3-VSj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

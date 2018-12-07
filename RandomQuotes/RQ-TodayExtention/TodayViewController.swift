@@ -10,20 +10,44 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    var displayQuote: Quote?{
+        didSet{
+            DispatchQueue.main.async {
+                self.updateLabel()
+            }
+        }
+    }
+    
+    @IBOutlet weak var quoteLabel: UILabel!
+    
+    
+    @IBAction func newQuote(_ sender: Any) {
+        let qc = QuoteController()
+        qc.fetchRandomQuote { (quote, _) in
+            self.displayQuote = quote
+        }
+    }
+    
+    func updateLabel(){
+        guard let displayQuote = displayQuote else {return}
+        quoteLabel.text = displayQuote.quote + " - " + displayQuote.author
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        newQuote(self)
     }
-        
-    func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
-        completionHandler(NCUpdateResult.newData)
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        if (activeDisplayMode == .compact){
+            // Changed to compact mode
+            self.preferredContentSize = maxSize;
+        }
+        else{
+            // Changed to expanded mode
+            self.preferredContentSize = maxSize
+        }
     }
     
 }
