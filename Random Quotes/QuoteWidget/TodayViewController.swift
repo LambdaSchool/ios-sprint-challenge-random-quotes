@@ -15,6 +15,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        widgetPerformUpdate { (result) in
+            
+        }
+    }
+    
     func updateViews(_ quote: Quote) {
         self.quoteLabel.text = " \"\(quote.quote)\"  "
         self.authorLabel.text = " - \(quote.author)"
