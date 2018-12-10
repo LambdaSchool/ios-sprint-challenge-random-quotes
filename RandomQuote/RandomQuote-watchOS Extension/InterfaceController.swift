@@ -11,6 +11,8 @@ import Foundation
 import RandomQuoteCore
 
 class InterfaceController: WKInterfaceController {
+    
+    // MARK: - Properties
 
     @IBOutlet weak var quoteLabel: WKInterfaceLabel!
     @IBOutlet weak var authorLabel: WKInterfaceLabel!
@@ -29,8 +31,13 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         fetchNewQuote()
-
     }
+    
+    @IBAction func fetchQuoteButton() {
+        fetchNewQuote()
+    }
+    
+    // MARK: - Private Functions
     
     private func fetchNewQuote() {
         fetcher.fetchQuote { (quote, error) in
@@ -40,10 +47,6 @@ class InterfaceController: WKInterfaceController {
             }
             self.quote = quote
         }
-    }
-    
-    @IBAction func fetchQuoteButton() {
-        fetchNewQuote()
     }
     
     private func updateViews() {
