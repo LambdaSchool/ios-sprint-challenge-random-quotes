@@ -14,6 +14,10 @@
 		F10562D421BE247700F43931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10562D221BE247700F43931 /* LaunchScreen.storyboard */; };
 		F105630621BE380B00F43931 /* RandomQuoteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F105630121BE376D00F43931 /* RandomQuoteCore.framework */; };
 		F105630721BE380B00F43931 /* RandomQuoteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F105630121BE376D00F43931 /* RandomQuoteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F105631121BE390900F43931 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F105631021BE390900F43931 /* NotificationCenter.framework */; };
+		F105631421BE390900F43931 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F105631321BE390900F43931 /* TodayViewController.swift */; };
+		F105631721BE390900F43931 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F105631521BE390900F43931 /* MainInterface.storyboard */; };
+		F105631B21BE390900F43931 /* RandomQuoteWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F105630F21BE390800F43931 /* RandomQuoteWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,13 @@
 			remoteGlobalIDString = F10562EF21BE371800F43931;
 			remoteInfo = RandomQuoteCore;
 		};
+		F105631921BE390900F43931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10562BE21BE247600F43931 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F105630E21BE390800F43931;
+			remoteInfo = RandomQuoteWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +56,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F105631F21BE390900F43931 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F105631B21BE390900F43931 /* RandomQuoteWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +78,11 @@
 		F10562D321BE247700F43931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10562D521BE247700F43931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RandomQuoteCore.xcodeproj; path = ../../Frameworks/RandomQuoteCore/RandomQuoteCore.xcodeproj; sourceTree = "<group>"; };
+		F105630F21BE390800F43931 /* RandomQuoteWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandomQuoteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F105631021BE390900F43931 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F105631321BE390900F43931 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F105631621BE390900F43931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		F105631821BE390900F43931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +94,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F105630C21BE390800F43931 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F105631121BE390900F43931 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F10562C821BE247600F43931 /* RandomQuote */,
+				F105631221BE390900F43931 /* RandomQuoteWidget */,
 				F10562FB21BE375200F43931 /* Frameworks */,
 				F10562C721BE247600F43931 /* Products */,
 			);
@@ -83,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F10562C621BE247600F43931 /* RandomQuote.app */,
+				F105630F21BE390800F43931 /* RandomQuoteWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */,
+				F105631021BE390900F43931 /* NotificationCenter.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +176,16 @@
 				F105630121BE376D00F43931 /* RandomQuoteCore.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F105631221BE390900F43931 /* RandomQuoteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F105631321BE390900F43931 /* TodayViewController.swift */,
+				F105631521BE390900F43931 /* MainInterface.storyboard */,
+				F105631821BE390900F43931 /* Info.plist */,
+			);
+			path = RandomQuoteWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,16 +199,35 @@
 				F10562C321BE247600F43931 /* Frameworks */,
 				F10562C421BE247600F43931 /* Resources */,
 				F105630A21BE380C00F43931 /* Embed Frameworks */,
+				F105631F21BE390900F43931 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F105630921BE380C00F43931 /* PBXTargetDependency */,
+				F105631A21BE390900F43931 /* PBXTargetDependency */,
 			);
 			name = RandomQuote;
 			productName = RandomQuote;
 			productReference = F10562C621BE247600F43931 /* RandomQuote.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F105630E21BE390800F43931 /* RandomQuoteWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F105631C21BE390900F43931 /* Build configuration list for PBXNativeTarget "RandomQuoteWidget" */;
+			buildPhases = (
+				F105630B21BE390800F43931 /* Sources */,
+				F105630C21BE390800F43931 /* Frameworks */,
+				F105630D21BE390800F43931 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomQuoteWidget;
+			productName = RandomQuoteWidget;
+			productReference = F105630F21BE390800F43931 /* RandomQuoteWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -173,6 +240,9 @@
 				ORGANIZATIONNAME = "Scott Bennett";
 				TargetAttributes = {
 					F10562C521BE247600F43931 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F105630E21BE390800F43931 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -197,6 +267,7 @@
 			projectRoot = "";
 			targets = (
 				F10562C521BE247600F43931 /* RandomQuote */,
+				F105630E21BE390800F43931 /* RandomQuoteWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +293,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F105630D21BE390800F43931 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F105631721BE390900F43931 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -234,6 +313,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F105630B21BE390800F43931 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F105631421BE390900F43931 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -241,6 +328,11 @@
 			isa = PBXTargetDependency;
 			name = RandomQuoteCore;
 			targetProxy = F105630821BE380C00F43931 /* PBXContainerItemProxy */;
+		};
+		F105631A21BE390900F43931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F105630E21BE390800F43931 /* RandomQuoteWidget */;
+			targetProxy = F105631921BE390900F43931 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -259,6 +351,14 @@
 				F10562D321BE247700F43931 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F105631521BE390900F43931 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F105631621BE390900F43931 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -418,6 +518,44 @@
 			};
 			name = Release;
 		};
+		F105631D21BE390900F43931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KBWP959TD;
+				INFOPLIST_FILE = RandomQuoteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.expertservices.RandomQuote.RandomQuoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F105631E21BE390900F43931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5KBWP959TD;
+				INFOPLIST_FILE = RandomQuoteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.expertservices.RandomQuote.RandomQuoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +573,15 @@
 			buildConfigurations = (
 				F10562D921BE247700F43931 /* Debug */,
 				F10562DA21BE247700F43931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F105631C21BE390900F43931 /* Build configuration list for PBXNativeTarget "RandomQuoteWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F105631D21BE390900F43931 /* Debug */,
+				F105631E21BE390900F43931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
