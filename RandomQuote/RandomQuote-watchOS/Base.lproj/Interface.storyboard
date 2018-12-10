@@ -16,8 +16,8 @@
                     <items>
                         <group width="1" alignment="left" layout="vertical" id="gk2-7v-NbA">
                             <items>
-                                <label width="136" height="103" alignment="center" text="Quote" numberOfLines="0" id="wUW-qn-59r"/>
-                                <label alignment="right" verticalAlignment="bottom" text="Author" textAlignment="right" id="aPi-Xi-rVP"/>
+                                <label width="136" height="103" alignment="center" numberOfLines="0" id="wUW-qn-59r"/>
+                                <label alignment="right" verticalAlignment="bottom" textAlignment="right" id="aPi-Xi-rVP"/>
                             </items>
                         </group>
                         <button width="1" alignment="left" title="Get New Quote" id="Zy1-Ba-qxE">
