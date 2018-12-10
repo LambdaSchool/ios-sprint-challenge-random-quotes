@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandomQuote_watchOS" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="gk2-7v-NbA">
+                            <items>
+                                <label width="136" height="103" alignment="center" numberOfLines="0" id="wUW-qn-59r"/>
+                                <label alignment="right" verticalAlignment="bottom" textAlignment="right" id="aPi-Xi-rVP"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Get New Quote" id="Zy1-Ba-qxE">
+                            <connections>
+                                <action selector="fetchQuoteButton" destination="AgC-eL-Hgc" id="j3v-O9-vPV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="aPi-Xi-rVP" id="ilO-dL-cju"/>
+                        <outlet property="quoteLabel" destination="wUW-qn-59r" id="sOH-ji-NGP"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="24.285714285714285"/>
+        </scene>
+    </scenes>
+</document>
