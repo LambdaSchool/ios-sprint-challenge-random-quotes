@@ -1,8 +1,8 @@
 //
 //  Quote.swift
-//  Random Quote-Core
+//  RandomQuote
 //
-//  Created by Scott Bennett on 12/7/18.
+//  Created by Scott Bennett on 12/9/18.
 //  Copyright © 2018 Scott Bennett. All rights reserved.
 //
 
