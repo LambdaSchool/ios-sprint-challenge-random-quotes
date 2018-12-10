@@ -12,9 +12,40 @@
 		F10562CF21BE247600F43931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10562CD21BE247600F43931 /* Main.storyboard */; };
 		F10562D121BE247700F43931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10562D021BE247700F43931 /* Assets.xcassets */; };
 		F10562D421BE247700F43931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10562D221BE247700F43931 /* LaunchScreen.storyboard */; };
-		F10562DF21BE250000F43931 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10562DE21BE250000F43931 /* Quote.swift */; };
-		F10562E421BE258100F43931 /* QuoteFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10562E321BE258100F43931 /* QuoteFetcher.swift */; };
+		F105630621BE380B00F43931 /* RandomQuoteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F105630121BE376D00F43931 /* RandomQuoteCore.framework */; };
+		F105630721BE380B00F43931 /* RandomQuoteCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F105630121BE376D00F43931 /* RandomQuoteCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F105630021BE376D00F43931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F10562F021BE371800F43931;
+			remoteInfo = RandomQuoteCore;
+		};
+		F105630821BE380C00F43931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F10562EF21BE371800F43931;
+			remoteInfo = RandomQuoteCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F105630A21BE380C00F43931 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F105630721BE380B00F43931 /* RandomQuoteCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F10562C621BE247600F43931 /* RandomQuote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,8 +55,7 @@
 		F10562D021BE247700F43931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10562D321BE247700F43931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F10562D521BE247700F43931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F10562DE21BE250000F43931 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		F10562E321BE258100F43931 /* QuoteFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteFetcher.swift; sourceTree = "<group>"; };
+		F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RandomQuoteCore.xcodeproj; path = ../../Frameworks/RandomQuoteCore/RandomQuoteCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F105630621BE380B00F43931 /* RandomQuoteCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F10562C821BE247600F43931 /* RandomQuote */,
+				F10562FB21BE375200F43931 /* Frameworks */,
 				F10562C721BE247600F43931 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,10 +90,7 @@
 		F10562C821BE247600F43931 /* RandomQuote */ = {
 			isa = PBXGroup;
 			children = (
-				F10562DD21BE24E400F43931 /* Model */,
-				F10562E021BE250800F43931 /* Model Controllers */,
 				F10562E121BE251700F43931 /* View Controllers */,
-				F10562E221BE256500F43931 /* Networking */,
 				F10562DC21BE249100F43931 /* Storyboards */,
 				F10562DB21BE248700F43931 /* Resources */,
 			);
@@ -87,21 +116,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		F10562DD21BE24E400F43931 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F10562DE21BE250000F43931 /* Quote.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F10562E021BE250800F43931 /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
-			sourceTree = "<group>";
-		};
 		F10562E121BE251700F43931 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,12 +124,20 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		F10562E221BE256500F43931 /* Networking */ = {
+		F10562FB21BE375200F43931 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F10562E321BE258100F43931 /* QuoteFetcher.swift */,
+				F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */,
 			);
-			path = Networking;
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F10562FD21BE376D00F43931 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F105630121BE376D00F43931 /* RandomQuoteCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,10 +150,12 @@
 				F10562C221BE247600F43931 /* Sources */,
 				F10562C321BE247600F43931 /* Frameworks */,
 				F10562C421BE247600F43931 /* Resources */,
+				F105630A21BE380C00F43931 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F105630921BE380C00F43931 /* PBXTargetDependency */,
 			);
 			name = RandomQuote;
 			productName = RandomQuote;
@@ -164,12 +188,28 @@
 			mainGroup = F10562BD21BE247600F43931;
 			productRefGroup = F10562C721BE247600F43931 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F10562FD21BE376D00F43931 /* Products */;
+					ProjectRef = F10562FC21BE376D00F43931 /* RandomQuoteCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F10562C521BE247600F43931 /* RandomQuote */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F105630121BE376D00F43931 /* RandomQuoteCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RandomQuoteCore.framework;
+			remoteRef = F105630021BE376D00F43931 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F10562C421BE247600F43931 /* Resources */ = {
@@ -189,14 +229,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10562E421BE258100F43931 /* QuoteFetcher.swift in Sources */,
 				F10562CC21BE247600F43931 /* ViewController.swift in Sources */,
-				F10562DF21BE250000F43931 /* Quote.swift in Sources */,
 				F10562CA21BE247600F43931 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F105630921BE380C00F43931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RandomQuoteCore;
+			targetProxy = F105630821BE380C00F43931 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F10562CD21BE247600F43931 /* Main.storyboard */ = {
@@ -337,6 +383,7 @@
 		F10562D921BE247700F43931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KBWP959TD;
@@ -355,6 +402,7 @@
 		F10562DA21BE247700F43931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KBWP959TD;
