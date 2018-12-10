@@ -738,6 +738,7 @@
 		F105631D21BE390900F43931 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KBWP959TD;
 				INFOPLIST_FILE = RandomQuoteWidget/Info.plist;
@@ -757,6 +758,7 @@
 		F105631E21BE390900F43931 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KBWP959TD;
 				INFOPLIST_FILE = RandomQuoteWidget/Info.plist;
