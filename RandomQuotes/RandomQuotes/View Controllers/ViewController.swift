@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var quoteTextView: UITextView!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let quotesController = QuotesController()
     
@@ -39,6 +40,7 @@ class ViewController: UIViewController {
     }
     
     private func fetchSingleQuote() {
+        activityIndicator.startAnimating()
         quotesController.getQuotes { (quote, error) in
             if let error = error {
                 let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
@@ -49,6 +51,10 @@ class ViewController: UIViewController {
             guard let quote = quote else {return}
             
             self.quotes = quote
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+            }
+            
         }
     }
 
