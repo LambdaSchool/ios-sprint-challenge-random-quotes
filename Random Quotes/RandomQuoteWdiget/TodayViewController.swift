@@ -34,8 +34,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
         guard let quote = quote, isViewLoaded else { return }
         
-        quoteLabel.text = quote.quote
-        authorLabel.text = quote.author
+        quoteLabel.text = "\"\(quote.quote)\""
+        authorLabel.text = "- \(quote.author)"
     }
     
     // MARK: - Properties

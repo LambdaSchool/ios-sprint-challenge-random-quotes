@@ -19,7 +19,6 @@ public class QuoteController {
         urlComponents?.queryItems = [URLQueryItem(name: "cat", value: "famous")]
         
         let url = urlComponents?.url
-        
         var request = URLRequest(url: url!)
         
         request.setValue(apiKey, forHTTPHeaderField: "X-RapidAPI-Key")
@@ -40,9 +39,9 @@ public class QuoteController {
             do {
                 let jsonDecoder = JSONDecoder()
                 
-                let quoteDictionary = try jsonDecoder.decode([String : Quote].self, from: data)
+                let quoteArray = try jsonDecoder.decode([Quote].self, from: data)
                 
-                let quote = quoteDictionary.first?.value
+                let quote = quoteArray.first
                 
                 completion(quote, nil)
             } catch {
