@@ -32,7 +32,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     private func updateViews() {
         
+        guard let quote = quote, isViewLoaded else { return }
         
+        quoteLabel.text = quote.quote
+        authorLabel.text = quote.author
     }
     
     // MARK: - Properties
@@ -47,4 +50,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     let quoteController = QuoteController()
     
+    @IBOutlet var quoteLabel: UILabel!
+    @IBOutlet var authorLabel: UILabel!
 }

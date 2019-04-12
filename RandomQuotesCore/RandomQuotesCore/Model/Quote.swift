@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Quote {
+public struct Quote: Codable {
     
     public let quote: String
     public let author: String
