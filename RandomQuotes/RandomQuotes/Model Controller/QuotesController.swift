@@ -11,7 +11,7 @@ import Foundation
 class QuotesController {
     
     private let baseUrl = URL(string: "https://andruxnet-random-famous-quotes.p.mashape.com/")!
-    private let apiKey = ""
+    private let apiKey = "f4Gbv51qWQmshRRneu7T312vs1Qwp164MuIjsnVfxaH9SgAOSP"
 
     private let urlSession: URLSession
     

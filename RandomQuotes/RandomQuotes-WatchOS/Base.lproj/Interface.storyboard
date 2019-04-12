@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandomQuotes_WatchOS" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="zzY-jF-Cur">
+                            <items>
+                                <label width="1" alignment="left" text="Loading quotes..." numberOfLines="0" id="NAK-4u-hR7"/>
+                            </items>
+                        </group>
+                        <group alignment="left" id="Rg4-bq-hxW">
+                            <items>
+                                <label alignment="left" text="Author" id="xnz-wu-sMU"/>
+                            </items>
+                        </group>
+                        <group height="33" alignment="center" verticalAlignment="bottom" id="ChZ-Qt-Cjw">
+                            <items>
+                                <button height="1" alignment="left" verticalAlignment="bottom" title="Fetch Quote" id="0jB-VK-zqk">
+                                    <connections>
+                                        <action selector="loadQuoteButtonPressed" destination="AgC-eL-Hgc" id="PTk-Dw-Sn6"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="xnz-wu-sMU" id="Ktq-ib-8lC"/>
+                        <outlet property="quoteLabel" destination="NAK-4u-hR7" id="Hnm-HB-lac"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
