@@ -63,9 +63,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="DfG-7e-Ick">
+                                <rect key="frame" x="150" y="151.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="3HM-R9-06d" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="2Lj-be-aTk"/>
+                            <constraint firstItem="DfG-7e-Ick" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="5lJ-MI-Lbb"/>
+                            <constraint firstItem="DfG-7e-Ick" firstAttribute="centerX" secondItem="S3S-Oj-5AN" secondAttribute="centerX" id="GPw-Df-2Ti"/>
                             <constraint firstItem="3HM-R9-06d" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="PwY-Xc-1GR"/>
                             <constraint firstAttribute="bottom" secondItem="3HM-R9-06d" secondAttribute="bottom" constant="5" id="ah2-EZ-edC"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="3HM-R9-06d" secondAttribute="trailing" constant="10" id="dW8-aR-Lke"/>
@@ -76,6 +81,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="323"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="DfG-7e-Ick" id="HMk-f5-gUh"/>
                         <outlet property="authorLabel" destination="CeQ-CC-sHq" id="BYv-Xh-61p"/>
                         <outlet property="fetchQuoteButton" destination="AbM-ed-4A1" id="dDp-Hw-pON"/>
                         <outlet property="quoteTextView" destination="Rei-Yn-MrQ" id="3tb-wG-aLv"/>
