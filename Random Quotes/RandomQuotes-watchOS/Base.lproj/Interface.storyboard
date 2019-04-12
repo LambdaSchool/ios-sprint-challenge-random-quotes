@@ -16,11 +16,15 @@
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="ASe-C8-MmY">
                             <items>
-                                <label width="1" height="0.80000000000000004" alignment="center" text="Label" textAlignment="center" id="q1w-RI-Zj2"/>
-                                <label alignment="right" text="Label" minimumScaleFactor="0.59999999999999998" id="9nO-pT-7ae"/>
+                                <label width="1" height="0.80000000000000004" alignment="center" textAlignment="center" numberOfLines="0" id="q1w-RI-Zj2"/>
+                                <label alignment="right" minimumScaleFactor="0.59999999999999998" id="9nO-pT-7ae"/>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="9nO-pT-7ae" id="9T0-Nx-tI5"/>
+                        <outlet property="quoteLabel" destination="q1w-RI-Zj2" id="7pL-Gu-A7D"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

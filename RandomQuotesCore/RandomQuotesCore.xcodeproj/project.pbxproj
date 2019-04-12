@@ -11,6 +11,8 @@
 		3962EC922260F913002A32C7 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC912260F913002A32C7 /* QuoteController.swift */; };
 		3962EC942260F91D002A32C7 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC932260F91D002A32C7 /* Quote.swift */; };
 		3962ED0822611F76002A32C7 /* RandomQuotesCore_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 3962ED0622611F76002A32C7 /* RandomQuotesCore_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3962ED1F226124AF002A32C7 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC932260F91D002A32C7 /* Quote.swift */; };
+		3962ED20226124AF002A32C7 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC912260F913002A32C7 /* QuoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,6 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3962ED20226124AF002A32C7 /* QuoteController.swift in Sources */,
+				3962ED1F226124AF002A32C7 /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
