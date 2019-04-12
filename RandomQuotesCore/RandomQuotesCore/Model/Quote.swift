@@ -8,4 +8,8 @@
 
 import Foundation
 
-
+public struct Quote {
+    
+    public let quote: String
+    public let author: String
+}

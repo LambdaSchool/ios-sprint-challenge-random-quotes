@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+public class QuoteController {
+    
+    public init() {}
+    
+    public func fetchRandomQuote(completion: @escaping (Quote?, Error?) -> Void) {
+        
+        
+        
+    }
+    
+    private let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.rapidapi.com/")!
+}

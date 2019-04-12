@@ -505,6 +505,7 @@
 		3962EC8D2260F494002A32C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZRKC88876;
 				INFOPLIST_FILE = RandomQuoteWdiget/Info.plist;
@@ -524,6 +525,7 @@
 		3962EC8E2260F494002A32C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZRKC88876;
 				INFOPLIST_FILE = RandomQuoteWdiget/Info.plist;
