@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     private func updateViews() {
         
-        guard let quote = quotes else {return}
+        guard let quote = quotes, isViewLoaded else {return}
         DispatchQueue.main.async {
             self.quoteTextView.text = "\(quote.quote)"
             self.authorLabel.text = "- \(quote.author)"
