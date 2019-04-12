@@ -14,7 +14,9 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+    }
+    
+    override func didAppear() {
         quoteController.fetchRandomQuote { (quote, error) in
             
             if let error = error {
