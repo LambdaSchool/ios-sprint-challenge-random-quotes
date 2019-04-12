@@ -12,7 +12,40 @@
 		3962EC4C2260F26E002A32C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3962EC4A2260F26E002A32C7 /* Main.storyboard */; };
 		3962EC4E2260F26F002A32C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3962EC4D2260F26F002A32C7 /* Assets.xcassets */; };
 		3962EC512260F26F002A32C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3962EC4F2260F26F002A32C7 /* LaunchScreen.storyboard */; };
+		3962EC742260F3A1002A32C7 /* RandomQuotesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */; };
+		3962EC752260F3A1002A32C7 /* RandomQuotesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3962EC722260F38F002A32C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3962EC622260F350002A32C7;
+			remoteInfo = RandomQuotesCore;
+		};
+		3962EC762260F3A1002A32C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3962EC612260F350002A32C7;
+			remoteInfo = RandomQuotesCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3962EC782260F3A1002A32C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3962EC752260F3A1002A32C7 /* RandomQuotesCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3962EC432260F26E002A32C7 /* Random Quotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Quotes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +55,7 @@
 		3962EC4D2260F26F002A32C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3962EC502260F26F002A32C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3962EC522260F26F002A32C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RandomQuotesCore.xcodeproj; path = ../../RandomQuotesCore/RandomQuotesCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3962EC742260F3A1002A32C7 /* RandomQuotesCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3962EC452260F26E002A32C7 /* Random Quotes */,
+				3962EC6D2260F361002A32C7 /* Frameworks */,
 				3962EC442260F26E002A32C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +100,22 @@
 			path = "Random Quotes";
 			sourceTree = "<group>";
 		};
+		3962EC6D2260F361002A32C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		3962EC6F2260F38F002A32C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +126,12 @@
 				3962EC3F2260F26E002A32C7 /* Sources */,
 				3962EC402260F26E002A32C7 /* Frameworks */,
 				3962EC412260F26E002A32C7 /* Resources */,
+				3962EC782260F3A1002A32C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3962EC772260F3A1002A32C7 /* PBXTargetDependency */,
 			);
 			name = "Random Quotes";
 			productName = "Random Quotes";
@@ -110,12 +164,28 @@
 			mainGroup = 3962EC3A2260F26E002A32C7;
 			productRefGroup = 3962EC442260F26E002A32C7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3962EC6F2260F38F002A32C7 /* Products */;
+					ProjectRef = 3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3962EC422260F26E002A32C7 /* Random Quotes */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RandomQuotesCore.framework;
+			remoteRef = 3962EC722260F38F002A32C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3962EC412260F26E002A32C7 /* Resources */ = {
@@ -141,6 +211,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3962EC772260F3A1002A32C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RandomQuotesCore;
+			targetProxy = 3962EC762260F3A1002A32C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3962EC4A2260F26E002A32C7 /* Main.storyboard */ = {
