@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		3962EC672260F350002A32C7 /* RandomQuotesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3962EC652260F350002A32C7 /* RandomQuotesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3962EC922260F913002A32C7 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC912260F913002A32C7 /* QuoteController.swift */; };
+		3962EC942260F91D002A32C7 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC932260F91D002A32C7 /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3962EC622260F350002A32C7 /* RandomQuotesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3962EC652260F350002A32C7 /* RandomQuotesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomQuotesCore.h; sourceTree = "<group>"; };
 		3962EC662260F350002A32C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3962EC912260F913002A32C7 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		3962EC932260F91D002A32C7 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		3962EC792260F3C7002A32C7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3962EC932260F91D002A32C7 /* Quote.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -64,6 +69,7 @@
 		3962EC7A2260F3D1002A32C7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3962EC912260F913002A32C7 /* QuoteController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -111,6 +117,7 @@
 				TargetAttributes = {
 					3962EC612260F350002A32C7 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -146,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3962EC942260F91D002A32C7 /* Quote.swift in Sources */,
+				3962EC922260F913002A32C7 /* QuoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +286,7 @@
 		3962EC6B2260F350002A32C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -294,6 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mosesrobinson.RandomQuotesCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,6 +313,7 @@
 		3962EC6C2260F350002A32C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

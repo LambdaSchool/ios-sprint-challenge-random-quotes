@@ -14,6 +14,10 @@
 		3962EC512260F26F002A32C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3962EC4F2260F26F002A32C7 /* LaunchScreen.storyboard */; };
 		3962EC742260F3A1002A32C7 /* RandomQuotesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */; };
 		3962EC752260F3A1002A32C7 /* RandomQuotesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3962EC812260F494002A32C7 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3962EC802260F494002A32C7 /* NotificationCenter.framework */; };
+		3962EC842260F494002A32C7 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962EC832260F494002A32C7 /* TodayViewController.swift */; };
+		3962EC872260F494002A32C7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3962EC852260F494002A32C7 /* MainInterface.storyboard */; };
+		3962EC8B2260F494002A32C7 /* RandomQuoteWdiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3962EC7F2260F494002A32C7 /* RandomQuoteWdiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +35,13 @@
 			remoteGlobalIDString = 3962EC612260F350002A32C7;
 			remoteInfo = RandomQuotesCore;
 		};
+		3962EC892260F494002A32C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3962EC3B2260F26E002A32C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3962EC7E2260F494002A32C7;
+			remoteInfo = RandomQuoteWdiget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +56,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3962EC8F2260F494002A32C7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3962EC8B2260F494002A32C7 /* RandomQuoteWdiget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +78,11 @@
 		3962EC502260F26F002A32C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3962EC522260F26F002A32C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RandomQuotesCore.xcodeproj; path = ../../RandomQuotesCore/RandomQuotesCore.xcodeproj; sourceTree = "<group>"; };
+		3962EC7F2260F494002A32C7 /* RandomQuoteWdiget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RandomQuoteWdiget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3962EC802260F494002A32C7 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3962EC832260F494002A32C7 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3962EC862260F494002A32C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3962EC882260F494002A32C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +94,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3962EC7C2260F494002A32C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3962EC812260F494002A32C7 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3962EC452260F26E002A32C7 /* Random Quotes */,
+				3962EC822260F494002A32C7 /* RandomQuoteWdiget */,
 				3962EC6D2260F361002A32C7 /* Frameworks */,
 				3962EC442260F26E002A32C7 /* Products */,
 			);
@@ -83,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				3962EC432260F26E002A32C7 /* Random Quotes.app */,
+				3962EC7F2260F494002A32C7 /* RandomQuoteWdiget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,12 +127,9 @@
 		3962EC452260F26E002A32C7 /* Random Quotes */ = {
 			isa = PBXGroup;
 			children = (
-				3962EC462260F26E002A32C7 /* AppDelegate.swift */,
+				3962EC902260F4D8002A32C7 /* Resources */,
 				3962EC482260F26E002A32C7 /* ViewController.swift */,
 				3962EC4A2260F26E002A32C7 /* Main.storyboard */,
-				3962EC4D2260F26F002A32C7 /* Assets.xcassets */,
-				3962EC4F2260F26F002A32C7 /* LaunchScreen.storyboard */,
-				3962EC522260F26F002A32C7 /* Info.plist */,
 			);
 			path = "Random Quotes";
 			sourceTree = "<group>";
@@ -104,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				3962EC6E2260F38F002A32C7 /* RandomQuotesCore.xcodeproj */,
+				3962EC802260F494002A32C7 /* NotificationCenter.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +149,27 @@
 				3962EC732260F38F002A32C7 /* RandomQuotesCore.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3962EC822260F494002A32C7 /* RandomQuoteWdiget */ = {
+			isa = PBXGroup;
+			children = (
+				3962EC832260F494002A32C7 /* TodayViewController.swift */,
+				3962EC852260F494002A32C7 /* MainInterface.storyboard */,
+				3962EC882260F494002A32C7 /* Info.plist */,
+			);
+			path = RandomQuoteWdiget;
+			sourceTree = "<group>";
+		};
+		3962EC902260F4D8002A32C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3962EC462260F26E002A32C7 /* AppDelegate.swift */,
+				3962EC4D2260F26F002A32C7 /* Assets.xcassets */,
+				3962EC4F2260F26F002A32C7 /* LaunchScreen.storyboard */,
+				3962EC522260F26F002A32C7 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,16 +183,35 @@
 				3962EC402260F26E002A32C7 /* Frameworks */,
 				3962EC412260F26E002A32C7 /* Resources */,
 				3962EC782260F3A1002A32C7 /* Embed Frameworks */,
+				3962EC8F2260F494002A32C7 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				3962EC772260F3A1002A32C7 /* PBXTargetDependency */,
+				3962EC8A2260F494002A32C7 /* PBXTargetDependency */,
 			);
 			name = "Random Quotes";
 			productName = "Random Quotes";
 			productReference = 3962EC432260F26E002A32C7 /* Random Quotes.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3962EC7E2260F494002A32C7 /* RandomQuoteWdiget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3962EC8C2260F494002A32C7 /* Build configuration list for PBXNativeTarget "RandomQuoteWdiget" */;
+			buildPhases = (
+				3962EC7B2260F494002A32C7 /* Sources */,
+				3962EC7C2260F494002A32C7 /* Frameworks */,
+				3962EC7D2260F494002A32C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomQuoteWdiget;
+			productName = RandomQuoteWdiget;
+			productReference = 3962EC7F2260F494002A32C7 /* RandomQuoteWdiget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -149,6 +224,9 @@
 				ORGANIZATIONNAME = "Moses Robinson";
 				TargetAttributes = {
 					3962EC422260F26E002A32C7 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					3962EC7E2260F494002A32C7 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -173,6 +251,7 @@
 			projectRoot = "";
 			targets = (
 				3962EC422260F26E002A32C7 /* Random Quotes */,
+				3962EC7E2260F494002A32C7 /* RandomQuoteWdiget */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +277,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3962EC7D2260F494002A32C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3962EC872260F494002A32C7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -210,6 +297,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3962EC7B2260F494002A32C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3962EC842260F494002A32C7 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -217,6 +312,11 @@
 			isa = PBXTargetDependency;
 			name = RandomQuotesCore;
 			targetProxy = 3962EC762260F3A1002A32C7 /* PBXContainerItemProxy */;
+		};
+		3962EC8A2260F494002A32C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3962EC7E2260F494002A32C7 /* RandomQuoteWdiget */;
+			targetProxy = 3962EC892260F494002A32C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -235,6 +335,14 @@
 				3962EC502260F26F002A32C7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3962EC852260F494002A32C7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3962EC862260F494002A32C7 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -359,10 +467,11 @@
 		3962EC562260F26F002A32C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZRKC88876;
-				INFOPLIST_FILE = "Random Quotes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Random Quotes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,16 +486,55 @@
 		3962EC572260F26F002A32C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZRKC88876;
-				INFOPLIST_FILE = "Random Quotes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Random Quotes/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mosesrobinson.Random-Quotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3962EC8D2260F494002A32C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZRKC88876;
+				INFOPLIST_FILE = RandomQuoteWdiget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mosesrobinson.Random-Quotes.RandomQuoteWdiget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3962EC8E2260F494002A32C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZRKC88876;
+				INFOPLIST_FILE = RandomQuoteWdiget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mosesrobinson.Random-Quotes.RandomQuoteWdiget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -409,6 +557,15 @@
 			buildConfigurations = (
 				3962EC562260F26F002A32C7 /* Debug */,
 				3962EC572260F26F002A32C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3962EC8C2260F494002A32C7 /* Build configuration list for PBXNativeTarget "RandomQuoteWdiget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3962EC8D2260F494002A32C7 /* Debug */,
+				3962EC8E2260F494002A32C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
