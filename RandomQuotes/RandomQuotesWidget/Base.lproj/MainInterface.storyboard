@@ -15,19 +15,19 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="RandomQuotesWidget" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="323"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="3HM-R9-06d">
-                                <rect key="frame" x="10" y="49" width="300" height="276.5"/>
+                                <rect key="frame" x="10" y="44" width="300" height="274"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-7H-2ym">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Random Quotes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-7H-2ym">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rei-Yn-MrQ">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rei-Yn-MrQ">
                                         <rect key="frame" x="0.0" y="50" width="300" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -36,14 +36,14 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-CC-sHq">
-                                        <rect key="frame" x="0.0" y="192" width="300" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeQ-CC-sHq">
+                                        <rect key="frame" x="0.0" y="192" width="300" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbM-ed-4A1">
-                                        <rect key="frame" x="0.0" y="226.5" width="300" height="50"/>
+                                        <rect key="frame" x="0.0" y="224" width="300" height="50"/>
                                         <color key="backgroundColor" red="0.28131833940000001" green="0.70429501000000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="9ef-MP-6RP"/>
@@ -65,15 +65,16 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="3HM-R9-06d" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" constant="5" id="2Lj-be-aTk"/>
+                            <constraint firstItem="3HM-R9-06d" firstAttribute="top" secondItem="ssy-KU-ocm" secondAttribute="top" id="2Lj-be-aTk"/>
                             <constraint firstItem="3HM-R9-06d" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="10" id="PwY-Xc-1GR"/>
+                            <constraint firstAttribute="bottom" secondItem="3HM-R9-06d" secondAttribute="bottom" constant="5" id="ah2-EZ-edC"/>
                             <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="3HM-R9-06d" secondAttribute="trailing" constant="10" id="dW8-aR-Lke"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="320"/>
+                    <size key="freeformSize" width="320" height="323"/>
                     <connections>
                         <outlet property="authorLabel" destination="CeQ-CC-sHq" id="BYv-Xh-61p"/>
                         <outlet property="fetchQuoteButton" destination="AbM-ed-4A1" id="dDp-Hw-pON"/>
