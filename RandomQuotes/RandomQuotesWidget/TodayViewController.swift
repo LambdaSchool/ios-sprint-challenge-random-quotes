@@ -8,11 +8,22 @@
 
 import UIKit
 import NotificationCenter
+import RandomQuotesCore
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     
+    //MARK: - Properties
+    let quoteController = QuoteController()
+    var quote: Quote? {
+        didSet {
+            DispatchQueue.main.async {
+                self.updateViews()
+            }
+        }
+    }
+    
     //MARK: - Outlets
-    @IBOutlet weak var quote: UILabel!
+    @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     
         
@@ -21,13 +32,22 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
         
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
+        quoteController.fetchRandomQuote { (quote, error) in
+            if let error = error {
+                NSLog("Found error trying to retrieve quote: \(error)")
+                return
+            }
+            
+            self.quote = quote
+        }
         completionHandler(NCUpdateResult.newData)
     }
     
+    private func updateViews() {
+        guard let quote = quote, isViewLoaded else { return }
+        
+        quoteLabel.text = "\"\(quote.quote)\""
+        authorLabel.text = "- \(quote.author)"
+    }
 }
