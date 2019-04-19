@@ -11,6 +11,8 @@
 		4802D918226A20F70025CC95 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D917226A20F70025CC95 /* Quote.swift */; };
 		4802D91A226A21130025CC95 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D919226A21130025CC95 /* QuoteController.swift */; };
 		4802D950226A3A910025CC95 /* RandomQuotes_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4802D94E226A3A910025CC95 /* RandomQuotes_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4802D954226A3BAE0025CC95 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D917226A20F70025CC95 /* Quote.swift */; };
+		4802D955226A3BAE0025CC95 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D919226A21130025CC95 /* QuoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -205,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4802D955226A3BAE0025CC95 /* QuoteController.swift in Sources */,
+				4802D954226A3BAE0025CC95 /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
