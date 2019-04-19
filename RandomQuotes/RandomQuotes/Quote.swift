@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+
+
+struct Quote: Codable {
+    let quote: String
+    let author: String
+    
+    init(quote: String, author: String = "Julian") {
+        self.quote = quote
+        self.author = author
+    }
+}
