@@ -20,7 +20,7 @@ public class QuoteController {
         urlComponents?.queryItems = [URLQueryItem(name: "cat", value: "movies")]
         
         let url = urlComponents?.url
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: url!)
         
         request.setValue(apiKey, forHTTPHeaderField: "X-RapidAPI-Key")
         

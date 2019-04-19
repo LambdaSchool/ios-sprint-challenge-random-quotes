@@ -8,7 +8,8 @@
 
 import WatchKit
 import Foundation
-import RandomQuotesCore
+import RandomQuotesCore_watchOS
+
 
 
 class InterfaceController: WKInterfaceController {
