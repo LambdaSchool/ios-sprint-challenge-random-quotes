@@ -7,7 +7,7 @@
 //
 import Foundation
 
-class QuoteController {
+public class QuoteController {
     
     //MARK: - Properties
     private let baseURL = URL(string: "https://andruxnet-random-famous-quotes.p.rapidapi.com/")!
