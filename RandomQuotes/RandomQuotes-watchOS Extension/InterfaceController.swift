@@ -8,11 +8,22 @@
 
 import WatchKit
 import Foundation
+import RandomQuotesCore_watchOS
 
 
 class InterfaceController: WKInterfaceController {
     
     //MARK: - Properties
+    var quote: Quote? {
+        didSet {
+            DispatchQueue.main.async {
+                self.updateViews()
+            }
+        }
+    }
+    
+    private let quoteController = QuoteController()
+    
     
     //MARK: - Outlets
     @IBOutlet weak var quoteLabel: WKInterfaceLabel!
@@ -21,12 +32,24 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        quoteController.fetchRandomQuote { (quote, error) in
+            
+            if let error = error {
+                NSLog("Found error trying to retrieve quote: \(error)")
+                return
+            }
+            
+            self.quote = quote
+        }
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    private func updateViews() {
+        guard let quote = quote else { return }
+        
+        let quoteString = "\"\(quote.quote)\""
+        let authorString = "- \(quote.author)"
+        
+        quoteLabel.setText(quoteString)
+        authorLabel.setText(authorString)
     }
-
 }

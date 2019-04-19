@@ -16,7 +16,7 @@
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="9fv-UF-SWS">
                             <items>
-                                <label width="1" height="0.75" alignment="left" text="quote label" numberOfLines="0" id="VPK-aU-Us9"/>
+                                <label width="1" height="0.75" alignment="left" text="quote label" numberOfLines="0" minimumScaleFactor="0.75" id="VPK-aU-Us9"/>
                                 <label alignment="right" text="author label" minimumScaleFactor="0.75" id="nCZ-RJ-JYg">
                                     <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                 </label>
