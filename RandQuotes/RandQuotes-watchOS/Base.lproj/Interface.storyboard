@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandQuotes_watchOS" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="ML3-3w-Ea6">
+                            <items>
+                                <label width="1" height="0.69999999999999996" alignment="center" text="a quote is coming.." textAlignment="left" numberOfLines="0" id="rlt-IP-TMg"/>
+                                <label width="1" alignment="right" verticalAlignment="bottom" text="- auther tba" textAlignment="right" id="p4n-i0-2at"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="authorLabel" destination="p4n-i0-2at" id="4fG-oc-9bH"/>
+                        <outlet property="quoteLabel" destination="rlt-IP-TMg" id="tsC-8R-3UV"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
