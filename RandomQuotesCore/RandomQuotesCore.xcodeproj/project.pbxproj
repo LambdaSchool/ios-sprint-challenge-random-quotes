@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4802D90B226A1EC80025CC95 /* RandomQuotesCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4802D909226A1EC80025CC95 /* RandomQuotesCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4802D918226A20F70025CC95 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D917226A20F70025CC95 /* Quote.swift */; };
+		4802D91A226A21130025CC95 /* QuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D919226A21130025CC95 /* QuoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4802D906226A1EC80025CC95 /* RandomQuotesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4802D909226A1EC80025CC95 /* RandomQuotesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomQuotesCore.h; sourceTree = "<group>"; };
 		4802D90A226A1EC80025CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4802D917226A20F70025CC95 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		4802D919226A21130025CC95 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		4802D908226A1EC80025CC95 /* RandomQuotesCore */ = {
 			isa = PBXGroup;
 			children = (
+				4802D917226A20F70025CC95 /* Quote.swift */,
+				4802D919226A21130025CC95 /* QuoteController.swift */,
 				4802D909226A1EC80025CC95 /* RandomQuotesCore.h */,
 				4802D90A226A1EC80025CC95 /* Info.plist */,
 			);
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					4802D905226A1EC80025CC95 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4802D91A226A21130025CC95 /* QuoteController.swift in Sources */,
+				4802D918226A20F70025CC95 /* Quote.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +270,7 @@
 		4802D90F226A1EC80025CC95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Frulwinn.RandomQuotesCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		4802D910226A1EC80025CC95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
