@@ -49,6 +49,7 @@
                     <connections>
                         <outlet property="authorLabel" destination="Xui-Pa-IeL" id="UYs-sk-RG1"/>
                         <outlet property="quoteLabel" destination="fq9-dI-ecA" id="gyu-nQ-LjA"/>
+                        <outlet property="quoteStackView" destination="Bd9-jb-UyR" id="1Id-hu-qVF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -35,7 +35,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         case .compact:
             preferredContentSize = maxSize
         case .expanded:
-            preferredContentSize = CGSize(width: maxSize.width, height: 300)
+            preferredContentSize = CGSize(width: maxSize.width, height: quoteStackView.bounds.height)
         default:
             break
         }
@@ -59,6 +59,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var quoteStackView: UIStackView!
     
     let quoteController = QuoteController()
 }
