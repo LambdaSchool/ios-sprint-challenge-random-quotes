@@ -10,10 +10,14 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+    
+    //MARK: - Outlets
+    @IBOutlet weak var quote: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
         
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {

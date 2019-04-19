@@ -16,6 +16,8 @@
 		4802D8F0226A1D460025CC95 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4802D8EF226A1D460025CC95 /* TodayViewController.swift */; };
 		4802D8F3226A1D460025CC95 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4802D8F1226A1D460025CC95 /* MainInterface.storyboard */; };
 		4802D8F7226A1D460025CC95 /* RandomQuotesWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4802D8EA226A1D460025CC95 /* RandomQuotesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4802D91B226A261E0025CC95 /* RandomQuotesCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4802D916226A1FBD0025CC95 /* RandomQuotesCore.framework */; };
+		4802D91C226A261E0025CC95 /* RandomQuotesCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4802D916226A1FBD0025CC95 /* RandomQuotesCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,13 @@
 			remoteGlobalIDString = 4802D906226A1EC80025CC95;
 			remoteInfo = RandomQuotesCore;
 		};
+		4802D91D226A261E0025CC95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4802D911226A1FBD0025CC95 /* RandomQuotesCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4802D905226A1EC80025CC95;
+			remoteInfo = RandomQuotesCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +54,17 @@
 				4802D8F7226A1D460025CC95 /* RandomQuotesWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4802D91F226A261E0025CC95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4802D91C226A261E0025CC95 /* RandomQuotesCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -70,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4802D91B226A261E0025CC95 /* RandomQuotesCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,11 +175,13 @@
 				4802D8C9226A1AF60025CC95 /* Frameworks */,
 				4802D8CA226A1AF60025CC95 /* Resources */,
 				4802D8FB226A1D460025CC95 /* Embed App Extensions */,
+				4802D91F226A261E0025CC95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4802D8F6226A1D460025CC95 /* PBXTargetDependency */,
+				4802D91E226A261E0025CC95 /* PBXTargetDependency */,
 			);
 			name = RandomQuotes;
 			productName = RandomQuotes;
@@ -281,6 +304,11 @@
 			isa = PBXTargetDependency;
 			target = 4802D8E9226A1D460025CC95 /* RandomQuotesWidget */;
 			targetProxy = 4802D8F5226A1D460025CC95 /* PBXContainerItemProxy */;
+		};
+		4802D91E226A261E0025CC95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RandomQuotesCore;
+			targetProxy = 4802D91D226A261E0025CC95 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -469,6 +497,7 @@
 		4802D8F9226A1D460025CC95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = RandomQuotesWidget/Info.plist;
@@ -488,6 +517,7 @@
 		4802D8FA226A1D460025CC95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX5TRU44F;
 				INFOPLIST_FILE = RandomQuotesWidget/Info.plist;
