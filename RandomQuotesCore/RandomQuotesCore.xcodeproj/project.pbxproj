@@ -19,8 +19,8 @@
 		4802D906226A1EC80025CC95 /* RandomQuotesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4802D909226A1EC80025CC95 /* RandomQuotesCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomQuotesCore.h; sourceTree = "<group>"; };
 		4802D90A226A1EC80025CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4802D917226A20F70025CC95 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
-		4802D919226A21130025CC95 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
+		4802D917226A20F70025CC95 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quote.swift; path = ../../RandomQuotes/RandomQuotes/Quote.swift; sourceTree = "<group>"; };
+		4802D919226A21130025CC95 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuoteController.swift; path = ../../RandomQuotes/RandomQuotes/QuoteController.swift; sourceTree = "<group>"; };
 		4802D94C226A3A910025CC95 /* RandomQuotesCore_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotesCore_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4802D94E226A3A910025CC95 /* RandomQuotes_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomQuotes_watchOS.h; sourceTree = "<group>"; };
 		4802D94F226A3A910025CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };

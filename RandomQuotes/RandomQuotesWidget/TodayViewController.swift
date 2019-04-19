@@ -8,7 +8,7 @@
 
 import UIKit
 import NotificationCenter
-import RandomQuotesCore
+//import RandomQuotesCore
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     

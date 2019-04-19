@@ -17,7 +17,7 @@ public class QuoteController {
     
     public func fetchRandomQuote(completion: @escaping (Quote?, Error?) -> Void) {
         var urlComponents = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)
-        urlComponents?.queryItems = [URLQueryItem(name: "cat", value: "movies")]
+        urlComponents?.queryItems = [URLQueryItem(name: "cat", value: "famous")]
         
         let url = urlComponents?.url
         var request = URLRequest(url: url!)
@@ -39,7 +39,7 @@ public class QuoteController {
             
             do {
                 let jsonDecoder = JSONDecoder()
-                let quoteArray = try jsonDecoder.decode([Quote].self, from: data)
+                let quoteArray = try jsonDecoder.decode([String: Quote].self, from: data)
                 let quote = quoteArray.first
                 completion(quote, nil)
             } catch {
