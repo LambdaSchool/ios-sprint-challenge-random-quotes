@@ -26,6 +26,13 @@
 			remoteGlobalIDString = 4802D8E9226A1D460025CC95;
 			remoteInfo = RandomQuotesWidget;
 		};
+		4802D915226A1FBD0025CC95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4802D911226A1FBD0025CC95 /* RandomQuotesCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4802D906226A1EC80025CC95;
+			remoteInfo = RandomQuotesCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +62,7 @@
 		4802D8EF226A1D460025CC95 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		4802D8F2226A1D460025CC95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		4802D8F4226A1D460025CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4802D911226A1FBD0025CC95 /* RandomQuotesCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RandomQuotesCore.xcodeproj; path = ../RandomQuotesCore/RandomQuotesCore.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				4802D8CE226A1AF60025CC95 /* RandomQuotes */,
+				4802D911226A1FBD0025CC95 /* RandomQuotesCore.xcodeproj */,
 				4802D8EE226A1D460025CC95 /* RandomQuotesWidget */,
 				4802D8EB226A1D460025CC95 /* Frameworks */,
 				4802D8CD226A1AF60025CC95 /* Products */,
@@ -124,6 +133,14 @@
 				4802D8F4226A1D460025CC95 /* Info.plist */,
 			);
 			path = RandomQuotesWidget;
+			sourceTree = "<group>";
+		};
+		4802D912226A1FBD0025CC95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4802D916226A1FBD0025CC95 /* RandomQuotesCore.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +211,12 @@
 			mainGroup = 4802D8C3226A1AF60025CC95;
 			productRefGroup = 4802D8CD226A1AF60025CC95 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4802D912226A1FBD0025CC95 /* Products */;
+					ProjectRef = 4802D911226A1FBD0025CC95 /* RandomQuotesCore.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4802D8CB226A1AF60025CC95 /* RandomQuotes */,
@@ -201,6 +224,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4802D916226A1FBD0025CC95 /* RandomQuotesCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RandomQuotesCore.framework;
+			remoteRef = 4802D915226A1FBD0025CC95 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4802D8CA226A1AF60025CC95 /* Resources */ = {
