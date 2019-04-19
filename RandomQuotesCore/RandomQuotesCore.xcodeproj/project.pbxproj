@@ -21,7 +21,7 @@
 		4802D90A226A1EC80025CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4802D917226A20F70025CC95 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		4802D919226A21130025CC95 /* QuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteController.swift; sourceTree = "<group>"; };
-		4802D94C226A3A910025CC95 /* RandomQuotes_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotes_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4802D94C226A3A910025CC95 /* RandomQuotesCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomQuotesCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4802D94E226A3A910025CC95 /* RandomQuotes_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomQuotes_watchOS.h; sourceTree = "<group>"; };
 		4802D94F226A3A910025CC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				4802D906226A1EC80025CC95 /* RandomQuotesCore.framework */,
-				4802D94C226A3A910025CC95 /* RandomQuotes_watchOS.framework */,
+				4802D94C226A3A910025CC95 /* RandomQuotesCore.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			);
 			name = "RandomQuotes-watchOS";
 			productName = "RandomQuotes-watchOS";
-			productReference = 4802D94C226A3A910025CC95 /* RandomQuotes_watchOS.framework */;
+			productReference = 4802D94C226A3A910025CC95 /* RandomQuotesCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -409,7 +409,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Frulwinn.RandomQuotes-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = RandomQuotesCore;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -437,7 +437,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Frulwinn.RandomQuotes-watchOS";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = RandomQuotesCore;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
