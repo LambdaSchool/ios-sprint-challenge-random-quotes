@@ -25,9 +25,10 @@ class InterfaceController: WKInterfaceController {
     
     func updateViews() {
         if let quote = quote {
-            quoteLabel.setText(quote.quote)
-            let author = "- " + quote.author
-            authorLabel.setText(author)
+            let quoteString = "\"" + quote.quote + "\""
+            quoteLabel.setText(quoteString)
+            let authorString = "- " + quote.author
+            authorLabel.setText(authorString)
         }
     }
     

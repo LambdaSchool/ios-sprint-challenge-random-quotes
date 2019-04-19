@@ -23,7 +23,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 print("Error during fetchQuote method: \(error).")
                 return
             }
-            
+
             self.quote = quote
         }
         
@@ -35,7 +35,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         case .compact:
             preferredContentSize = maxSize
         case .expanded:
-            preferredContentSize = CGSize(width: maxSize.width, height: quoteStackView.bounds.height)
+            let contentHeight = quoteLabel.frame.height + authorLabel.frame.height + 56
+            preferredContentSize = CGSize(width: maxSize.width, height: contentHeight)
         default:
             break
         }
@@ -43,7 +44,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func updateViews() {
         if let quote = quote {
-            quoteLabel.text = quote.quote
+            quoteLabel.text = "\"" + quote.quote + "\""
             let author = "- " + quote.author
             authorLabel.text = author
         }
@@ -59,7 +60,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var quoteStackView: UIStackView!
     
     let quoteController = QuoteController()
 }
